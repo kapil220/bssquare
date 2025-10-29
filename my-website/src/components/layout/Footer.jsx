@@ -1,0 +1,233 @@
+import { Link } from 'react-router-dom';
+import { Facebook, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+const Footer = () => {
+  return (
+    <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 overflow-hidden">
+      {/* Background elements matching HeroSection */}
+      <div className="absolute inset-0 opacity-10">
+        <motion.div 
+          className="absolute inset-0 w-full h-full" 
+          style={{
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}
+          animate={{
+            backgroundPosition: ['0px 0px', '50px 50px'],
+          }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+        />
+      </div>
+
+      {/* Floating elements matching HeroSection */}
+      <motion.div
+        className="absolute bottom-20 left-10 w-8 h-8 border border-[#FFBD59]/20 rounded-full"
+        animate={{
+          y: [0, -20, 0],
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+      
+      <motion.div
+        className="absolute top-10 right-20 w-6 h-6 border border-[#FFBD59]/30 rounded-lg rotate-45"
+        animate={{
+          y: [0, 15, 0],
+          rotate: [45, 90, 45],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2
+        }}
+      />
+
+      {/* WhatsApp Floating Button - Updated to match theme */}
+      <motion.a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-40 bg-[#FFBD59] text-gray-900 p-4 rounded-full shadow-2xl hover:bg-[#FFBD59]/90 hover:scale-110 transition-all duration-300"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <MessageCircle size={28} />
+      </motion.a>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Company Info */}
+          <div>
+            <motion.div 
+              className="flex items-center space-x-2 mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="w-10 h-10 bg-gradient-to-br from-[#FFBD59] to-[#FFA726] rounded-lg flex items-center justify-center">
+                <span className="text-gray-900 font-bold text-lg">BS</span>
+              </div>
+              <span className="text-xl font-bold text-white">B Square Global</span>
+            </motion.div>
+            <motion.p 
+              className="text-sm text-gray-400 mb-6 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              Your trusted partner for comprehensive HR, accounting, and training services. Empowering businesses to thrive with excellence.
+            </motion.p>
+            <motion.div 
+              className="flex space-x-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <motion.a 
+                href="#" 
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFBD59] transition-all duration-300"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Linkedin size={20} className="text-gray-300 hover:text-gray-900" />
+              </motion.a>
+              <motion.a 
+                href="#" 
+                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFBD59] transition-all duration-300"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Facebook size={20} className="text-gray-300 hover:text-gray-900" />
+              </motion.a>
+            </motion.div>
+          </div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <h4 className="text-white font-bold text-lg mb-6 relative inline-block">
+              Quick Links
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
+            </h4>
+            <ul className="space-y-3">
+              {['Home', 'Services', 'Career', 'About Us', 'Contact Us'].map((link, index) => (
+                <motion.li key={link}
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <Link 
+                    to={`/${link === 'Home' ? '' : link.toLowerCase().replace(' ', '-')}`} 
+                    className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
+                  >
+                    {link}
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Our Services */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <h4 className="text-white font-bold text-lg mb-6 relative inline-block">
+              Our Services
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
+            </h4>
+            <ul className="space-y-3">
+              {['CAD & BIM', 'Virtual HR Services', 'Accounting Services', 'Training Programs'].map((service, index) => (
+                <motion.li key={service}
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <Link 
+                    to={`/services/${service.toLowerCase().replace(' & ', '-').replace(' ', '-')}`} 
+                    className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
+                  >
+                    {service}
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Contact Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <h4 className="text-white font-bold text-lg mb-6 relative inline-block">
+              Contact Us
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
+            </h4>
+            <ul className="space-y-4">
+              <motion.li 
+                className="flex items-start group"
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <MapPin size={20} className="mr-3 mt-0.5 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
+                <span className="text-sm leading-relaxed text-gray-400">UN | INDIA</span>
+              </motion.li>
+              <motion.li 
+                className="flex items-center group"
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <Mail size={20} className="mr-3 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
+                <a href="mailto:info@bsqglobal.com" className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors">
+                  info@bsqglobal.com
+                </a>
+              </motion.li>
+              <motion.li 
+                className="flex items-center group"
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <Phone size={20} className="mr-3 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
+                <div className="text-sm text-gray-400">
+                  <div>+971 56 293 6953</div>
+                  <div className="mt-1">+971 56 747 9953</div>
+                </div>
+              </motion.li>
+            </ul>
+          </motion.div>
+        </div>
+
+        {/* Bottom Bar */}
+        <motion.div 
+          className="border-t border-gray-700 mt-12 pt-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>&copy; 2025 B Square Global. All rights reserved.</p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <Link to="#" className="text-gray-400 hover:text-[#FFBD59] transition-colors">Privacy Policy</Link>
+              <Link to="#" className="text-gray-400 hover:text-[#FFBD59] transition-colors">Terms of Service</Link>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
