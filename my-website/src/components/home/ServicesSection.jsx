@@ -12,13 +12,20 @@ const ServicesSection = () => {
       icon: <BookOpen size={40} />,
       title: 'CAD & BIM',
       description: 'Professional development courses, skill enhancement workshops, and certification programs to empower your team with the latest industry knowledge.',
+      link: '/services/cad-bim'
     },
     {
       icon: <Users size={40} />,
       title: 'Virtual HR Services',
       description: 'Complete HR solutions including talent management, payroll services, compliance management, employee relations, and performance management systems.',
+      link: '/services/hr-services'
     }
   ];
+
+  const handleLearnMoreClick = (serviceLink) => {
+    // Navigate to the service page
+    window.location.href = serviceLink;
+  };
 
   return (
     <section ref={ref} className="py-32 bg-gray-50 relative overflow-hidden">
@@ -60,19 +67,22 @@ const ServicesSection = () => {
                 <div className="w-16 h-16 bg-gray-900 rounded-lg flex items-center justify-center mb-6 text-white group-hover:bg-[#FFBD59] transition-colors duration-300">
                   {service.icon}
                 </div>
-                
+
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4 uppercase tracking-wide">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                
-                <div className="flex items-center text-gray-900 font-semibold group-hover:text-[#FFBD59] transition-colors">
+
+                <button 
+                  onClick={() => handleLearnMoreClick(service.link)}
+                  className="flex items-center text-gray-900 font-semibold group-hover:text-[#FFBD59] transition-colors cursor-pointer hover:underline"
+                >
                   Learn More
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </div>
+                </button>
               </div>
             </motion.div>
           ))}

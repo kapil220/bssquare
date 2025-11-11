@@ -17,40 +17,36 @@ const JobDetail = () => {
       department: 'Construction Services',
       location: 'Dubai, UAE',
       type: 'Full Time',
-      experience: '3-5 years',
-      salary: 'Competitive',
-      description: 'Handle government relations, visa processing, and PRO services for our UAE operations.',
+      experience: '8 years',
+      // salary: 'Competitive',
+      description: 'We are looking for an experienced and well-connected Public Relations Officer (PRO) to handle all government-related tasks, visa processes, legal documentation, and license renewals.',
       responsibilities: [
-        'Process and renew visas, labor cards, and other government documents',
-        'Liaise with government authorities and maintain positive relationships',
-        'Handle company registration and licensing matters',
-        'Manage document attestation and legalization processes',
-        'Ensure compliance with UAE labor laws and regulations',
-        'Coordinate with various departments for document requirements',
-        'Maintain updated knowledge of changing government procedures'
+        'Manage visa processing, Emirates ID, labor contracts, and medical tests',
+        'Coordinate with Dubai government departments – GDRFA, MOHRE, DED, DHA, etc.',
+        'Handle trade license renewals, tenancy contracts, and company documentation',
+        'Ensure compliance with UAE labor and immigration laws',
+        'Maintain strong relationships with typing centers and government offices'
       ],
       requirements: [
-        '3+ years experience as PRO in UAE',
-        'In-depth knowledge of UAE government procedures',
-        'Valid UAE driving license',
-        'Excellent communication skills in Arabic and English',
-        'Strong network with government authorities',
-        'Ability to work under pressure and meet deadlines',
-        'Strong problem-solving skills'
+        'Minimum 8 years of PRO experience in the UAE (Dubai-specific experience preferred)',
+        'Strong knowledge of UAE labor and immigration laws',
+        'Familiarity with government portals (MOHRE, GDRFA, ICP, Tasheel)',
+        'Good communication in English (Arabic is a plus)',
+        'UAE driving license (preferred)'
       ],
-      qualifications: [
-        'High school diploma or equivalent',
-        'PRO certification from relevant authorities',
-        'Proven track record in PRO services',
-        'Knowledge of typing in both English and Arabic'
-      ],
-      benefits: [
-        'Health insurance',
-        'Annual flight ticket',
-        '30 days annual leave',
-        'Performance bonus',
-        'Career growth opportunities'
-      ]
+      // qualifications: [
+      //   'High school diploma or equivalent',
+      //   'PRO certification from relevant authorities',
+      //   'Proven track record in PRO services',
+      //   'Knowledge of typing in both English and Arabic'
+      // ],
+      // benefits: [
+      //   'Health insurance',
+      //   'Annual flight ticket',
+      //   '30 days annual leave',
+      //   'Performance bonus',
+      //   'Career growth opportunities'
+      // ]
     },
     {
       id: '4505',
@@ -59,39 +55,38 @@ const JobDetail = () => {
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
-      experience: '2-4 years',
+      experience: '1-2 years',
       salary: 'As per industry standards',
-      description: 'Manage end-to-end HR operations including recruitment, employee relations, and compliance.',
+      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual HR services for clients in both countries.',
       responsibilities: [
-        'Manage end-to-end recruitment process',
-        'Handle employee onboarding and offboarding',
-        'Maintain employee records and HR databases',
-        'Coordinate performance management systems',
-        'Handle employee grievances and relations',
-        'Implement HR policies and procedures',
-        'Coordinate training and development programs'
+        'Assist with recruitment, onboarding, and documentation for India and UAE-based clients.',
+        'Support HR policy implementation, employee records management, and compliance tracking.',
+        'Help prepare offer letters, contracts, and HR reports.',
+        'Coordinate payroll data and attendance with external vendors or finance teams.',
+        'Resolve employee queries and provide basic grievance support.',
+        'Ensure HR practices comply with both UAE and Indian labour law requirements.',
+        'Work closely with the senior HR team to deliver virtual HR services for clients.'
       ],
       requirements: [
-        '2+ years experience in HR generalist role',
-        'Knowledge of Indian labor laws',
-        'Experience with HR software and systems',
-        'Excellent interpersonal skills',
-        'Bachelor\'s degree in HR or related field',
-        'Strong organizational skills',
-        'Ability to maintain confidentiality'
+        'Bachelor’s degree in Human Resources, Business Administration, or related field.',
+        '1–2 years of experience in HR operations or generalist roles (internship experience also considered).',
+        'Basic knowledge of Indian and UAE labour laws is mandatory',
+        'Good written and verbal communication skills in English.',
+        'Familiarity with MS Excel, Google Workspace, and HR software is a plus.',
+        'Ability to work remotely, manage tasks independently, and adapt to cross-border work environments.'
       ],
-      qualifications: [
-        'MBA in HR or relevant degree',
-        'HR certification preferred',
-        'Strong knowledge of HR best practices',
-        'Proficiency in MS Office and HRIS'
-      ],
+      // qualifications: [
+      //   'MBA in HR or relevant degree',
+      //   'HR certification preferred',
+      //   'Strong knowledge of HR best practices',
+      //   'Proficiency in MS Office and HRIS'
+      // ],
       benefits: [
-        'Health insurance',
-        'Flexible working hours',
-        'Professional development support',
-        'Performance incentives',
-        'Work-life balance initiatives'
+        'Exposure to multi-country HR practices (India + UAE).',
+        'Flexible remote/hybrid work environment.',
+        'Opportunity to grow into a specialized HR role.',
+        'Mentorship from experienced HR leaders in the Virtual HR industry.',
+        'Work with growing startups and mid-scale businesses.'
       ]
     },
     {
@@ -101,36 +96,37 @@ const JobDetail = () => {
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
-      experience: '5-8 years',
+      experience: '5+ years',
       salary: 'Best in industry',
-      description: 'Lead HR strategy, team management, and organizational development initiatives.',
+      description: 'We are looking for an experienced HR Manager to lead and manage our HR operations and also support our clients through our Virtual HR Service model. You will be responsible for designing HR processes, guiding junior HR consultants, and ensuring client satisfaction across the HR lifecycle.',
       responsibilities: [
-        'Develop and implement HR strategies and initiatives',
-        'Manage HR team and oversee all HR operations',
-        'Drive talent management and succession planning',
-        'Oversee compensation and benefits programs',
-        'Ensure legal compliance throughout human resource management',
-        'Develop and monitor overall HR strategies, systems, and procedures'
+        'Lead internal HR strategy, recruitment, onboarding, and employee engagement.',
+        'Oversee Virtual HR service delivery for client companies, ensuring quality and compliance.',
+        'Act as the primary HR contact for clients—handle grievances, policy creation, performance reviews, and exit processes.',
+        'Implement and monitor HRMS tools for workflow automation.Prepare and present HR reports, dashboards, and compliance documentation.',
+        'Guide a small team of HR executives and freelance consultants.Ensure labor law compliance across client operations (UAE labor law expertise preferred).',
+        'Collaborate with the Training team for employee development programs.'
       ],
       requirements: [
-        '5+ years experience in HR management',
-        'Deep knowledge of HR functions and best practices',
-        'Experience in strategic planning and implementation',
-        'Excellent leadership and decision-making skills',
-        'Proven experience in team management'
+        'Bachelor’s degree in HR or related field (MBA in HR preferred).',
+        '5+ years of HR experience, including at least 2 years in a leadership role.',
+        'Hands-on experience in recruitment, policy drafting, payroll coordination, and employee engagement.',
+        'Experience in working with or managing remote/virtual teams is a strong plus.',
+        'Strong knowledge of UAE labor law and HR compliance.',
+        'Excellent communication and client-handling skills.',
+        'Tech-savvy, with familiarity in tools like Zoho People, BambooHR, or similar HRMS.'
       ],
-      qualifications: [
-        'MBA in HR or related field',
-        'Relevant HR certification required',
-        'Strong business acumen',
-        'Excellent communication and presentation skills'
-      ],
+      // qualifications: [
+      //   'MBA in HR or related field',
+      //   'Relevant HR certification required',
+      //   'Strong business acumen',
+      //   'Excellent communication and presentation skills'
+      // ],
       benefits: [
-        'Comprehensive health insurance',
-        'Stock options',
-        'Leadership development programs',
-        'Executive benefits package',
-        'International exposure opportunities'
+        'Work with a visionary startup shaping the future of HR in the UAE.',
+        'Lead innovation in Virtual HR delivery for SMEs and startups.',
+        'Flexible, remote-first work environment.',
+        'Opportunity to grow into a leadership role within a fast-scaling company.'
       ]
     },
     {
@@ -382,10 +378,10 @@ const JobDetail = () => {
                   <UserCheck size={20} className="text-[#FFBD59]" />
                   {job.experience}
                 </span>
-                <span className="flex items-center gap-2">
+                {/* <span className="flex items-center gap-2">
                   <DollarSign size={20} className="text-[#FFBD59]" />
                   {job.salary}
-                </span>
+                </span> */}
               </div>
             </div>
             
@@ -435,7 +431,7 @@ const JobDetail = () => {
               </section>
 
               {/* Qualifications */}
-              <section>
+              {/* <section>
                 <h2 className="text-3xl font-serif text-gray-900 mb-6">Qualifications</h2>
                 <ul className="space-y-3">
                   {job.qualifications?.map((qualification, index) => (
@@ -445,10 +441,10 @@ const JobDetail = () => {
                     </li>
                   ))}
                 </ul>
-              </section>
+              </section> */}
 
               {/* Benefits */}
-              {job.benefits && (
+              {/* {job.benefits && (
                 <section>
                   <h2 className="text-3xl font-serif text-gray-900 mb-6">Benefits & Perks</h2>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -460,7 +456,7 @@ const JobDetail = () => {
                     ))}
                   </div>
                 </section>
-              )}
+              )} */}
             </div>
 
             {/* Sidebar */}
@@ -481,10 +477,10 @@ const JobDetail = () => {
                     <span className="text-gray-600">Type:</span>
                     <span className="font-semibold">{job.type}</span>
                   </div>
-                  <div className="flex justify-between">
+                  {/* <div className="flex justify-between">
                     <span className="text-gray-600">Department:</span>
                     <span className="font-semibold">{job.department}</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between">
                     <span className="text-gray-600">Category:</span>
                     <span className="font-semibold">{job.category}</span>
@@ -493,10 +489,10 @@ const JobDetail = () => {
                     <span className="text-gray-600">Experience:</span>
                     <span className="font-semibold">{job.experience}</span>
                   </div>
-                  <div className="flex justify-between">
+                  {/* <div className="flex justify-between">
                     <span className="text-gray-600">Salary:</span>
                     <span className="font-semibold">{job.salary}</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
