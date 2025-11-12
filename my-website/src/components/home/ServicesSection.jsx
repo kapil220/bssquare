@@ -22,7 +22,7 @@ const ServicesSection = () => {
     }
   ];
 
-  const handleLearnMoreClick = (serviceLink) => {
+  const handleServiceClick = (serviceLink) => {
     // Navigate to the service page
     window.location.href = serviceLink;
   };
@@ -63,7 +63,10 @@ const ServicesSection = () => {
               whileHover={{ y: -5 }}
               className="group"
             >
-              <div className="bg-white p-10 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full border border-gray-100">
+              <div 
+                onClick={() => handleServiceClick(service.link)}
+                className="bg-white p-10 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 h-full border border-gray-100 cursor-pointer"
+              >
                 <div className="w-16 h-16 bg-gray-900 rounded-lg flex items-center justify-center mb-6 text-white group-hover:bg-[#FFBD59] transition-colors duration-300">
                   {service.icon}
                 </div>
@@ -76,13 +79,10 @@ const ServicesSection = () => {
                   {service.description}
                 </p>
 
-                <button 
-                  onClick={() => handleLearnMoreClick(service.link)}
-                  className="flex items-center text-gray-900 font-semibold group-hover:text-[#FFBD59] transition-colors cursor-pointer hover:underline"
-                >
+                <div className="flex items-center text-gray-900 font-semibold group-hover:text-[#FFBD59] transition-colors">
                   Learn More
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </div>
               </div>
             </motion.div>
           ))}
