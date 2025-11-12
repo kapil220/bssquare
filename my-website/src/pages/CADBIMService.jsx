@@ -362,12 +362,12 @@ const BIMServices = () => {
           </div>
           
           {/* Mohan Babu */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          {/* <div className="bg-white p-6 rounded-lg shadow-md">
             <h5 className="text-lg font-semibold text-gray-900 mb-2">Mr. Mohan Babu</h5>
             <p className="text-gray-600">
               <a href="mailto:Mohan.b@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Mohan.b@bsquareglobalfze.com</a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 

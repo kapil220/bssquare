@@ -17,40 +17,36 @@ const JobDetail = () => {
       department: 'Construction Services',
       location: 'Dubai, UAE',
       type: 'Full Time',
-      experience: '3-5 years',
+      experience: '8 years',
       salary: 'Competitive',
-      description: 'Handle government relations, visa processing, and PRO services for our UAE operations.',
+      description: 'We are looking for an experienced and well-connected Public Relations Officer (PRO) to handle all government-related tasks, visa processes, legal documentation, and license renewals.',
       responsibilities: [
-        'Process and renew visas, labor cards, and other government documents',
-        'Liaise with government authorities and maintain positive relationships',
-        'Handle company registration and licensing matters',
-        'Manage document attestation and legalization processes',
-        'Ensure compliance with UAE labor laws and regulations',
-        'Coordinate with various departments for document requirements',
-        'Maintain updated knowledge of changing government procedures'
+        'Manage visa processing, Emirates ID, labor contracts, and medical tests.',
+        'Coordinate with Dubai government departments – GDRFA, MOHRE, DED, DHA, etc.',
+        'Handle trade license renewals, tenancy contracts, and company documentation.',
+        'Ensure compliance with UAE labor and immigration laws.',
+        'Maintain strong relationships with typing centers and government offices.'
       ],
       requirements: [
-        '3+ years experience as PRO in UAE',
-        'In-depth knowledge of UAE government procedures',
-        'Valid UAE driving license',
-        'Excellent communication skills in Arabic and English',
-        'Strong network with government authorities',
-        'Ability to work under pressure and meet deadlines',
-        'Strong problem-solving skills'
+        'Minimum 8 years of PRO experience in the UAE (Dubai-specific experience preferred).',
+        'Strong knowledge of UAE labor and immigration laws.',
+        'Familiarity with government portals (MOHRE, GDRFA, ICP, Tasheel).',
+        'Good communication in English (Arabic is a plus).',
+        'UAE driving license (preferred).'
       ],
-      qualifications: [
-        'High school diploma or equivalent',
-        'PRO certification from relevant authorities',
-        'Proven track record in PRO services',
-        'Knowledge of typing in both English and Arabic'
-      ],
-      benefits: [
-        'Health insurance',
-        'Annual flight ticket',
-        '30 days annual leave',
-        'Performance bonus',
-        'Career growth opportunities'
-      ]
+      // qualifications: [
+      //   'High school diploma or equivalent',
+      //   'PRO certification from relevant authorities',
+      //   'Proven track record in PRO services',
+      //   'Knowledge of typing in both English and Arabic'
+      // ],
+      // benefits: [
+      //   'Health insurance',
+      //   'Annual flight ticket',
+      //   '30 days annual leave',
+      //   'Performance bonus',
+      //   'Career growth opportunities'
+      // ]
     },
     {
       id: '4505',
@@ -59,39 +55,38 @@ const JobDetail = () => {
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
-      experience: '2-4 years',
+      experience: '1-2 years',
       salary: 'As per industry standards',
-      description: 'Manage end-to-end HR operations including recruitment, employee relations, and compliance.',
+      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual HR services for clients in both countries.',
       responsibilities: [
-        'Manage end-to-end recruitment process',
-        'Handle employee onboarding and offboarding',
-        'Maintain employee records and HR databases',
-        'Coordinate performance management systems',
-        'Handle employee grievances and relations',
-        'Implement HR policies and procedures',
-        'Coordinate training and development programs'
+        'Assist with recruitment, onboarding, and documentation for India and UAE-based clients.',
+        'Support HR policy implementation, employee records management, and compliance tracking.',
+        'Help prepare offer letters, contracts, and HR reports.',
+        'Coordinate payroll data and attendance with external vendors or finance teams.',
+        'Resolve employee queries and provide basic grievance support.',
+        'Ensure HR practices comply with both UAE and Indian labour law requirements.',
+        'Work closely with the senior HR team to deliver virtual HR services for clients.'
       ],
       requirements: [
-        '2+ years experience in HR generalist role',
-        'Knowledge of Indian labor laws',
-        'Experience with HR software and systems',
-        'Excellent interpersonal skills',
-        'Bachelor\'s degree in HR or related field',
-        'Strong organizational skills',
-        'Ability to maintain confidentiality'
+        'Bachelor’s degree in Human Resources, Business Administration, or related field.',
+        '1–2 years of experience in HR operations or generalist roles (internship experience also considered).',
+        'Basic knowledge of Indian and UAE labour laws is mandatory.',
+        'Good written and verbal communication skills in English.',
+        'Familiarity with MS Excel, Google Workspace, and HR software is a plus.',
+        'Ability to work remotely, manage tasks independently, and adapt to cross-border work environments.'
       ],
-      qualifications: [
-        'MBA in HR or relevant degree',
-        'HR certification preferred',
-        'Strong knowledge of HR best practices',
-        'Proficiency in MS Office and HRIS'
-      ],
+      // qualifications: [
+      //   'MBA in HR or relevant degree',
+      //   'HR certification preferred',
+      //   'Strong knowledge of HR best practices',
+      //   'Proficiency in MS Office and HRIS'
+      // ],
       benefits: [
-        'Health insurance',
-        'Flexible working hours',
-        'Professional development support',
-        'Performance incentives',
-        'Work-life balance initiatives'
+        'Exposure to multi-country HR practices (India + UAE).',
+        'Flexible remote/hybrid work environment.',
+        'Opportunity to grow into a specialized HR role.',
+        'Mentorship from experienced HR leaders in the Virtual HR industry.',
+        'Work with growing startups and mid-scale businesses.'
       ]
     },
     {
@@ -101,74 +96,78 @@ const JobDetail = () => {
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
-      experience: '5-8 years',
+      experience: '5+ years',
       salary: 'Best in industry',
-      description: 'Lead HR strategy, team management, and organizational development initiatives.',
+      description: 'We are looking for an experienced HR Manager to lead and manage our HR operations and also support our clients through our Virtual HR Service model. You will be responsible for designing HR processes, guiding junior HR consultants, and ensuring client satisfaction across the HR lifecycle.',
       responsibilities: [
-        'Develop and implement HR strategies and initiatives',
-        'Manage HR team and oversee all HR operations',
-        'Drive talent management and succession planning',
-        'Oversee compensation and benefits programs',
-        'Ensure legal compliance throughout human resource management',
-        'Develop and monitor overall HR strategies, systems, and procedures'
+        'Lead internal HR strategy, recruitment, onboarding, and employee engagement.',
+        'Oversee Virtual HR service delivery for client companies, ensuring quality and compliance.',
+        'Act as the primary HR contact for clients—handle grievances, policy creation, performance reviews, and exit processes.',
+        'Implement and monitor HRMS tools for workflow automation.Prepare and present HR reports, dashboards, and compliance documentation.',
+        'Guide a small team of HR executives and freelance consultants.Ensure labor law compliance across client operations (UAE labor law expertise preferred).',
+        'Collaborate with the Training team for employee development programs.'
       ],
       requirements: [
-        '5+ years experience in HR management',
-        'Deep knowledge of HR functions and best practices',
-        'Experience in strategic planning and implementation',
-        'Excellent leadership and decision-making skills',
-        'Proven experience in team management'
+        'Bachelor’s degree in HR or related field (MBA in HR preferred).',
+        '5+ years of HR experience, including at least 2 years in a leadership role.',
+        'Hands-on experience in recruitment, policy drafting, payroll coordination, and employee engagement.',
+        'Experience in working with or managing remote/virtual teams is a strong plus.',
+        'Strong knowledge of UAE labor law and HR compliance.',
+        'Excellent communication and client-handling skills.',
+        'Tech-savvy, with familiarity in tools like Zoho People, BambooHR, or similar HRMS.'
       ],
-      qualifications: [
-        'MBA in HR or related field',
-        'Relevant HR certification required',
-        'Strong business acumen',
-        'Excellent communication and presentation skills'
-      ],
+      // qualifications: [
+      //   'MBA in HR or related field',
+      //   'Relevant HR certification required',
+      //   'Strong business acumen',
+      //   'Excellent communication and presentation skills'
+      // ],
       benefits: [
-        'Comprehensive health insurance',
-        'Stock options',
-        'Leadership development programs',
-        'Executive benefits package',
-        'International exposure opportunities'
+        'Work with a visionary startup shaping the future of HR in the UAE.',
+        'Lead innovation in Virtual HR delivery for SMEs and startups.',
+        'Flexible, remote-first work environment.',
+        'Opportunity to grow into a leadership role within a fast-scaling company.'
       ]
     },
     {
       id: '4503',
       title: 'Business Development Executive',
       category: 'HR Services',
-      department: 'Sales & Marketing',
+      department: 'Marketing',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '2-3 years',
+      experience: '2-4 years',
       salary: 'Base + Commission',
-      description: 'Drive business growth through client acquisition and relationship management in Sharjah.',
+      description: 'We are looking for a Business Development Executive who is driven, self-motivated, and confident in building strong B2B relationships. This role is ideal for someone who can communicate value to mid-sized businesses and startups, and convert leads into long-term clients for our services.',
       responsibilities: [
-        'Identify and pursue new business opportunities',
-        'Build and maintain client relationships',
-        'Achieve sales targets and objectives',
-        'Prepare and present business proposals',
-        'Conduct market research and analysis',
-        'Collaborate with marketing team on campaigns'
+        'Identify and pursue new B2B leads for Virtual HR, Consultancy, Training, and Manpower services.',
+        'Conduct client meetings (virtual/in-person), presentations, and service demonstrations.',
+        'Understand client needs and propose tailored service packages from B Square Global.',
+        'Maintain CRM records, follow up on prospects, and achieve monthly sales targets.',
+        'Collaborate with operations and delivery teams to ensure smooth onboarding of new clients.',
+        'Represent the company in networking events, webinars, and industry forums.',
+        'Create proposals, quotations, and coordinate agreement sign-offs.'
       ],
       requirements: [
-        '2+ years in business development or sales',
-        'Experience in HR services industry preferred',
-        'Excellent negotiation and presentation skills',
-        'Self-motivated with proven track record',
-        'Valid UAE driving license'
+        'Bachelor’s degree in Business, Marketing, or related field.',
+        '2–4 years of B2B sales experience (preferably in HR, consultancy, or service sectors).',
+        'Excellent communication, negotiation, and presentation skills.',
+        'Proficiency in using CRM tools and MS Office Suite.',
+        'Strong understanding of UAE market and business culture.',
+        'Ability to work independently and manage time effectively.',
+        'UAE driving license is a plus.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in Business or Marketing',
-        'Proven sales track record',
-        'Strong network in UAE business community'
-      ],
+      // qualifications: [
+      //   'Bachelor\'s degree in Business or Marketing',
+      //   'Proven sales track record',
+      //   'Strong network in UAE business community'
+      // ],
       benefits: [
-        'Uncapped commission structure',
-        'Company vehicle allowance',
-        'Client entertainment budget',
-        'Performance bonuses',
-        'Career advancement opportunities'
+        'Flexible working model (Remote/Hybrid).',
+        'Base salary + performance-based incentives.',
+        'Opportunity to grow with a visionary startup.',
+        'Work directly with the leadership team and build meaningful B2B connections.',
+        'Exposure to multi-sector clients and cross-functional services.'
       ]
     },
     {
@@ -178,36 +177,35 @@ const JobDetail = () => {
       department: 'Engineering',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '3-6 years',
+      experience: '5 years',
       salary: 'AED 8,000 - 12,000',
-      description: 'Oversee civil construction projects, ensure quality standards and timely delivery.',
+      description: 'We are looking for a dynamic and experienced Project Engineer to join our growing team in the UAE. The ideal candidate should have hands-on experience in civil and infrastructure construction projects with a strong understanding of local regulations, construction standards, and project execution.',
       responsibilities: [
-        'Manage and supervise construction projects',
-        'Review technical drawings and specifications',
-        'Coordinate with contractors and suppliers',
-        'Ensure compliance with safety regulations',
-        'Monitor project progress and quality control',
-        'Prepare project reports and documentation'
+        'Oversee and manage day-to-day site activities and construction work.',
+        'Coordinate with consultants, subcontractors, and suppliers.',
+        'Ensure timely project delivery within budget and quality standards.',
+        'Monitor progress and prepare regular reports.',
+        'Ensure compliance with HSE regulations and quality standards.'
       ],
       requirements: [
-        '3+ years experience in civil construction',
-        'Knowledge of construction methods and materials',
-        'Familiarity with UAE building codes',
-        'Strong project management skills',
-        'Excellent problem-solving abilities'
+        'Bachelor’s degree in Civil Engineering (B.E / B.Tech).',
+        'Minimum 5 years of UAE experience in civil and infrastructure projects.',
+        'Strong knowledge of site execution, project planning, and technical specifications.',
+        'Excellent leadership, communication, and problem-solving skills.',
+        'UAE driving license is an advantage.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in Civil Engineering',
-        'UAE driving license',
-        'Project management certification preferred'
-      ],
-      benefits: [
-        'Accommodation allowance',
-        'Transportation allowance',
-        'Medical insurance',
-        'Annual bonus',
-        'Professional certification support'
-      ]
+      // qualifications: [
+      //   'Bachelor\'s degree in Civil Engineering',
+      //   'UAE driving license',
+      //   'Project management certification preferred'
+      // ],
+      // benefits: [
+      //   'Accommodation allowance',
+      //   'Transportation allowance',
+      //   'Medical insurance',
+      //   'Annual bonus',
+      //   'Professional certification support'
+      // ]
     },
     {
       id: '4501',
@@ -218,32 +216,35 @@ const JobDetail = () => {
       type: 'Full Time',
       experience: '2-5 years',
       salary: 'AED 6,000 - 9,000',
-      description: 'Design, plan and supervise construction projects with focus on structural integrity.',
+      description: 'We are seeking a highly motivated and detail-oriented Construction Site Supervisor to oversee and direct construction projects from conception to completion. You will be the on-site leader responsible for ensuring projects are delivered on time, within budget, and to the highest quality and safety standards.',
       responsibilities: [
-        'Design and analyze structural systems',
-        'Prepare engineering calculations and drawings',
-        'Supervise construction activities',
-        'Conduct site inspections and tests',
-        'Coordinate with architects and contractors',
-        'Ensure compliance with design specifications'
+        'Supervise and monitor site construction activities to ensure alignment with project specifications, safety regulations, and timelines.',
+        'Review drawings, plans, and quantities for accuracy.',
+        'Coordinate with architects, consultants, contractors, and local authorities.',
+        'Prepare daily, weekly, and monthly progress reports.',
+        'Ensure materials used and work performed are in accordance with the project specifications.',
+        'Manage site logistics and resolve any technical or engineering issues that arise.',
+        'Conduct quality control and safety inspections.',
+        'Assist in budgeting, cost estimation, and project documentation.'
       ],
       requirements: [
-        '2+ years experience in civil engineering',
-        'Proficiency in AutoCAD and other engineering software',
-        'Knowledge of structural analysis and design',
-        'Strong technical and analytical skills'
+        'Bachelor’s degree in Civil Engineering (mandatory).',
+        '2–5 years of UAE experience in construction or infrastructure projects.',
+        'Strong knowledge of AutoCAD, MS Office, and project management tools.',
+        'Familiarity with Sharjah Municipality regulations and permitting processes is a plus.',
+        'Good command of English (Arabic is a plus).',
+        'UAE driving license preferred.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in Civil Engineering',
-        'UAE driving license',
-        'Engineer membership preferred'
-      ],
+      // qualifications: [
+      //   'Bachelor\'s degree in Civil Engineering',
+      //   'UAE driving license',
+      //   'Engineer membership preferred'
+      // ],
       benefits: [
-        'Housing allowance',
-        'Transport allowance',
-        'Health insurance',
-        'Vacation tickets',
-        'Continuous training opportunities'
+        'Competitive salary based on experience.',
+        'Annual leave and health insurance.',
+        'Professional development opportunities.',
+        'Collaborative and supportive work environment.'
       ]
     },
     {
@@ -253,34 +254,31 @@ const JobDetail = () => {
       department: 'Procurement',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '1-3 years',
+      experience: '4 years',
       salary: 'AED 4,000 - 6,000',
-      description: 'Manage procurement of construction materials, vendor coordination, and inventory.',
+      description: 'We are seeking an experienced Procurement Specialist (Civil Construction) to handle procurement, supplier negotiations, and material sourcing for construction projects.',
       responsibilities: [
-        'Source and purchase construction materials',
-        'Negotiate with suppliers and vendors',
-        'Maintain inventory records',
-        'Process purchase orders and invoices',
-        'Coordinate with project teams',
-        'Ensure timely delivery of materials'
+        'Source and procure construction materials cost-effectively.',
+        'Negotiate with suppliers and maintain vendor relationships.',
+        'Ensure timely deliveries and manage inventory.',
+        'Maintain purchase records and compliance.'
       ],
       requirements: [
-        '1+ years experience in procurement',
-        'Knowledge of construction materials',
-        'Strong negotiation skills',
-        'Attention to detail and accuracy'
+        'Bachelor’s degree in Business, Supply Chain, or related field.',
+        '4 years of construction procurement experience.',
+        'Strong negotiation & vendor management skills.',
+        'Proficiency in MS Office & ERP software.'
       ],
-      qualifications: [
-        'Diploma or degree in Supply Chain Management',
-        'Proficiency in MS Office and inventory software',
-        'Valid UAE driving license'
-      ],
+      // qualifications: [
+      //   'Diploma or degree in Supply Chain Management',
+      //   'Proficiency in MS Office and inventory software',
+      //   'Valid UAE driving license'
+      // ],
       benefits: [
-        'Medical insurance',
-        'Transport allowance',
-        'Performance incentives',
-        'Career growth opportunities',
-        'Training and development'
+        'Competitive salary, Visa',
+        'accommodation',
+        'transport',
+        'health insurance.'
       ]
     },
     {
@@ -290,33 +288,35 @@ const JobDetail = () => {
       department: 'Sales & Marketing',
       location: 'UAE Ajman',
       type: 'Commission + Base Pay (Flexible)',
-      experience: '1-2 years',
+      experience: '2 years',
       salary: 'Base + High Commission',
-      description: 'Promote virtual HR services, build client relationships, and achieve sales targets.',
+      description: 'We are seeking a motivated and result-oriented Business Development Executive to promote and sell our Virtual HR service packages across the UAE market. The ideal candidate will identify target clients, generate leads, conduct sales meetings, and close deals with SMEs, startups, and mid-sized firms.',
       responsibilities: [
-        'Promote virtual HR services to potential clients',
-        'Build and maintain client relationships',
-        'Achieve sales targets for HR services',
-        'Conduct product demonstrations',
-        'Gather client feedback and requirements'
+        'Promote and sell Virtual HR solutions to target clients in the UAE.',
+        'Identify new business opportunities through cold calling, networking, and field visits.',
+        'Schedule meetings with potential clients and present service offerings.',
+        'Customize service packages based on client needs and budgets.',
+        'Meet or exceed monthly and quarterly sales targets.',
+        'Maintain client records and report regularly to management.',
+        'Attend business events and HR networking sessions when needed.'
       ],
       requirements: [
-        '1+ years in sales or business development',
-        'Knowledge of HR services industry',
-        'Excellent communication skills',
-        'Self-motivated and target-driven'
+        'Minimum 2 years of experience in B2B sales, preferably in HR services, consulting, SaaS, or staffing.',
+        'Strong understanding of the UAE business market and client behavior.',
+        'Excellent communication and presentation skills in English, Hindi (Arabic is a plus).',
+        'Self-motivated, target-driven, and able to work independently.',
+        'UAE driving license is an advantage but not mandatory.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in any field',
-        'Sales certification preferred',
-        'Experience in service industry sales'
-      ],
+      // qualifications: [
+      //   'Bachelor\'s degree in any field',
+      //   'Sales certification preferred',
+      //   'Experience in service industry sales'
+      // ],
       benefits: [
-        'Flexible working hours',
-        'High commission structure',
-        'Work from home options',
-        'Performance bonuses',
-        'Unlimited earning potential'
+        'Competitive base salary + performance-based commission.',
+        'Flexible work structure (field visits + remote work).',
+        'Opportunity to grow with a startup focused on innovation and virtual solutions.',
+        'Training on HR services and virtual solutions provided.'
       ]
     }
   ];
@@ -328,7 +328,7 @@ const JobDetail = () => {
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-serif text-gray-900 mb-4">Job Not Found</h2>
-          <button 
+          <button
             onClick={() => navigate('/career')}
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#FFBD59] text-white rounded-md hover:bg-[#e6a847] transition-colors"
           >
@@ -349,14 +349,14 @@ const JobDetail = () => {
       {/* Header */}
       <div className="bg-gray-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <button 
+          <button
             onClick={() => navigate('/career')}
             className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft size={20} />
             Back to Careers
           </button>
-          
+
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
             <div className="flex-1">
               <span className="inline-block text-[#FFBD59] bg-[#FFBD59]/10 px-3 py-1 rounded-full text-sm font-semibold mb-4">
@@ -364,7 +364,7 @@ const JobDetail = () => {
               </span>
               <h1 className="text-4xl md:text-5xl font-serif mb-6">{job.title}</h1>
               <p className="text-xl text-gray-300 mb-8">{job.description}</p>
-              
+
               <div className="flex flex-wrap gap-6 text-gray-300">
                 <span className="flex items-center gap-2">
                   <Briefcase size={20} className="text-[#FFBD59]" />
@@ -382,13 +382,13 @@ const JobDetail = () => {
                   <UserCheck size={20} className="text-[#FFBD59]" />
                   {job.experience}
                 </span>
-                <span className="flex items-center gap-2">
+                {/* <span className="flex items-center gap-2">
                   <DollarSign size={20} className="text-[#FFBD59]" />
                   {job.salary}
-                </span>
+                </span> */}
               </div>
             </div>
-            
+
             <motion.button
               onClick={handleApply}
               className="lg:self-start inline-flex items-center justify-center px-8 py-4 bg-[#FFBD59] text-gray-900 text-lg font-semibold rounded-md hover:bg-[#e6a847] transition-colors whitespace-nowrap"
@@ -435,7 +435,7 @@ const JobDetail = () => {
               </section>
 
               {/* Qualifications */}
-              <section>
+              {/* <section>
                 <h2 className="text-3xl font-serif text-gray-900 mb-6">Qualifications</h2>
                 <ul className="space-y-3">
                   {job.qualifications?.map((qualification, index) => (
@@ -445,7 +445,7 @@ const JobDetail = () => {
                     </li>
                   ))}
                 </ul>
-              </section>
+              </section> */}
 
               {/* Benefits */}
               {job.benefits && (
@@ -481,10 +481,10 @@ const JobDetail = () => {
                     <span className="text-gray-600">Type:</span>
                     <span className="font-semibold">{job.type}</span>
                   </div>
-                  <div className="flex justify-between">
+                  {/* <div className="flex justify-between">
                     <span className="text-gray-600">Department:</span>
                     <span className="font-semibold">{job.department}</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between">
                     <span className="text-gray-600">Category:</span>
                     <span className="font-semibold">{job.category}</span>
@@ -493,10 +493,10 @@ const JobDetail = () => {
                     <span className="text-gray-600">Experience:</span>
                     <span className="font-semibold">{job.experience}</span>
                   </div>
-                  <div className="flex justify-between">
+                  {/* <div className="flex justify-between">
                     <span className="text-gray-600">Salary:</span>
                     <span className="font-semibold">{job.salary}</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -519,16 +519,27 @@ const JobDetail = () => {
 
               {/* Share Job */}
               <div className="bg-white p-6 rounded-lg border border-gray-200">
-                <h3 className="text-xl font-serif text-gray-900 mb-4">Share This Job</h3>
-                <div className="flex gap-3">
-                  <button className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-                    LinkedIn
+                <h3 className="text-xl font-serif text-gray-900 mb-4 text-center">Share This Job</h3>
+                <div className="flex gap-3 justify-center">
+                  {/* LinkedIn */}
+                  <button className="flex items-center justify-center w-12 h-12 bg-[#0077B5] text-white rounded-md hover:bg-[#00669A] transition-colors">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
                   </button>
-                  <button className="flex-1 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors">
-                    WhatsApp
+
+                  {/* WhatsApp */}
+                  <button className="flex items-center justify-center w-12 h-12 bg-[#25D366] text-white rounded-md hover:bg-[#20BD5C] transition-colors">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
                   </button>
-                  <button className="flex-1 px-4 py-2 bg-blue-400 text-white rounded-md hover:bg-blue-500 transition-colors">
-                    Twitter
+
+                  {/* Twitter */}
+                  <button className="flex items-center justify-center w-12 h-12 bg-black text-white rounded-md hover:bg-gray-800 transition-colors">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
                   </button>
                 </div>
               </div>

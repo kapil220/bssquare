@@ -233,12 +233,12 @@ const Career = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="relative"
+                className="relative flex flex-col"
               >
-                <div className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300 flex-1 flex flex-col">
                   <div className="text-5xl font-serif text-[#FFBD59] mb-4 opacity-50">{item.step}</div>
                   <h3 className="text-xl font-serif text-gray-900 mb-3">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-600 leading-relaxed flex-1">{item.desc}</p>
                 </div>
                 {index < 3 && (
                   <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
