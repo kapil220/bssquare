@@ -1,17 +1,19 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Target, Eye, Heart, CheckCircle2, TrendingUp, Users, Award } from 'lucide-react';
+import { Target, Eye, Heart, CheckCircle2, TrendingUp, Users, Award, Building2, CheckCircle } from 'lucide-react';
 
 const About = () => {
   const storyRef = useRef(null);
   const missionRef = useRef(null);
   const directorRef = useRef(null);
   const industriesRef = useRef(null);
+  const aboutRef = useRef(null);
   
   const storyInView = useInView(storyRef, { once: true, margin: "-100px" });
   const missionInView = useInView(missionRef, { once: true, margin: "-100px" });
   const directorInView = useInView(directorRef, { once: true, margin: "-100px" });
   const industriesInView = useInView(industriesRef, { once: true, margin: "-100px" });
+  const aboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
 
   return (
     <div className="bg-white">
@@ -56,6 +58,165 @@ const About = () => {
               <div className="h-px w-16 bg-[#FFBD59]"></div>
               <p className="text-lg text-gray-600 font-light">Empowering Business from Day One</p>
               <div className="h-px w-16 bg-[#FFBD59]"></div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section ref={aboutRef} className="py-32 bg-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900">
+              About <span className="text-[#FFBD59] italic">Us</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-3 gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-gray-50 p-8 rounded-lg border border-gray-200"
+            >
+              <div className="w-12 h-12 bg-[#FFBD59] rounded-lg flex items-center justify-center mb-6">
+                <Building2 size={24} className="text-white" />
+              </div>
+              <h3 className="text-2xl font-serif text-gray-900 mb-4">Who We Are</h3>
+              <p className="text-gray-600 leading-relaxed">
+                B SQUARE GLOBAL is a company started by Bijal Shah, who has over 20 years of experience in BIM technology and construction management. We help architects, engineers, and builders by providing a wide range of BIM services.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gray-50 p-8 rounded-lg border border-gray-200"
+            >
+              <div className="w-12 h-12 bg-[#FFBD59] rounded-lg flex items-center justify-center mb-6">
+                <Eye size={24} className="text-white" />
+              </div>
+              <h3 className="text-2xl font-serif text-gray-900 mb-4">Our Vision</h3>
+              <p className="text-gray-600 leading-relaxed">
+                At B SQUARE GLOBAL, our goal is to make building projects easier and more successful with our BIM services. We want to give each client the best solutions for their needs, using our skilled and experienced team.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-gray-50 p-8 rounded-lg border border-gray-200"
+            >
+              <div className="w-12 h-12 bg-[#FFBD59] rounded-lg flex items-center justify-center mb-6">
+                <CheckCircle size={24} className="text-white" />
+              </div>
+              <h3 className="text-2xl font-serif text-gray-900 mb-4">Our Value</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Many of our clients come back to us for new projects. This shows that they trust our work and appreciate our professionalism. We always focus on what our clients need, and our team is dedicated to doing their best on every project.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Founder Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-16 bg-gradient-to-br from-[#FFBD59]/10 to-orange-50 p-8 rounded-lg border border-[#FFBD59]/20"
+          >
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              {/* Left Column - Bijal Shah with Large Image */}
+              <div className="space-y-6">
+                {/* Large Image */}
+                <div className="w-full">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                    alt="Bijal Shah"
+                    className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+
+                {/* Content */}
+                <div>
+                  <h3 className="text-3xl font-serif text-gray-900 mb-2">Bijal Shah</h3>
+
+                  <div className="space-y-2 text-gray-700 mb-4">
+                    <p>
+                      <a href="tel:+971563045152" className="hover:text-[#FFBD59]">+971 563045152</a>
+                    </p>
+                    <p>
+                      <a href="mailto:Bijal.s@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Bijal.s@bsquareglobalfze.com</a>
+                    </p>
+                    <p>
+                      <a href="http://www.bsquareglobalfze.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFBD59]">www.bsquareglobalfze.com</a>
+                    </p>
+                  </div>
+
+                  <div className="mb-4">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-1">PROFESSIONAL BUSINESS SOLUTION</h4>
+                    <p className="text-lg text-[#FFBD59] font-semibold">Technical Director | BIM Consultant | Founder at B Square Global</p>
+                  </div>
+
+                  <p className="text-gray-600">
+                    Empowering AEC firms with 20 years of BIM expertise in the UAE
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Column - Founders and Directors */}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-xl font-serif text-gray-900 mb-4">Founder and directors</h4>
+                  <div className="space-y-4">
+                    {/* Bhavin Shah */}
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                      <h5 className="text-lg font-semibold text-gray-900 mb-2">Mr. Bhavin Shah</h5>
+                      <p className="text-gray-600">
+                        <a href="mailto:Bhavin.s@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Bhavin.s@bsquareglobalfze.com</a>
+                      </p>
+                    </div>
+
+                    {/* Mohan Babu */}
+                    {/* <div className="bg-white p-6 rounded-lg shadow-md">
+                      <h5 className="text-lg font-semibold text-gray-900 mb-2">Mr. Mohan Babu</h5>
+                      <p className="text-gray-600">
+                        <a href="mailto:Mohan.b@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Mohan.b@bsquareglobalfze.com</a>
+                      </p>
+                    </div> */}
+                  </div>
+                </div>
+
+                {/* Additional Info Section to fill space */}
+                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#FFBD59]">
+                  <h5 className="text-lg font-semibold text-gray-900 mb-3">Get in Touch</h5>
+                  <p className="text-gray-600 mb-4">
+                    Ready to transform your AEC projects with BIM expertise? Contact us for consultation and services.
+                  </p>
+                  <div className="space-y-2 text-sm text-gray-700">
+                    <p className="flex items-center gap-2">
+                      <span>🏢</span>
+                      <span>Based in UAE</span>
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span>⏰</span>
+                      <span>20+ Years Experience</span>
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span>📞</span>
+                      <span>Available for Consultation</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
