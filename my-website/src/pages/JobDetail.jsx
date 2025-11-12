@@ -18,21 +18,21 @@ const JobDetail = () => {
       location: 'Dubai, UAE',
       type: 'Full Time',
       experience: '8 years',
-      // salary: 'Competitive',
+      salary: 'Competitive',
       description: 'We are looking for an experienced and well-connected Public Relations Officer (PRO) to handle all government-related tasks, visa processes, legal documentation, and license renewals.',
       responsibilities: [
-        'Manage visa processing, Emirates ID, labor contracts, and medical tests',
+        'Manage visa processing, Emirates ID, labor contracts, and medical tests.',
         'Coordinate with Dubai government departments – GDRFA, MOHRE, DED, DHA, etc.',
-        'Handle trade license renewals, tenancy contracts, and company documentation',
-        'Ensure compliance with UAE labor and immigration laws',
-        'Maintain strong relationships with typing centers and government offices'
+        'Handle trade license renewals, tenancy contracts, and company documentation.',
+        'Ensure compliance with UAE labor and immigration laws.',
+        'Maintain strong relationships with typing centers and government offices.'
       ],
       requirements: [
-        'Minimum 8 years of PRO experience in the UAE (Dubai-specific experience preferred)',
-        'Strong knowledge of UAE labor and immigration laws',
-        'Familiarity with government portals (MOHRE, GDRFA, ICP, Tasheel)',
-        'Good communication in English (Arabic is a plus)',
-        'UAE driving license (preferred)'
+        'Minimum 8 years of PRO experience in the UAE (Dubai-specific experience preferred).',
+        'Strong knowledge of UAE labor and immigration laws.',
+        'Familiarity with government portals (MOHRE, GDRFA, ICP, Tasheel).',
+        'Good communication in English (Arabic is a plus).',
+        'UAE driving license (preferred).'
       ],
       // qualifications: [
       //   'High school diploma or equivalent',
@@ -70,7 +70,7 @@ const JobDetail = () => {
       requirements: [
         'Bachelor’s degree in Human Resources, Business Administration, or related field.',
         '1–2 years of experience in HR operations or generalist roles (internship experience also considered).',
-        'Basic knowledge of Indian and UAE labour laws is mandatory',
+        'Basic knowledge of Indian and UAE labour laws is mandatory.',
         'Good written and verbal communication skills in English.',
         'Familiarity with MS Excel, Google Workspace, and HR software is a plus.',
         'Ability to work remotely, manage tasks independently, and adapt to cross-border work environments.'
@@ -133,38 +133,41 @@ const JobDetail = () => {
       id: '4503',
       title: 'Business Development Executive',
       category: 'HR Services',
-      department: 'Sales & Marketing',
+      department: 'Marketing',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '2-3 years',
+      experience: '2-4 years',
       salary: 'Base + Commission',
-      description: 'Drive business growth through client acquisition and relationship management in Sharjah.',
+      description: 'We are looking for a Business Development Executive who is driven, self-motivated, and confident in building strong B2B relationships. This role is ideal for someone who can communicate value to mid-sized businesses and startups, and convert leads into long-term clients for our services.',
       responsibilities: [
-        'Identify and pursue new business opportunities',
-        'Build and maintain client relationships',
-        'Achieve sales targets and objectives',
-        'Prepare and present business proposals',
-        'Conduct market research and analysis',
-        'Collaborate with marketing team on campaigns'
+        'Identify and pursue new B2B leads for Virtual HR, Consultancy, Training, and Manpower services.',
+        'Conduct client meetings (virtual/in-person), presentations, and service demonstrations.',
+        'Understand client needs and propose tailored service packages from B Square Global.',
+        'Maintain CRM records, follow up on prospects, and achieve monthly sales targets.',
+        'Collaborate with operations and delivery teams to ensure smooth onboarding of new clients.',
+        'Represent the company in networking events, webinars, and industry forums.',
+        'Create proposals, quotations, and coordinate agreement sign-offs.'
       ],
       requirements: [
-        '2+ years in business development or sales',
-        'Experience in HR services industry preferred',
-        'Excellent negotiation and presentation skills',
-        'Self-motivated with proven track record',
-        'Valid UAE driving license'
+        'Bachelor’s degree in Business, Marketing, or related field.',
+        '2–4 years of B2B sales experience (preferably in HR, consultancy, or service sectors).',
+        'Excellent communication, negotiation, and presentation skills.',
+        'Proficiency in using CRM tools and MS Office Suite.',
+        'Strong understanding of UAE market and business culture.',
+        'Ability to work independently and manage time effectively.',
+        'UAE driving license is a plus.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in Business or Marketing',
-        'Proven sales track record',
-        'Strong network in UAE business community'
-      ],
+      // qualifications: [
+      //   'Bachelor\'s degree in Business or Marketing',
+      //   'Proven sales track record',
+      //   'Strong network in UAE business community'
+      // ],
       benefits: [
-        'Uncapped commission structure',
-        'Company vehicle allowance',
-        'Client entertainment budget',
-        'Performance bonuses',
-        'Career advancement opportunities'
+        'Flexible working model (Remote/Hybrid).',
+        'Base salary + performance-based incentives.',
+        'Opportunity to grow with a visionary startup.',
+        'Work directly with the leadership team and build meaningful B2B connections.',
+        'Exposure to multi-sector clients and cross-functional services.'
       ]
     },
     {
@@ -174,36 +177,35 @@ const JobDetail = () => {
       department: 'Engineering',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '3-6 years',
+      experience: '5 years',
       salary: 'AED 8,000 - 12,000',
-      description: 'Oversee civil construction projects, ensure quality standards and timely delivery.',
+      description: 'We are looking for a dynamic and experienced Project Engineer to join our growing team in the UAE. The ideal candidate should have hands-on experience in civil and infrastructure construction projects with a strong understanding of local regulations, construction standards, and project execution.',
       responsibilities: [
-        'Manage and supervise construction projects',
-        'Review technical drawings and specifications',
-        'Coordinate with contractors and suppliers',
-        'Ensure compliance with safety regulations',
-        'Monitor project progress and quality control',
-        'Prepare project reports and documentation'
+        'Oversee and manage day-to-day site activities and construction work.',
+        'Coordinate with consultants, subcontractors, and suppliers.',
+        'Ensure timely project delivery within budget and quality standards.',
+        'Monitor progress and prepare regular reports.',
+        'Ensure compliance with HSE regulations and quality standards.'
       ],
       requirements: [
-        '3+ years experience in civil construction',
-        'Knowledge of construction methods and materials',
-        'Familiarity with UAE building codes',
-        'Strong project management skills',
-        'Excellent problem-solving abilities'
+        'Bachelor’s degree in Civil Engineering (B.E / B.Tech).',
+        'Minimum 5 years of UAE experience in civil and infrastructure projects.',
+        'Strong knowledge of site execution, project planning, and technical specifications.',
+        'Excellent leadership, communication, and problem-solving skills.',
+        'UAE driving license is an advantage.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in Civil Engineering',
-        'UAE driving license',
-        'Project management certification preferred'
-      ],
-      benefits: [
-        'Accommodation allowance',
-        'Transportation allowance',
-        'Medical insurance',
-        'Annual bonus',
-        'Professional certification support'
-      ]
+      // qualifications: [
+      //   'Bachelor\'s degree in Civil Engineering',
+      //   'UAE driving license',
+      //   'Project management certification preferred'
+      // ],
+      // benefits: [
+      //   'Accommodation allowance',
+      //   'Transportation allowance',
+      //   'Medical insurance',
+      //   'Annual bonus',
+      //   'Professional certification support'
+      // ]
     },
     {
       id: '4501',
@@ -214,32 +216,35 @@ const JobDetail = () => {
       type: 'Full Time',
       experience: '2-5 years',
       salary: 'AED 6,000 - 9,000',
-      description: 'Design, plan and supervise construction projects with focus on structural integrity.',
+      description: 'We are seeking a highly motivated and detail-oriented Construction Site Supervisor to oversee and direct construction projects from conception to completion. You will be the on-site leader responsible for ensuring projects are delivered on time, within budget, and to the highest quality and safety standards.',
       responsibilities: [
-        'Design and analyze structural systems',
-        'Prepare engineering calculations and drawings',
-        'Supervise construction activities',
-        'Conduct site inspections and tests',
-        'Coordinate with architects and contractors',
-        'Ensure compliance with design specifications'
+        'Supervise and monitor site construction activities to ensure alignment with project specifications, safety regulations, and timelines.',
+        'Review drawings, plans, and quantities for accuracy.',
+        'Coordinate with architects, consultants, contractors, and local authorities.',
+        'Prepare daily, weekly, and monthly progress reports.',
+        'Ensure materials used and work performed are in accordance with the project specifications.',
+        'Manage site logistics and resolve any technical or engineering issues that arise.',
+        'Conduct quality control and safety inspections.',
+        'Assist in budgeting, cost estimation, and project documentation.'
       ],
       requirements: [
-        '2+ years experience in civil engineering',
-        'Proficiency in AutoCAD and other engineering software',
-        'Knowledge of structural analysis and design',
-        'Strong technical and analytical skills'
+        'Bachelor’s degree in Civil Engineering (mandatory).',
+        '2–5 years of UAE experience in construction or infrastructure projects.',
+        'Strong knowledge of AutoCAD, MS Office, and project management tools.',
+        'Familiarity with Sharjah Municipality regulations and permitting processes is a plus.',
+        'Good command of English (Arabic is a plus).',
+        'UAE driving license preferred.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in Civil Engineering',
-        'UAE driving license',
-        'Engineer membership preferred'
-      ],
+      // qualifications: [
+      //   'Bachelor\'s degree in Civil Engineering',
+      //   'UAE driving license',
+      //   'Engineer membership preferred'
+      // ],
       benefits: [
-        'Housing allowance',
-        'Transport allowance',
-        'Health insurance',
-        'Vacation tickets',
-        'Continuous training opportunities'
+        'Competitive salary based on experience.',
+        'Annual leave and health insurance.',
+        'Professional development opportunities.',
+        'Collaborative and supportive work environment.'
       ]
     },
     {
@@ -249,34 +254,28 @@ const JobDetail = () => {
       department: 'Procurement',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '1-3 years',
+      experience: '4 years',
       salary: 'AED 4,000 - 6,000',
-      description: 'Manage procurement of construction materials, vendor coordination, and inventory.',
+      description: 'We are seeking an experienced Procurement Specialist (Civil Construction) to handle procurement, supplier negotiations, and material sourcing for construction projects.',
       responsibilities: [
-        'Source and purchase construction materials',
-        'Negotiate with suppliers and vendors',
-        'Maintain inventory records',
-        'Process purchase orders and invoices',
-        'Coordinate with project teams',
-        'Ensure timely delivery of materials'
+        'Source and procure construction materials cost-effectively.',
+        'Negotiate with suppliers and maintain vendor relationships.',
+        'Ensure timely deliveries and manage inventory.',
+        'Maintain purchase records and compliance.'
       ],
       requirements: [
-        '1+ years experience in procurement',
-        'Knowledge of construction materials',
-        'Strong negotiation skills',
-        'Attention to detail and accuracy'
+        'Bachelor’s degree in Business, Supply Chain, or related field.',
+        '4 years of construction procurement experience.',
+        'Strong negotiation & vendor management skills.',
+        'Proficiency in MS Office & ERP software.'
       ],
-      qualifications: [
-        'Diploma or degree in Supply Chain Management',
-        'Proficiency in MS Office and inventory software',
-        'Valid UAE driving license'
-      ],
+      // qualifications: [
+      //   'Diploma or degree in Supply Chain Management',
+      //   'Proficiency in MS Office and inventory software',
+      //   'Valid UAE driving license'
+      // ],
       benefits: [
-        'Medical insurance',
-        'Transport allowance',
-        'Performance incentives',
-        'Career growth opportunities',
-        'Training and development'
+        'Competitive salary, visa, accommodation, transport, and health insurance.'
       ]
     },
     {
@@ -286,33 +285,35 @@ const JobDetail = () => {
       department: 'Sales & Marketing',
       location: 'UAE Ajman',
       type: 'Commission + Base Pay (Flexible)',
-      experience: '1-2 years',
+      experience: '2 years',
       salary: 'Base + High Commission',
-      description: 'Promote virtual HR services, build client relationships, and achieve sales targets.',
+      description: 'We are seeking a motivated and result-oriented Business Development Executive to promote and sell our Virtual HR service packages across the UAE market. The ideal candidate will identify target clients, generate leads, conduct sales meetings, and close deals with SMEs, startups, and mid-sized firms.',
       responsibilities: [
-        'Promote virtual HR services to potential clients',
-        'Build and maintain client relationships',
-        'Achieve sales targets for HR services',
-        'Conduct product demonstrations',
-        'Gather client feedback and requirements'
+        'Promote and sell Virtual HR solutions to target clients in the UAE.',
+        'Identify new business opportunities through cold calling, networking, and field visits.',
+        'Schedule meetings with potential clients and present service offerings.',
+        'Customize service packages based on client needs and budgets.',
+        'Meet or exceed monthly and quarterly sales targets.',
+        'Maintain client records and report regularly to management.',
+        'Attend business events and HR networking sessions when needed.'
       ],
       requirements: [
-        '1+ years in sales or business development',
-        'Knowledge of HR services industry',
-        'Excellent communication skills',
-        'Self-motivated and target-driven'
+        'Minimum 2 years of experience in B2B sales, preferably in HR services, consulting, SaaS, or staffing.',
+        'Strong understanding of the UAE business market and client behavior.',
+        'Excellent communication and presentation skills in English, Hindi (Arabic is a plus).',
+        'Self-motivated, target-driven, and able to work independently.',
+        'UAE driving license is an advantage but not mandatory.'
       ],
-      qualifications: [
-        'Bachelor\'s degree in any field',
-        'Sales certification preferred',
-        'Experience in service industry sales'
-      ],
+      // qualifications: [
+      //   'Bachelor\'s degree in any field',
+      //   'Sales certification preferred',
+      //   'Experience in service industry sales'
+      // ],
       benefits: [
-        'Flexible working hours',
-        'High commission structure',
-        'Work from home options',
-        'Performance bonuses',
-        'Unlimited earning potential'
+        'Competitive base salary + performance-based commission.',
+        'Flexible work structure (field visits + remote work).',
+        'Opportunity to grow with a startup focused on innovation and virtual solutions.',
+        'Training on HR services and virtual solutions provided.'
       ]
     }
   ];
@@ -324,7 +325,7 @@ const JobDetail = () => {
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-serif text-gray-900 mb-4">Job Not Found</h2>
-          <button 
+          <button
             onClick={() => navigate('/career')}
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#FFBD59] text-white rounded-md hover:bg-[#e6a847] transition-colors"
           >
@@ -345,14 +346,14 @@ const JobDetail = () => {
       {/* Header */}
       <div className="bg-gray-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <button 
+          <button
             onClick={() => navigate('/career')}
             className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft size={20} />
             Back to Careers
           </button>
-          
+
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
             <div className="flex-1">
               <span className="inline-block text-[#FFBD59] bg-[#FFBD59]/10 px-3 py-1 rounded-full text-sm font-semibold mb-4">
@@ -360,7 +361,7 @@ const JobDetail = () => {
               </span>
               <h1 className="text-4xl md:text-5xl font-serif mb-6">{job.title}</h1>
               <p className="text-xl text-gray-300 mb-8">{job.description}</p>
-              
+
               <div className="flex flex-wrap gap-6 text-gray-300">
                 <span className="flex items-center gap-2">
                   <Briefcase size={20} className="text-[#FFBD59]" />
@@ -384,7 +385,7 @@ const JobDetail = () => {
                 </span> */}
               </div>
             </div>
-            
+
             <motion.button
               onClick={handleApply}
               className="lg:self-start inline-flex items-center justify-center px-8 py-4 bg-[#FFBD59] text-gray-900 text-lg font-semibold rounded-md hover:bg-[#e6a847] transition-colors whitespace-nowrap"
