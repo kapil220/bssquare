@@ -10,6 +10,8 @@ import CADBIMService from './pages/CADBIMService';
 import HRService from './pages/HRService';
 import JobDetail from './pages/JobDetail'; // Add this import
 import VirtualHRService from './pages/VirtualHRService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path="/services/cad-bim" element={<CADBIMService />} />
             <Route path="/services/hr-services" element={<HRService />} />
             <Route path="/services/hr-services/virtual-hr-services" element={<VirtualHRService />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>
         </main>
         <Footer />
