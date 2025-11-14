@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Briefcase, MapPin, Clock, ChevronRight, Users, TrendingUp, Heart, Award, CheckCircle2, Upload, ArrowLeft, Calendar, DollarSign, UserCheck } from 'lucide-react';
 import { useState } from 'react';
+import { sendJobApplicationEmail } from '../utils/emailService';
 
 const JobDetail = () => {
   const { jobId } = useParams();
@@ -579,12 +580,55 @@ const ApplicationForm = ({ job, onClose }) => {
     coverLetter: ''
   });
 
-  const handleSubmit = (e) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [resumeFile, setResumeFile] = useState(null);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Application submitted:', { ...formData, job: job.title });
-    alert('Application submitted successfully! We will contact you soon.');
-    onClose();
+    setIsLoading(true);
+
+    try {
+      // Validate required fields
+      if (!formData.fullName || !formData.email || !formData.phone || !formData.experience) {
+        alert('Please fill all required fields (Name, Email, Phone, Experience)');
+        setIsLoading(false);
+        return;
+      }
+
+      if (!resumeFile) {
+        alert('Please upload your resume');
+        setIsLoading(false);
+        return;
+      }
+
+      const emailResult = await sendJobApplicationEmail(formData, job, resumeFile);
+
+      if (emailResult.success) {
+        alert('Application submitted successfully! Our HR team will review your application and contact you soon.');
+        onClose();
+        // Reset form
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          currentCompany: '',
+          currentPosition: '',
+          experience: '',
+          expectedSalary: '',
+          noticePeriod: '',
+          visaStatus: '',
+          coverLetter: ''
+        });
+        setResumeFile(null);
+      } else {
+        throw new Error('Failed to send application');
+      }
+    } catch (error) {
+      console.error("Error submitting application:", error);
+      alert('There was an error submitting your application. Please try again or email us directly at careers@bsquareglobal.com');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -592,6 +636,30 @@ const ApplicationForm = ({ job, onClose }) => {
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Validate file type
+      const allowedTypes = ['.pdf', '.doc', '.docx'];
+      const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
+      
+      if (!allowedTypes.includes(fileExtension)) {
+        alert('Please upload a PDF, DOC, or DOCX file');
+        e.target.value = '';
+        return;
+      }
+
+      // Validate file size (5MB max)
+      if (file.size > 5 * 1024 * 1024) {
+        alert('File size must be less than 5MB');
+        e.target.value = '';
+        return;
+      }
+
+      setResumeFile(file);
+    }
   };
 
   return (
@@ -608,6 +676,7 @@ const ApplicationForm = ({ job, onClose }) => {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
+          {/* Required Fields */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Full Name *
@@ -619,6 +688,7 @@ const ApplicationForm = ({ job, onClose }) => {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             />
           </div>
 
@@ -633,6 +703,7 @@ const ApplicationForm = ({ job, onClose }) => {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             />
           </div>
 
@@ -647,32 +718,7 @@ const ApplicationForm = ({ job, onClose }) => {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Current Company
-            </label>
-            <input
-              type="text"
-              name="currentCompany"
-              value={formData.currentCompany}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Current Position
-            </label>
-            <input
-              type="text"
-              name="currentPosition"
-              value={formData.currentPosition}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             />
           </div>
 
@@ -686,7 +732,39 @@ const ApplicationForm = ({ job, onClose }) => {
               value={formData.experience}
               onChange={handleChange}
               required
+              min="0"
+              max="50"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
+            />
+          </div>
+
+          {/* Optional Fields */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Current Company
+            </label>
+            <input
+              type="text"
+              name="currentCompany"
+              value={formData.currentCompany}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Current Position
+            </label>
+            <input
+              type="text"
+              name="currentPosition"
+              value={formData.currentPosition}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             />
           </div>
 
@@ -700,6 +778,7 @@ const ApplicationForm = ({ job, onClose }) => {
               value={formData.expectedSalary}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             />
           </div>
 
@@ -712,6 +791,7 @@ const ApplicationForm = ({ job, onClose }) => {
               value={formData.noticePeriod}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             >
               <option value="">Select Notice Period</option>
               <option value="Immediate">Immediate</option>
@@ -732,6 +812,7 @@ const ApplicationForm = ({ job, onClose }) => {
                 value={formData.visaStatus}
                 onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+                disabled={isLoading}
               >
                 <option value="">Select Visa Status</option>
                 <option value="Visit Visa">Visit Visa</option>
@@ -754,6 +835,7 @@ const ApplicationForm = ({ job, onClose }) => {
               rows={4}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
               placeholder="Tell us why you're interested in this position and why you'd be a great fit..."
+              disabled={isLoading}
             />
           </div>
 
@@ -765,22 +847,29 @@ const ApplicationForm = ({ job, onClose }) => {
               type="file"
               accept=".pdf,.doc,.docx"
               required
+              onChange={handleFileChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFBD59] focus:border-transparent"
+              disabled={isLoading}
             />
-            <p className="text-sm text-gray-500 mt-1">Accepted formats: PDF, DOC, DOCX (Max: 5MB)</p>
+            <p className="text-sm text-gray-500 mt-1">
+              Accepted formats: PDF, DOC, DOCX (Max: 5MB)
+              {resumeFile && <span className="text-green-600 ml-2">✓ {resumeFile.name}</span>}
+            </p>
           </div>
         </div>
 
         <div className="flex gap-4 pt-6">
           <button
             type="submit"
-            className="flex-1 bg-[#FFBD59] text-gray-900 py-3 px-6 rounded-md font-semibold hover:bg-[#e6a847] transition-colors"
+            disabled={isLoading}
+            className={`flex-1 ${isLoading ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#FFBD59] hover:bg-[#e6a847]'} text-gray-900 py-3 px-6 rounded-md font-semibold transition-colors`}
           >
-            Submit Application
+            {isLoading ? 'Submitting...' : 'Submit Application'}
           </button>
           <button
             type="button"
             onClick={onClose}
+            disabled={isLoading}
             className="flex-1 bg-gray-300 text-gray-700 py-3 px-6 rounded-md font-semibold hover:bg-gray-400 transition-colors"
           >
             Cancel
