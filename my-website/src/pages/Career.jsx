@@ -1,6 +1,6 @@
 // pages/Career.jsx
 import { motion, useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Briefcase, MapPin, Clock, ChevronRight, Users, TrendingUp, Heart, Award, CheckCircle2, Upload } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,9 +8,6 @@ const Career = () => {
   const jobsRef = useRef(null);
   const jobsInView = useInView(jobsRef, { once: true, margin: "-100px" });
   const navigate = useNavigate();
-  
-  const [showForm, setShowForm] = useState(false);
-  const [selectedJob, setSelectedJob] = useState('');
 
   const jobs = [
     {
@@ -93,14 +90,6 @@ const Career = () => {
     { icon: Heart, title: 'Resume Optimization', desc: 'Professional resume reviews and enhancements' },
     { icon: Award, title: 'Exclusive Opportunities', desc: 'Access to top companies and roles' }
   ];
-
-  const handleApply = (jobTitle) => {
-    setSelectedJob(jobTitle);
-    setShowForm(true);
-    setTimeout(() => {
-      document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  };
 
   const handleJobClick = (jobId) => {
     navigate(`/career/jobs/${jobId}`);

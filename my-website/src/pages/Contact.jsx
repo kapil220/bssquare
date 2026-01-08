@@ -239,7 +239,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Location</h3>
-                        <p className="text-gray-300 text-sm">UAE | INDIA</p>
+                        <p className="text-gray-300 text-sm">UAE | OMAN |QATAR | KSA | INDIA</p>
                       </div>
                     </motion.div>
 
@@ -255,7 +255,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <div className="text-gray-300 text-sm hover:text-[#FFBD59] transition-colors cursor-pointer">
-                          info@globalfze.com
+                          Bijal.s@bsquareglobalfze.com
+Bhavin.s@bsquareglobalfze.com
                         </div>
                       </div>
                     </motion.div>

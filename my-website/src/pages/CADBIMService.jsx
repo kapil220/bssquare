@@ -7,12 +7,10 @@ const BIMServices = () => {
   const servicesRef = useRef(null);
   const coreServicesRef = useRef(null);
   const benefitsRef = useRef(null);
-  const aboutRef = useRef(null);
 
   const servicesInView = useInView(servicesRef, { once: true, margin: "-100px" });
   const coreServicesInView = useInView(coreServicesRef, { once: true, margin: "-100px" });
   const benefitsInView = useInView(benefitsRef, { once: true, margin: "-100px" });
-  const aboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [showVideo, setShowVideo] = useState(false);

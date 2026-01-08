@@ -156,7 +156,7 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
             <ul className="space-y-3">
-              {['Home', 'Services', 'Career', 'About Us', 'Contact Us'].map((link, index) => (
+              {['Home', 'Services', 'Career', 'About Us', 'Contact Us'].map((link) => (
                 <motion.li key={link}
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
@@ -183,7 +183,7 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
             <ul className="space-y-3">
-              {['CAD & BIM', 'Virtual HR Services', 'Accounting Services', 'Training Programs'].map((service, index) => (
+              {['CAD & BIM', 'Virtual HR Services', 'Accounting Services', 'Training Programs'].map((service) => (
                 <motion.li key={service}
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}

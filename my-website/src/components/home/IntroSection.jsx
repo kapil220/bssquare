@@ -1,5 +1,5 @@
 // IntroSection.jsx
-import { motion, useScroll, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 

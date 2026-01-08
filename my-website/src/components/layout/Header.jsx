@@ -59,7 +59,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
-            {navigation.map((item, index) => (
+            {navigation.map((item) => (
               <div key={item.name} className="relative group">
                 {item.hasDropdown ? (
                   <>
@@ -137,14 +137,14 @@ const Header = () => {
           <div className="flex flex-col items-center justify-center h-full space-y-8 px-8">
             {/* Mobile Logo */}
             <div className="mb-8">
-              <img 
+              <img
                 src="/logo.jpeg" // Replace with your actual logo path
                 alt="B Square Global"
                 className="w-28 h-20 object-contain mx-auto mb-4"
               />
             </div>
-            
-            {navigation.map((item, index) => (
+
+            {navigation.map((item) => (
               <div key={item.name} className="text-center">
                 {item.hasDropdown ? (
                   <>
