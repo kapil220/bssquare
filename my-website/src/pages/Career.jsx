@@ -379,13 +379,7 @@ const Career = () => {
                 ))}
               </div>
 
-              {selectedJob && (
-                <div className="p-6 bg-[#FFBD59]/5 rounded-lg border border-[#FFBD59]/20">
-                  <p className="text-gray-700">
-                    <span className="font-semibold">Selected Position:</span> {selectedJob}
-                  </p>
-                </div>
-              )}
+
 
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <motion.a
