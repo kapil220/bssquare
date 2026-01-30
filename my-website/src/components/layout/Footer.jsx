@@ -156,19 +156,30 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
             <ul className="space-y-3">
-              {['Home', 'Services', 'Career', 'About Us', 'Contact Us'].map((link) => (
-                <motion.li key={link}
-                  whileHover={{ x: 5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <Link
-                    to={`/${link === 'Home' ? '' : link.toLowerCase().replace(' ', '-')}`}
-                    className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
+              {['Home', 'Services', 'Career', 'About Us', 'Contact Us'].map((link) => {
+                let path = '';
+                switch(link) {
+                  case 'Home': path = '/'; break;
+                  case 'Services': path = '/services/cad-bim'; break;
+                  case 'Career': path = '/career'; break;
+                  case 'About Us': path = '/about'; break;
+                  case 'Contact Us': path = '/contact'; break;
+                  default: path = '/';
+                }
+                return (
+                  <motion.li key={link}
+                    whileHover={{ x: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
-                    {link}
-                  </Link>
-                </motion.li>
-              ))}
+                    <Link
+                      to={path}
+                      className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
+                    >
+                      {link}
+                    </Link>
+                  </motion.li>
+                );
+              })}
             </ul>
           </motion.div>
 
@@ -183,16 +194,20 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
             <ul className="space-y-3">
-              {['CAD & BIM', 'Virtual HR Services', 'Accounting Services', 'Training Programs'].map((service) => (
-                <motion.li key={service}
+              {[
+                { name: 'CAD & BIM Service', path: '/services/cad-bim' },
+                { name: 'HR Services', path: '/services/hr-services' },
+                { name: 'Virtual HR Services', path: '/services/hr-services/virtual-hr-services' }
+              ].map((service) => (
+                <motion.li key={service.name}
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <Link
-                    to={`/services/${service.toLowerCase().replace(' & ', '-').replace(' ', '-')}`}
+                    to={service.path}
                     className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
                   >
-                    {service}
+                    {service.name}
                   </Link>
                 </motion.li>
               ))}
