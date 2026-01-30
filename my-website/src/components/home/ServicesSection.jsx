@@ -10,14 +10,14 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <BookOpen size={40} />,
-      title: 'CAD & BIM',
-      description: 'Professional development courses, skill enhancement workshops, and certification programs to empower your team with the latest industry knowledge.',
+      title: 'CAD & BIM Services',
+      description: 'Comprehensive BIM modeling, architectural design, MEP coordination, structural solutions, and digital construction services for modern projects.',
       link: '/services/cad-bim'
     },
     {
       icon: <Users size={40} />,
-      title: 'Virtual HR Services',
-      description: 'Complete HR solutions including talent management, payroll services, compliance management, employee relations, and performance management systems.',
+      title: 'HR Support Services',
+      description: 'HR solutions and talent support to complement your CAD & BIM team with recruitment, compliance, and HR management.',
       link: '/services/hr-services'
     }
   ];
@@ -49,7 +49,7 @@ const ServicesSection = () => {
           </h2>
           <div className="w-16 h-px bg-[#FFBD59] mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover how our comprehensive solutions can transform your business operations and drive sustainable growth.
+            Discover how our CAD and BIM expertise can transform your design and construction projects, combined with dedicated HR support.
           </p>
         </motion.div>
 

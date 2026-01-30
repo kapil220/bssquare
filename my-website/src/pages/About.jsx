@@ -127,98 +127,7 @@ const About = () => {
           </div>
 
           {/* Founder Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={aboutInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-16 bg-gradient-to-br from-[#FFBD59]/10 to-orange-50 p-8 rounded-lg border border-[#FFBD59]/20"
-          >
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              {/* Left Column - Bijal Shah with Large Image */}
-              <div className="space-y-6">
-                {/* Large Image */}
-                <div className="w-full">
-                  <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-                    alt="Bijal Shah"
-                    className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-
-                {/* Content */}
-                <div>
-                  <h3 className="text-3xl font-serif text-gray-900 mb-2">Bijal Shah</h3>
-
-                  <div className="space-y-2 text-gray-700 mb-4">
-                    <p>
-                      <a href="tel:+971563045152" className="hover:text-[#FFBD59]">+971 563045152</a>
-                    </p>
-                    <p>
-                      <a href="mailto:Bijal.s@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Bijal.s@bsquareglobalfze.com</a>
-                    </p>
-                    <p>
-                      <a href="http://www.bsquareglobalfze.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFBD59]">www.bsquareglobalfze.com</a>
-                    </p>
-                  </div>
-
-                  <div className="mb-4">
-                    <h4 className="text-xl font-semibold text-gray-900 mb-1">PROFESSIONAL BUSINESS SOLUTION</h4>
-                    <p className="text-lg text-[#FFBD59] font-semibold">Technical Director | BIM Consultant | Founder at B Square Global</p>
-                  </div>
-
-                  <p className="text-gray-600">
-                    Empowering AEC firms with 20 years of BIM expertise in the UAE
-                  </p>
-                </div>
-              </div>
-
-              {/* Right Column - Founders and Directors */}
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-xl font-serif text-gray-900 mb-4">Founder and directors</h4>
-                  <div className="space-y-4">
-                    {/* Bhavin Shah */}
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h5 className="text-lg font-semibold text-gray-900 mb-2">Mr. Bhavin Shah</h5>
-                      <p className="text-gray-600">
-                        <a href="mailto:Bhavin.s@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Bhavin.s@bsquareglobalfze.com</a>
-                      </p>
-                    </div>
-
-                    {/* Mohan Babu */}
-                    {/* <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h5 className="text-lg font-semibold text-gray-900 mb-2">Mr. Mohan Babu</h5>
-                      <p className="text-gray-600">
-                        <a href="mailto:Mohan.b@bsquareglobalfze.com" className="hover:text-[#FFBD59]">Mohan.b@bsquareglobalfze.com</a>
-                      </p>
-                    </div> */}
-                  </div>
-                </div>
-
-                {/* Additional Info Section to fill space */}
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#FFBD59]">
-                  <h5 className="text-lg font-semibold text-gray-900 mb-3">Get in Touch</h5>
-                  <p className="text-gray-600 mb-4">
-                    Ready to transform your AEC projects with BIM expertise? Contact us for consultation and services.
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-700">
-                    <p className="flex items-center gap-2">
-                      <span>🏢</span>
-                      <span>Based in UAE</span>
-                    </p>
-                    <p className="flex items-center gap-2">
-                      <span>⏰</span>
-                      <span>20+ Years Experience</span>
-                    </p>
-                    <p className="flex items-center gap-2">
-                      <span>📞</span>
-                      <span>Available for Consultation</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+        
         </div>
       </section>
 
@@ -235,25 +144,24 @@ const About = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight text-gray-900">
-                Your Growth Partner in{' '}
-                <span className="text-[#FFBD59] italic">HR</span>,{' '}
-                <span className="text-[#FFBD59] italic">Finance</span> & Beyond
+                Transforming Design & Construction with{' '}
+                <span className="text-[#FFBD59] italic">CAD & BIM</span>
               </h2>
               
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  <span className="font-semibold text-gray-900">B Square Global</span> is a dynamic solutions partner, committed to transforming how businesses operate, grow, and innovate. We offer a diverse portfolio of services — from Virtual HR solutions and specialized talent deployment to cutting-edge BIM & CAD training — designed to help organizations stay agile in a rapidly evolving market.
+                  <span className="font-semibold text-gray-900">B Square Global</span> specializes in cutting-edge CAD and BIM services for the architecture, engineering, and construction industries. We empower design professionals and construction teams with advanced modeling, coordination, and digital solutions that accelerate project delivery and enhance precision.
                 </p>
                 
                 <p>
-                  Our approach is rooted in flexibility, innovation, and deep domain knowledge. Whether you're seeking to enhance workforce capabilities, streamline technical operations, or access scalable expertise on demand, B Square Global delivers tailored solutions that align with your strategic goals.
+                  Our approach combines technical excellence, industry expertise, and innovative methodologies. Whether you need architectural BIM modeling, structural coordination, MEP integration, or construction management support, B Square Global delivers integrated solutions that help organizations optimize workflows, reduce costs, and deliver projects on time.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
                   {[
-                    { icon: TrendingUp, text: 'Smart Growth' },
-                    { icon: Users, text: 'People First' },
-                    { icon: Award, text: 'Excellence Driven' }
+                    { icon: TrendingUp, text: 'Design Excellence' },
+                    { icon: Users, text: 'Skilled Teams' },
+                    { icon: Award, text: 'Quality Focused' }
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <item.icon className="text-[#FFBD59] w-5 h-5" />
@@ -331,15 +239,15 @@ const About = () => {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight text-gray-900">
-                Driven by <span className="text-[#FFBD59] italic">Vision</span> & Innovation
+                Driven by <span className="text-[#FFBD59] italic">Digital Innovation</span> & Technical Expertise
               </h2>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Driven by a vision to empower businesses through smart services and sustainable growth, we continue to expand into new verticals to meet tomorrow's challenges today.
+                At B Square Global, we believe that advanced technology and skilled expertise are the cornerstones of successful design and construction projects. Our BIM and CAD solutions leverage the latest tools and methodologies to streamline workflows and enhance collaboration across all project phases.
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Partner with us to unlock the full potential of your people, processes, and projects. We don't just provide services — we build strategic partnerships that help organizations unlock potential, adapt to change, and grow with confidence in a dynamic business landscape.
+                We don't just provide services — we partner with architects, engineers, and construction firms to unlock project potential, optimize design efficiency, and deliver exceptional results. From conceptual modeling to construction coordination, we bring precision, innovation, and strategic thinking to every project.
               </p>
             </motion.div>
           </div>
@@ -378,7 +286,7 @@ const About = () => {
               </div>
               <h3 className="text-3xl font-serif text-gray-900 mb-6">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                To enable businesses to operate efficiently and grow strategically by delivering integrated, tech-enabled services in HR, engineering, workforce deployment, and training. We are committed to offering flexible, high-impact solutions that simplify operations, elevate workforce capabilities, and drive sustainable performance — all under one trusted platform.
+                To deliver world-class BIM and CAD services that empower architects, engineers, and construction professionals to design, plan, and build more efficiently. We enable our clients to leverage cutting-edge digital technology, drive project excellence, and achieve superior outcomes through precision modeling, seamless coordination, and expert technical guidance.
               </p>
             </motion.div>
 
@@ -394,7 +302,7 @@ const About = () => {
               </div>
               <h3 className="text-3xl font-serif text-gray-900 mb-6">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
-                To be a leading force in transforming business support services through innovative, virtual-first solutions. By blending technology, talent, and training, we aim to empower organizations of all sizes to achieve operational agility, digital readiness, and people-focused growth in an ever-evolving business landscape.
+                To be the leading partner for BIM and CAD excellence in the Middle East and beyond. We aspire to transform the AEC industry by combining technical innovation, skilled expertise, and forward-thinking solutions that enable organizations to build smarter, faster, and more sustainably. Our vision is a world where digital collaboration and BIM-driven workflows are standard practice.
               </p>
             </motion.div>
           </div>
@@ -433,20 +341,9 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white rounded-lg overflow-hidden shadow-xl border border-gray-100"
           >
-            <div className="grid md:grid-cols-5 gap-0">
-              {/* Director Image - Placeholder for now */}
-              <div className="md:col-span-2">
-                <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" 
-                    alt="Bhavin S. - Director" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Director Info */}
-              <div className="md:col-span-3 p-10 flex flex-col justify-center">
+            <div className="p-10">
+              {/* Bhavin S. Director Info */}
+              <div className="mb-12">
                 <div className="mb-6">
                   <h3 className="text-3xl font-serif text-gray-900 mb-2">Bhavin S.</h3>
                   <p className="text-[#FFBD59] font-semibold text-lg">Director</p>
@@ -466,8 +363,40 @@ const About = () => {
                   </p>
 
                   <p className="font-medium text-gray-900 pt-4">
-                    Known for his entrepreneurial mindset, Bhavin blends innovation, operational efficiency, and customer-centric strategy to position BSquare Global as a trusted partner in HR, engineering, and digital services.
+                    Known for his entrepreneurial mindset, Bhavin blends innovation, operational efficiency, and customer-centric strategy to position BSquare Global as a trusted partner in engineering and digital services.
                   </p>
+                </div>
+              </div>
+
+              {/* Divider */}
+              <div className="border-t border-gray-200 my-8"></div>
+
+              {/* Bijal Shah Founder Info */}
+              <div>
+                <div className="mb-6">
+                  <h3 className="text-3xl font-serif text-gray-900 mb-2">Bijal Shah</h3>
+                  <p className="text-[#FFBD59] font-semibold text-lg">Technical Director | BIM Consultant | Founder</p>
+                </div>
+
+                <div className="space-y-4 text-gray-600 leading-relaxed mb-6">
+                  <p>
+                    Empowering AEC firms with 20 years of BIM expertise in the UAE. Bijal Shah is the founder and technical director of B Square Global, bringing over two decades of specialized expertise in BIM technology and construction management.
+                  </p>
+                </div>
+
+                {/* Contact Information */}
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <div className="space-y-3 text-gray-700">
+                    <p>
+                      <a href="tel:+971563045152" className="text-[#FFBD59] font-semibold hover:underline">+971 563045152</a>
+                    </p>
+                    <p>
+                      <a href="mailto:Bijal.s@bsquareglobalfze.com" className="text-[#FFBD59] font-semibold hover:underline">Bijal.s@bsquareglobalfze.com</a>
+                    </p>
+                    <p>
+                      <a href="http://www.bsquareglobalfze.com" target="_blank" rel="noopener noreferrer" className="text-[#FFBD59] font-semibold hover:underline">www.bsquareglobalfze.com</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -490,31 +419,31 @@ const About = () => {
               Industries We <span className="text-[#FFBD59] italic">Serve</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Explore how we help businesses across various industries achieve growth, optimize operations, and navigate challenges with our expert consulting services.
+              Explore how we serve diverse sectors within the AEC industry with specialized CAD and BIM expertise to drive project success.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: 'Information Technology',
-                description: 'We support tech companies with strategic hiring, automated payroll, and scalable financial systems to help teams grow efficiently in a competitive landscape.',
-                image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80'
-              },
-              {
-                title: 'Real Estate & Construction',
-                description: 'Our core focus. We offer complete HR and financial solutions for real estate developers and contractors, including workforce planning, vendor payments, and project cost forecasting.',
+                title: 'Architecture & Design Firms',
+                description: 'We support architectural practices with comprehensive BIM services including 3D modeling, documentation, visualization, and design coordination to enhance client presentations and project delivery.',
                 image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80'
               },
               {
-                title: 'Healthcare Service',
-                description: 'We assist clinics and healthcare providers with regulatory HR frameworks, staffing support, and accurate financial management for sustained care delivery.',
-                image: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&q=80'
+                title: 'Construction & Development',
+                description: 'We assist contractors and developers with project coordination, BIM clash detection, construction sequencing, and technical documentation to optimize on-site execution and reduce project delays.',
+                image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80'
               },
               {
-                title: 'Retail & E-commerce',
-                description: 'Supporting retail businesses with workforce management, financial planning, and operational efficiency to thrive in the digital marketplace.',
-                image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80'
+                title: 'Engineering Consultancies',
+                description: 'Our structural and MEP BIM services enable engineering firms to deliver accurate models, coordinated systems, and detailed construction drawings for complex projects.',
+                image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80'
+              },
+              {
+                title: 'Facility Management',
+                description: 'We provide BIM-based asset management and facility coordination services to help organizations maintain and operate buildings efficiently throughout their lifecycle.',
+                image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80'
               }
             ].map((industry, index) => (
               <motion.div

@@ -17,6 +17,7 @@ const Header = () => {
 
   const navigation = [
     { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
     { 
       name: 'Services', 
       path: '#',
@@ -27,8 +28,8 @@ const Header = () => {
       ]
     },
     { name: 'Career', path: '/career' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact Us', path: '/contact' },
+    
+    // { name: 'Contact Us', path: '/contact' },
   ];
 
   return (

@@ -2,10 +2,12 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { CheckCircle2 } from 'lucide-react';
+import { useParallax } from '../../hooks/useParallax';
 
 const IntroSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { ref: parallaxRef, offset } = useParallax(0.3);
 
   return (
     <section ref={ref} className="py-32 bg-white relative overflow-hidden">
@@ -32,8 +34,8 @@ const IntroSection = () => {
               className="text-4xl md:text-5xl font-serif mb-8 leading-tight text-gray-900"
             >
               Your Growth Partner in{' '}
-              <span className="text-[#FFBD59] italic">HR</span>,{' '}
-              <span className="text-[#FFBD59] italic">Finance</span> & Beyond
+              <span className="text-[#FFBD59] italic">CAD & BIM</span>{' '}
+              & Design Excellence
             </motion.h2>
             
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
@@ -42,7 +44,7 @@ const IntroSection = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <span className="font-semibold text-gray-900">B Square Global</span> is a dynamic solutions partner, committed to transforming how businesses operate, grow, and innovate. We offer a diverse portfolio of services — from Virtual HR Solutions and specialized talent deployment to cutting-edge BIM & CAD training.
+                <span className="font-semibold text-gray-900">B Square Global</span> is a dynamic solutions partner specializing in cutting-edge CAD and BIM services for the construction and design industry. We deliver comprehensive design solutions, project delivery expertise, and specialized talent support to architects, engineers, and construction professionals.
               </motion.p>
               
               <motion.div
@@ -59,13 +61,17 @@ const IntroSection = () => {
 
           {/* Right Image */}
           <motion.div
+            ref={parallaxRef}
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
+            style={{
+              transform: `translateY(${offset}px)`
+            }}
           >
             <div className="relative rounded-lg overflow-hidden shadow-xl border border-gray-100">
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+              <div className="aspect-[3/4] min-h-[600px] bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
                 <img 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" 
                   alt="Team collaboration" 

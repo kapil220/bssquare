@@ -1,7 +1,7 @@
 // Industries.jsx
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Laptop, Building2, Stethoscope, ShoppingBag } from 'lucide-react';
+import { Laptop, Building2, Wrench, Zap } from 'lucide-react';
 
 const Industries = () => {
   const ref = useRef(null);
@@ -9,24 +9,24 @@ const Industries = () => {
 
   const industries = [
     { 
+      icon: <Building2 size={40} />, 
+      name: 'Real Estate & Construction',
+      description: 'BIM modeling, architectural design, structural coordination, and complete project delivery solutions for construction and development projects.'
+    },
+    { 
       icon: <Laptop size={40} />, 
-      name: 'Information Technology',
-      description: 'Specialized solutions for tech companies including talent acquisition, compliance, and financial management for rapid growth.'
+      name: 'Design & Architecture',
+      description: 'CAD services, BIM coordination, 3D modeling, visualization, and digital design solutions for architects and design firms.'
+    },
+    { 
+      icon: <Wrench size={40} />, 
+      name: 'Engineering Services',
+      description: 'Structural BIM, MEP coordination, civil engineering design, and technical documentation for complex projects.'
     },
     { 
       icon: <Building2 size={40} />, 
-      name: 'Real Estate & Construction',
-      description: 'Project-based accounting, contractor management, regulatory compliance, and workforce planning for construction projects.'
-    },
-    { 
-      icon: <Stethoscope size={40} />, 
-      name: 'Healthcare Service',
-      description: 'Compliance management, regulatory oversight, and workforce planning specialized for healthcare operations.'
-    },
-    { 
-      icon: <ShoppingBag size={40} />, 
-      name: 'Retail & E-Commerce',
-      description: 'Inventory management, seasonal workforce planning, customer service training, and multi-channel financial tracking.'
+      name: 'Infrastructure Development',
+      description: 'Large-scale project planning, BIM coordination, clash detection, and construction management support.'
     }
   ];
 

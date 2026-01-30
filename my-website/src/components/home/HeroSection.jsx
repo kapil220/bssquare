@@ -3,99 +3,55 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
-      {/* Clean background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-gray-100/80"></div>
-      
-      {/* Right side subtle grid */}
-      <div className="absolute right-0 top-0 w-1/3 h-full opacity-[0.04]">
-        <motion.div 
-          className="w-full h-full"
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        {/* Video element */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
           style={{
-            backgroundImage: `linear-gradient(90deg, transparent 92%, #000 100%), linear-gradient(180deg, transparent 92%, #000 100%)`,
-            backgroundSize: '50px 50px'
+            backgroundAttachment: 'fixed'
           }}
+        >
+          <source 
+            src="/vid.mp4" 
+            type="video/mp4" 
+          />
+          {/* Fallback gradient if video doesn't load */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-black"></div>
+        </video>
+        
+        {/* Fallback gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-black opacity-0"></div>
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Animated gradient overlay */}
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"
           animate={{
-            backgroundPosition: ['0px 0px', '50px 50px'],
+            opacity: [0.4, 0.6, 0.4]
           }}
           transition={{
-            duration: 25,
+            duration: 8,
             repeat: Infinity,
-            ease: "linear"
+            ease: "easeInOut"
           }}
         />
       </div>
-
-      {/* Left side pattern - More visible */}
-      <div className="absolute left-0 top-0 w-1/3 h-full opacity-[0.05]">
-        <motion.div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `linear-gradient(45deg, transparent 46%, #FFBD59 50%, transparent 54%)`,
-            backgroundSize: '80px 80px'
-          }}
-          animate={{
-            backgroundPosition: ['0px 0px', '80px 80px'],
-          }}
-          transition={{
-            duration: 35,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        />
-      </div>
-
-      {/* Left side elements - More visible */}
-      <motion.div
-        className="absolute top-1/4 left-24 w-16 h-16 border border-[#FFBD59]/40 rounded-lg rotate-45"
-        animate={{
-          y: [0, -40, 0],
-          rotate: [45, 135, 45],
-          opacity: [0.4, 0.7, 0.4]
-        }}
-        transition={{
-          duration: 9,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
       
+      {/* Animated floating elements */}
       <motion.div
-        className="absolute bottom-1/3 left-32 w-14 h-14 border border-gray-500/30 rounded-full"
+        className="absolute top-20 left-20 w-20 h-20 border-2 border-white/30 rounded-lg"
         animate={{
-          x: [0, -20, 0],
-          y: [0, 30, 0],
-          scale: [1, 1.25, 1]
-        }}
-        transition={{
-          duration: 11,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2
-        }}
-      />
-
-      <motion.div
-        className="absolute top-2/3 left-40 w-10 h-10 bg-[#FFBD59]/25 rounded-lg"
-        animate={{
-          y: [0, 30, 0],
-          rotate: [0, -45, 0],
-          opacity: [0.5, 0.8, 0.5]
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1
-        }}
-      />
-
-      {/* Right side elements */}
-      <motion.div
-        className="absolute top-20 right-36 w-8 h-8 border border-[#FFBD59]/35 rounded-lg"
-        animate={{
-          y: [0, -25, 0],
-          rotate: [0, 90, 0],
+          y: [0, -30, 0],
+          rotate: [0, 45, 0],
+          opacity: [0.3, 0.6, 0.3]
         }}
         transition={{
           duration: 8,
@@ -105,52 +61,10 @@ const HeroSection = () => {
       />
       
       <motion.div
-        className="absolute bottom-40 right-52 w-10 h-10 border border-[#FFBD59]/30 rounded-full"
+        className="absolute bottom-32 right-32 w-16 h-16 bg-[#FFBD59]/20 rounded-full"
         animate={{
-          y: [0, 35, 0],
-          scale: [1, 1.15, 1],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1
-        }}
-      />
-
-      {/* Center elements */}
-      <motion.div
-        className="absolute top-1/2 left-1/3 w-24 h-24 border border-[#FFBD59]/20 rounded-full"
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.3, 0.5, 0.3]
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-
-      {/* Connection lines - More visible */}
-      <motion.div
-        className="absolute left-16 top-1/2 w-0.5 h-40 bg-gradient-to-b from-transparent via-[#FFBD59]/25 to-transparent"
-        animate={{
-          height: [40, 50, 40],
-          opacity: [0.3, 0.5, 0.3]
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-
-      <motion.div
-        className="absolute left-28 bottom-20 w-24 h-0.5 bg-gradient-to-r from-transparent via-[#FFBD59]/25 to-transparent"
-        animate={{
-          width: [24, 32, 24],
-          opacity: [0.3, 0.5, 0.3]
+          scale: [1, 1.2, 1],
+          opacity: [0.2, 0.5, 0.2]
         }}
         transition={{
           duration: 6,
@@ -160,137 +74,89 @@ const HeroSection = () => {
         }}
       />
 
-      {/* Floating dots - More visible */}
-      <motion.div
-        className="absolute top-1/5 left-44 w-2.5 h-2.5 bg-[#FFBD59]/40 rounded-full"
-        animate={{
-          y: [0, -15, 0],
-          opacity: [0.5, 0.8, 0.5]
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.5
-        }}
-      />
-
-      <motion.div
-        className="absolute bottom-1/4 left-36 w-2.5 h-2.5 bg-gray-500/30 rounded-full"
-        animate={{
-          y: [0, 20, 0],
-          x: [0, 10, 0],
-          opacity: [0.5, 0.8, 0.5]
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1.5
-        }}
-      />
-
-      {/* Soft glow effects */}
-      <motion.div
-        className="absolute top-1/3 left-1/4 w-56 h-56 bg-[#FFBD59]/8 rounded-full blur-xl"
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.2, 0.4, 0.2]
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20">
-        <div className="text-center max-w-5xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-32 w-full">
+        <div className="text-center max-w-4xl mx-auto">
           
-          {/* Main headline */}
+          {/* Main headline with fade-in animation */}
           <motion.h1 
-            className="text-5xl md:text-6xl lg:text-7xl font-serif mb-8 leading-tight tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-tight tracking-tight text-white drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <span className="block text-gray-900 font-normal mb-3">
-              Elevate Your Business
+            <span className="block font-bold mb-3">
+              Master CAD & BIM
             </span>
-            <span className="block text-gray-900 font-normal mb-3">
-              with Professional
+            <span className="block mb-3">
+              for Modern Design &
             </span>
             <span className="block">
-              <span className="text-[#FFBD59] font-normal italic">Excellence</span>
+              <span className="text-[#FFBD59] font-bold italic">Construction Excellence</span>
             </span>
           </motion.h1>
 
-          {/* Refined subtitle */}
+          {/* Refined subtitle with fade-in animation */}
           <motion.p
-            className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light"
+            className="text-lg md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed font-light drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Strategic HR management, precise accounting services, and comprehensive training solutions 
-            tailored to drive sustainable growth and operational excellence.
+            Comprehensive BIM services, precision CAD solutions, and expert coordination for architects, engineers, and construction professionals. 
+            Delivering projects on time, within budget, and exceeding expectations.
           </motion.p>
 
-          {/* Key benefits */}
+          {/* Key benefits with staggered fade-in */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-wrap justify-center gap-8 mb-12"
           >
             {[
-              'Expert Consultation',
-              'Proven Results',
-              'Trusted Partner'
+              'BIM Expertise',
+              'CAD Excellence',
+              'Project Success'
             ].map((benefit, index) => (
               <motion.div 
                 key={index} 
-                className="flex items-center gap-2"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 189, 89, 0.2)' }}
               >
                 <CheckCircle2 className="text-[#FFBD59] w-5 h-5" />
-                <span className="text-gray-700 font-medium">{benefit}</span>
+                <span className="text-white font-medium">{benefit}</span>
               </motion.div>
             ))}
           </motion.div>
 
-          {/* Elegant CTA buttons */}
+          {/* Elegant CTA buttons with fade-in animation */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-5 justify-center items-center"
           >
             <motion.a
               href="/contact"
-              className="group relative inline-flex items-center px-10 py-4 bg-gray-900 text-white text-base font-semibold rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              className="group relative inline-flex items-center px-10 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="relative z-10 flex items-center tracking-wide">
                 Schedule Consultation
                 <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
-              <motion.div
-                className="absolute inset-0 bg-[#FFBD59]"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              />
             </motion.a>
             
             <motion.a
               href="/about"
-              className="group inline-flex items-center px-10 py-4 bg-white border-2 border-gray-900 text-gray-900 text-base font-semibold rounded-md hover:bg-gray-900 hover:text-white transition-all duration-300"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              className="group inline-flex items-center px-10 py-4 bg-white/20 backdrop-blur-md border-2 border-white text-white text-base font-semibold rounded-md hover:bg-white hover:text-gray-900 transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="tracking-wide">Explore Services</span>
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -301,8 +167,8 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-12 text-sm text-gray-500 font-light"
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-12 text-sm text-white/70 font-light"
           >
             Trusted by leading businesses worldwide
           </motion.p>
