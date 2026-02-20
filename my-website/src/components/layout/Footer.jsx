@@ -107,7 +107,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/logo.jpeg"
+                src="/logo8.png"
                 alt="B Square Global"
                 className="h-15 object-contain"
               />
