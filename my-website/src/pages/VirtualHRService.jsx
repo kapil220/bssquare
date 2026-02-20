@@ -105,8 +105,8 @@ const VirtualHRService = () => {
 
   const benefits = [
     { icon: MapPin, title: 'Location Independent', desc: 'Full HR support regardless of your team\'s geographical distribution.' },
-    { icon: DollarSign, title: 'Cost-Effective', desc: 'Access expert HR services without the overhead of an in-house department.' },
-    { icon: Layers, title: 'Scalable Solutions', desc: 'HR services that grow with your business, adapting to your changing needs.' },
+    { icon: DollarSign, title: 'Cost-Effective', desc: 'Access expert Virtual HR Services without the overhead of an in-house department.' },
+    { icon: Layers, title: 'Scalable Solutions', desc: 'Virtual HR Services that grow with your business, adapting to your changing needs.' },
     { icon: Zap, title: 'Tech-Driven Efficiency', desc: 'Leverage modern HR technology for streamlined processes and data insights.' }
   ];
 
@@ -201,7 +201,7 @@ const VirtualHRService = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#FFBD59]/20 text-[#FFBD59] font-semibold rounded-full mb-6">
                 <Users size={20} />
-                Virtual HR Services
+                Virtual Virtual HR Services
               </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-6 text-white leading-[0.95] tracking-[-0.02em]">
@@ -244,7 +244,7 @@ const VirtualHRService = () => {
             >
               <img 
                 src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
-                alt="Virtual HR Services"
+                alt="Virtual Virtual HR Services"
                 className="w-[60%] rounded-lg shadow-2xl"
               />
               
@@ -573,7 +573,7 @@ const VirtualHRService = () => {
             <div className="w-full h-full flex items-center justify-center text-white">
               <div className="text-center">
                 <Play size={64} className="mx-auto mb-4 opacity-50" />
-                <p className="text-gray-400">Virtual HR Services Overview Video</p>
+                <p className="text-gray-400">Virtual Virtual HR Services Overview Video</p>
                 <p className="text-sm text-gray-500 mt-2">Add your video URL here</p>
               </div>
             </div>

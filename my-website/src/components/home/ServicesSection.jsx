@@ -10,7 +10,7 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <BookOpen size={40} />,
-      title: 'CAD & BIM Services',
+      title: 'CAD & BIM Engineering Services',
       description: 'Comprehensive BIM modeling, architectural design, MEP coordination, structural solutions, and digital construction services for modern projects.',
       link: '/services/cad-bim'
     },

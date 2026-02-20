@@ -23,8 +23,8 @@ const Header = () => {
       path: '#',
       hasDropdown: true,
       submenu: [
-        { name: 'CAD & BIM', path: '/services/cad-bim' },
-        { name: 'Virtual HR Services', path: '/services/hr-services' },
+        { name: 'CAD & BIM Engineering Services', path: '/services/cad-bim' },
+        { name: 'Virtual Virtual HR Services', path: '/services/hr-services' },
       ]
     },
     { name: 'Career', path: '/career' },

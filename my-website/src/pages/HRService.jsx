@@ -92,8 +92,8 @@ const HRServices = () => {
 
   const benefits = [
     { icon: MapPin, title: 'Location Independent', desc: 'Full HR support regardless of your team\'s geographical distribution.' },
-    { icon: DollarSign, title: 'Cost-Effective', desc: 'Access expert HR services without the overhead of an in-house department.' },
-    { icon: Layers, title: 'Scalable Solutions', desc: 'HR services that grow with your business, adapting to your changing needs.' },
+    { icon: DollarSign, title: 'Cost-Effective', desc: 'Access expert Virtual HR Services without the overhead of an in-house department.' },
+    { icon: Layers, title: 'Scalable Solutions', desc: 'Virtual HR Services that grow with your business, adapting to your changing needs.' },
     { icon: Zap, title: 'Tech-Driven Efficiency', desc: 'Leverage modern HR technology for streamlined processes and data insights.' }
   ];
 
@@ -114,7 +114,7 @@ const HRServices = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-gray-800/95 to-[#FFBD59]/20 z-10"></div>
           <img 
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80"
-            alt="HR Services"
+            alt="Virtual HR Services"
             className="w-full h-full object-cover"
           />
         </div>
@@ -172,7 +172,7 @@ const HRServices = () => {
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-6 leading-[0.95] tracking-[-0.02em] text-white">
-              <span className="block font-semibold text-white/95 mb-3">Strategic HR Services for</span>
+              <span className="block font-semibold text-white/95 mb-3">Strategic Virtual HR Services for</span>
               <span className="block text-[#FFBD59] font-black">Peak Business Performance</span>
             </h1>
 
@@ -210,7 +210,7 @@ const HRServices = () => {
         </motion.div>
       </section>
 
-      {/* HR Services Grid */}
+      {/* Virtual HR Services Grid */}
       <section ref={servicesRef} className="py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 
@@ -225,7 +225,7 @@ const HRServices = () => {
               Our Comprehensive <span className="text-[#FFBD59] italic">HR Service Offerings</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Explore our diverse range of expert HR services, meticulously crafted to meet the unique needs of modern businesses and empower your human capital.
+              Explore our diverse range of expert Virtual HR Services, meticulously crafted to meet the unique needs of modern businesses and empower your human capital.
             </p>
           </motion.div>
 
@@ -321,7 +321,7 @@ const HRServices = () => {
         </div>
       </section>
 
-      {/* Virtual HR Services Section */}
+      {/* Virtual Virtual HR Services Section */}
       <section ref={virtualHRRef} className="py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.02]">
           <div style={{
@@ -345,7 +345,7 @@ const HRServices = () => {
               </div>
               
               <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900">
-                Introducing <span className="text-[#FFBD59] italic">Virtual HR Services</span>
+                Introducing <span className="text-[#FFBD59] italic">Virtual Virtual HR Services</span>
               </h2>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -395,7 +395,7 @@ const HRServices = () => {
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
-                  alt="Virtual HR Services"
+                  alt="Virtual Virtual HR Services"
                   className="w-full h-full object-cover aspect-[4/3]"
                 />
                 <motion.button
@@ -560,7 +560,7 @@ const HRServices = () => {
             <div className="w-full h-full flex items-center justify-center text-white">
               <div className="text-center">
                 <Play size={64} className="mx-auto mb-4 opacity-50" />
-                <p className="text-gray-400">Video placeholder - Add your HR services video URL here</p>
+                <p className="text-gray-400">Video placeholder - Add your Virtual HR Services video URL here</p>
               </div>
             </div>
           </motion.div>

@@ -134,14 +134,7 @@ const Footer = () => {
               >
                 <Linkedin size={20} className="text-gray-300 hover:text-gray-900" />
               </motion.a>
-              <motion.a
-                href="#"
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFBD59] transition-all duration-300"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Facebook size={20} className="text-gray-300 hover:text-gray-900" />
-              </motion.a>
+             
             </motion.div>
           </div>
 
@@ -195,9 +188,9 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                { name: 'CAD & BIM Service', path: '/services/cad-bim' },
-                { name: 'HR Services', path: '/services/hr-services' },
-                { name: 'Virtual HR Services', path: '/services/hr-services/virtual-hr-services' }
+                { name: 'CAD & BIM Engineering Service', path: '/services/cad-bim' },
+                { name: 'Virtual HR Services', path: '/services/hr-services' },
+               
               ].map((service) => (
                 <motion.li key={service.name}
                   whileHover={{ x: 5 }}
@@ -231,7 +224,7 @@ const Footer = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <MapPin size={20} className="mr-3 mt-0.5 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
-                <span className="text-sm leading-relaxed text-gray-400">UN | INDIA</span>
+                <span className="text-sm leading-relaxed text-gray-400">UAE | INDIA</span>
               </motion.li>
               <motion.li
                 className="flex items-center group"
@@ -239,8 +232,8 @@ const Footer = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Mail size={20} className="mr-3 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
-                <a href="mailto:info@bsqglobal.com" className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors">
-                  info@bsqglobal.com
+                <a href="mailto:info@bsquareglobalfze.com" className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors">
+                  info@bsquareglobalfze.com
                 </a>
               </motion.li>
               <motion.li

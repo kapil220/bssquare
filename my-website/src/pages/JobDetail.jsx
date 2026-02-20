@@ -52,13 +52,13 @@ const JobDetail = () => {
     {
       id: '4505',
       title: 'HR Generalist',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
       experience: '1-2 years',
       salary: 'As per industry standards',
-      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual HR services for clients in both countries.',
+      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual Virtual HR Services for clients in both countries.',
       responsibilities: [
         'Assist with recruitment, onboarding, and documentation for India and UAE-based clients.',
         'Support HR policy implementation, employee records management, and compliance tracking.',
@@ -66,7 +66,7 @@ const JobDetail = () => {
         'Coordinate payroll data and attendance with external vendors or finance teams.',
         'Resolve employee queries and provide basic grievance support.',
         'Ensure HR practices comply with both UAE and Indian labour law requirements.',
-        'Work closely with the senior HR team to deliver virtual HR services for clients.'
+        'Work closely with the senior HR team to deliver virtual Virtual HR Services for clients.'
       ],
       requirements: [
         'Bachelor’s degree in Human Resources, Business Administration, or related field.',
@@ -93,7 +93,7 @@ const JobDetail = () => {
     {
       id: '4504',
       title: 'HR Manager',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
@@ -133,7 +133,7 @@ const JobDetail = () => {
     {
       id: '4503',
       title: 'Business Development Executive',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Marketing',
       location: 'Sharjah, UAE',
       type: 'Full Time',
@@ -285,7 +285,7 @@ const JobDetail = () => {
     {
       id: '4374',
       title: 'Business Development Executive – Virtual HR',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Sales & Marketing',
       location: 'UAE Ajman',
       type: 'Commission + Base Pay (Flexible)',
@@ -302,7 +302,7 @@ const JobDetail = () => {
         'Attend business events and HR networking sessions when needed.'
       ],
       requirements: [
-        'Minimum 2 years of experience in B2B sales, preferably in HR services, consulting, SaaS, or staffing.',
+        'Minimum 2 years of experience in B2B sales, preferably in Virtual HR Services, consulting, SaaS, or staffing.',
         'Strong understanding of the UAE business market and client behavior.',
         'Excellent communication and presentation skills in English, Hindi (Arabic is a plus).',
         'Self-motivated, target-driven, and able to work independently.',
@@ -317,7 +317,7 @@ const JobDetail = () => {
         'Competitive base salary + performance-based commission.',
         'Flexible work structure (field visits + remote work).',
         'Opportunity to grow with a startup focused on innovation and virtual solutions.',
-        'Training on HR services and virtual solutions provided.'
+        'Training on Virtual HR Services and virtual solutions provided.'
       ]
     }
   ];

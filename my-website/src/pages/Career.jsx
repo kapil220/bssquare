@@ -22,7 +22,7 @@ const Career = () => {
     {
       id: '4505',
       title: 'HR Generalist',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
@@ -31,7 +31,7 @@ const Career = () => {
     {
       id: '4504',
       title: 'HR Manager',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Human Resources',
       location: 'India',
       type: 'Full Time',
@@ -40,7 +40,7 @@ const Career = () => {
     {
       id: '4503',
       title: 'Business Development Executive',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Sales & Marketing',
       location: 'Sharjah, UAE',
       type: 'Full Time',
@@ -76,11 +76,11 @@ const Career = () => {
     {
       id: '4374',
       title: 'Business Development Executive – Virtual HR',
-      category: 'HR Services',
+      category: 'Virtual HR Services',
       department: 'Sales & Marketing',
       location: 'UAE Ajman',
       type: 'Commission + Base Pay (Flexible)',
-      description: 'Promote virtual HR services, build client relationships, and achieve sales targets.'
+      description: 'Promote virtual Virtual HR Services, build client relationships, and achieve sales targets.'
     }
   ];
 

@@ -345,7 +345,7 @@ const About = () => {
               {/* Bhavin S. Director Info */}
               <div className="mb-12">
                 <div className="mb-6">
-                  <h3 className="text-3xl font-serif text-gray-900 mb-2">Bhavin S.</h3>
+                  <h3 className="text-3xl font-serif text-gray-900 mb-2">Bhavin Shah</h3>
                   <p className="text-[#FFBD59] font-semibold text-lg">Director</p>
                 </div>
 
