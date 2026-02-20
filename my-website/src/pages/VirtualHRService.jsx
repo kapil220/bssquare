@@ -204,9 +204,9 @@ const VirtualHRService = () => {
                 Virtual HR Services
               </div>
               
-              <h1 className="text-5xl md:text-6xl font-serif mb-6 text-white leading-tight">
-                One Partner
-                <span className="block text-[#FFBD59] italic">Every HR Solution</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-6 text-white leading-[0.95] tracking-[-0.02em]">
+                <span className="block font-semibold text-white/95 mb-3">One Partner</span>
+                <span className="block text-[#FFBD59] font-black">Every HR Solution</span>
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">

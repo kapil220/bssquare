@@ -50,9 +50,9 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-6 leading-tight">
-              <span className="block text-gray-900 font-normal mb-3">About</span>
-              <span className="text-[#FFBD59] italic">B Square Global</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-6 leading-[0.95] tracking-[-0.02em] text-gray-900">
+              <span className="block font-semibold mb-3">About</span>
+              <span className="text-[#FFBD59] font-black">B Square Global</span>
             </h1>
             <div className="flex items-center justify-center gap-4 mt-8">
               <div className="h-px w-16 bg-[#FFBD59]"></div>

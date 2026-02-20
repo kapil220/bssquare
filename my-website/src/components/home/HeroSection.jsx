@@ -22,18 +22,18 @@ const HeroSection = () => {
             type="video/mp4" 
           />
           {/* Fallback gradient if video doesn't load */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-black"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-blue-900 via-purple-900 to-black"></div>
         </video>
         
         {/* Fallback gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-black opacity-0"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-blue-900 via-purple-900 to-black opacity-0"></div>
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Animated gradient overlay */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"
+          className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black/60"
           animate={{
             opacity: [0.4, 0.6, 0.4]
           }}
@@ -76,29 +76,60 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-32 w-full">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto lg:mx-0 lg:ml-8 text-center lg:text-left">
           
           {/* Main headline with fade-in animation */}
           <motion.h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-tight tracking-tight text-white drop-shadow-lg"
-            initial={{ opacity: 0, y: 20 }}
+            className="text-5xl md:text-7xl lg:text-[5.1rem] font-black mb-8 leading-[0.95] tracking-[-0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]"
+            initial={{ opacity: 0, y: 30, x: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.9, delay: 0.1, ease: 'easeOut' }}
           >
-            <span className="block font-bold mb-3">
-              Master CAD & BIM
-            </span>
-            <span className="block mb-3">
-              for Modern Design &
-            </span>
-            <span className="block">
-              <span className="text-[#FFBD59] font-bold italic">Construction Excellence</span>
-            </span>
+            <motion.span
+              className="block mb-4 font-extrabold"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
+              <span className="text-3xl md:text-5xl lg:text-6xl font-semibold text-white/90 mr-2">Master</span>
+              <span className="text-[#FFBD59]">CAD</span> & <span className="text-[#FFBD59]">BIM</span>
+            </motion.span>
+
+            <motion.span
+              className="block mb-4 font-semibold text-white/95"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.35 }}
+            >
+              <span className="text-3xl md:text-5xl lg:text-6xl text-white/90">for</span> Modern Design &
+            </motion.span>
+
+            <motion.span
+              className="block"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+            >
+              <motion.span
+                className="bg-linear-to-r from-[#FFBD59] via-[#FFE6B8] to-[#FFBD59] bg-clip-text text-transparent"
+                animate={{
+                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: 'easeInOut'
+                }}
+                style={{ backgroundSize: '220% 220%' }}
+              >
+                Construction Excellence
+              </motion.span>
+            </motion.span>
           </motion.h1>
 
           {/* Refined subtitle with fade-in animation */}
           <motion.p
-            className="text-lg md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed font-light drop-shadow-lg"
+            className="text-lg md:text-2xl text-white/90 mb-12 max-w-3xl lg:mx-0 mx-auto leading-relaxed font-light drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -112,7 +143,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-wrap justify-center gap-8 mb-12"
+            className="flex flex-wrap justify-center lg:justify-start gap-8 mb-12"
           >
             {[
               'BIM Expertise',
@@ -138,7 +169,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-5 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start items-center lg:items-start"
           >
             <motion.a
               href="/contact"
@@ -168,7 +199,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 text-sm text-white/70 font-light"
+            className="mt-12 text-sm text-white/70 font-light lg:text-left"
           >
             Trusted by leading businesses worldwide
           </motion.p>

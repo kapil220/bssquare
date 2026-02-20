@@ -171,9 +171,9 @@ const HRServices = () => {
               <Users size={48} className="text-[#FFBD59]" />
             </motion.div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-6 leading-tight text-white">
-              <span className="block font-normal mb-2">Strategic HR Services for</span>
-              <span className="text-[#FFBD59] italic">Peak Business Performance</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-6 leading-[0.95] tracking-[-0.02em] text-white">
+              <span className="block font-semibold text-white/95 mb-3">Strategic HR Services for</span>
+              <span className="block text-[#FFBD59] font-black">Peak Business Performance</span>
             </h1>
 
             <div className="flex items-center justify-center gap-4 mt-8 mb-10">

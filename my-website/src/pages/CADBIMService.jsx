@@ -195,8 +195,8 @@ const BIMServices = () => {
 
             <div className="mb-4">
               <p className="text-lg text-[#FFBD59] font-semibold mb-2">PROUDLY PRESENTING...!</p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-2 leading-tight text-white">
-                <span className="block font-bold mb-2">B SQUARE GLOBAL</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-2 leading-[0.95] tracking-[-0.02em] text-white">
+                <span className="block font-black mb-2">B SQUARE GLOBAL</span>
               </h1>
             </div>
 
