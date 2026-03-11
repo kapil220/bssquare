@@ -1,15 +1,19 @@
+# Handle Single Page Application (SPA) routing
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Redirect old links to new ones (301 Permanent Redirect)
+  # Redirect legacy URLs
   RewriteRule ^about-us/?$ /about [R=301,L]
   RewriteRule ^hr-services/?$ /services/hr-services [R=301,L]
   RewriteRule ^cad-bim/?$ /services/cad-bim [R=301,L]
 
-  # SPA Routing
+  # If the requested filename is not a directory or a file, rewrite to index.html
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
 </IfModule>
+
+# Fallback 404 handler to ensure the app loads even if the above fails
+ErrorDocument 404 /index.html
