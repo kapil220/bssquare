@@ -8,8 +8,8 @@ const TermsOfService = () => {
         <title>Terms of Service | B Square Global FZE</title>
         <meta name="description" content="Review the terms of service for B Square Global FZE. Understand the conditions governing the use of our website and professional services." />
         <meta property="og:title" content="Terms of Service | B Square Global FZE" />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/terms-of-service" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/terms-of-service" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/terms-of-service" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/terms-of-service" />
       </Helmet>
       <div className="max-w-4xl mx-auto py-12">
         <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>

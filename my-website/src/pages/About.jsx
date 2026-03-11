@@ -24,11 +24,11 @@ const About = () => {
         <meta name="keywords" content="about B Square Global, BIM company UAE, HR company Dubai, Bijal Shah, BIM expertise" />
         <meta property="og:title" content="About Us | B Square Global FZE" />
         <meta property="og:description" content="20+ years of BIM and HR expertise serving clients across the Middle East and India." />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/about" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/about" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/about" />
       </Helmet>
       <div className="bg-white">
       {/* Hero Section */}

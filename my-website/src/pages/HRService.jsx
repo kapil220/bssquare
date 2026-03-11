@@ -116,11 +116,11 @@ const HRServices = () => {
         <meta name="keywords" content="HR services UAE, HR documentation Dubai, employee onboarding UAE, HR compliance, recruitment UAE, HR outsourcing" />
         <meta property="og:title" content="HR Services | B Square Global FZE" />
         <meta property="og:description" content="Comprehensive HR services — documentation, onboarding, recruitment, compliance and more for businesses across UAE and India." />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/services/hr-services" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/services/hr-services" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/services/hr-services" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/services/hr-services" />
       </Helmet>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

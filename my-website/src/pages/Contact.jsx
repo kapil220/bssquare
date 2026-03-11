@@ -135,11 +135,11 @@ const Contact = () => {
         <meta name="keywords" content="contact B Square Global, BIM services enquiry, HR services contact, Dubai BIM company contact" />
         <meta property="og:title" content="Contact Us | B Square Global FZE" />
         <meta property="og:description" content="Reach out to B Square Global FZE for CAD & BIM or Virtual HR services enquiries." />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/contact" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/contact" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/contact" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/contact" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">

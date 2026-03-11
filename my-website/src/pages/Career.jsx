@@ -99,11 +99,11 @@ const Career = () => {
         <meta name="keywords" content="careers B Square Global, jobs UAE, BIM engineer jobs, HR jobs Dubai, civil engineer UAE" />
         <meta property="og:title" content="Careers | B Square Global FZE" />
         <meta property="og:description" content="Explore exciting career opportunities at B Square Global FZE across UAE and India." />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/career" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/career" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/career" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/career" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">

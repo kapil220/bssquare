@@ -177,11 +177,11 @@ const VirtualHRService = () => {
         <meta name="keywords" content="virtual HR services UAE, HR outsourcing Dubai, payroll services UAE, HR compliance, talent management UAE, B Square Global HR" />
         <meta property="og:title" content="Virtual HR Services | B Square Global FZE" />
         <meta property="og:description" content="Complete virtual HR solutions — talent, performance, payroll and compliance — for businesses in UAE and beyond." />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
       </Helmet>
       {/* Header */}
       <header className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">

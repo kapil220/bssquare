@@ -8,8 +8,8 @@ const PrivacyPolicy = () => {
         <title>Privacy Policy | B Square Global FZE</title>
         <meta name="description" content="Read the privacy policy of B Square Global FZE. We are committed to protecting your personal data in compliance with applicable data protection laws." />
         <meta property="og:title" content="Privacy Policy | B Square Global FZE" />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/privacy-policy" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/privacy-policy" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/privacy-policy" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/privacy-policy" />
       </Helmet>
       <div className="max-w-4xl mx-auto py-12">
         <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>

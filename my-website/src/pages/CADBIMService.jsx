@@ -2,9 +2,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Layers, Box, Eye, GitMerge, Database, Users, CheckCircle, ArrowRight, Play, ChevronRight, Building2, Ruler, Zap, Shield, Clock, TrendingUp, Sofa, FileText, Wrench, Briefcase } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 import QuoteModal from '../components/common/QuoteModal';
 
 const BIMServices = () => {
+  const navigate = useNavigate();
   const heroRef = useRef(null);
   const servicesRef = useRef(null);
   const coreServicesRef = useRef(null);
@@ -141,11 +143,11 @@ const BIMServices = () => {
         <meta name="keywords" content="CAD BIM services UAE, BIM engineering Dubai, Architectural BIM, Structural BIM, MEP BIM, BIM coordination, BIM outsourcing, Revit modeling UAE" />
         <meta property="og:title" content="CAD & BIM Engineering Services | B Square Global FZE" />
         <meta property="og:description" content="Expert CAD & BIM engineering services — Architectural, Structural, MEP BIM, coordination, as-built models and manpower outsourcing." />
-        <meta property="og:url" content="https://www.bsquareglobalfze.com/services/cad-bim" />
+        <meta property="og:url" content="https://bsquareglobalfze.com/services/cad-bim" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.bsquareglobalfze.com/services/cad-bim" />
+        <link rel="canonical" href="https://bsquareglobalfze.com/services/cad-bim" />
       </Helmet>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
