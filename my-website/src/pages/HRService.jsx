@@ -111,11 +111,11 @@ const HRServices = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>HR Services | B Square Global FZE</title>
-        <meta name="description" content="B Square Global FZE offers comprehensive HR services including HR documentation, employee onboarding, policy drafting, employee relations, recruitment, and compliance management across UAE and India." />
-        <meta name="keywords" content="HR services UAE, HR documentation Dubai, employee onboarding UAE, HR compliance, recruitment UAE, HR outsourcing" />
-        <meta property="og:title" content="HR Services | B Square Global FZE" />
-        <meta property="og:description" content="Comprehensive HR services — documentation, onboarding, recruitment, compliance and more for businesses across UAE and India." />
+        <title>HR Outsourcing & Recruitment Company in Dubai | B Square Global FZE</title>
+        <meta name="description" content="Looking for the best HR outsourcing and recruitment company in Dubai? B Square Global FZE offers expert HR documentation, onboarding, policy drafting, and compliance across UAE and India." />
+        <meta name="keywords" content="HR company Dubai, HR outsourcing UAE, recruitment company Dubai, HR services UAE, employee onboarding Dubai, HR compliance UAE, B Square Global HR" />
+        <meta property="og:title" content="HR Outsourcing & Recruitment Company in Dubai | B Square Global FZE" />
+        <meta property="og:description" content="Top-tier HR outsourcing, recruitment, and compliance services for businesses in Dubai, UAE, and India." />
         <meta property="og:url" content="https://bsquareglobalfze.com/services/hr-services" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />

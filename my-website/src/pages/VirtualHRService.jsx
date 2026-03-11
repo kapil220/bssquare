@@ -172,11 +172,11 @@ const VirtualHRService = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Virtual HR Services | B Square Global FZE</title>
-        <meta name="description" content="B Square Global FZE's complete Virtual HR Services — talent management, performance management, payroll, compliance, and HR consulting tailored for businesses across UAE and beyond." />
-        <meta name="keywords" content="virtual HR services UAE, HR outsourcing Dubai, payroll services UAE, HR compliance, talent management UAE, B Square Global HR" />
-        <meta property="og:title" content="Virtual HR Services | B Square Global FZE" />
-        <meta property="og:description" content="Complete virtual HR solutions — talent, performance, payroll and compliance — for businesses in UAE and beyond." />
+        <title>Best Virtual HR Services Company in UAE | B Square Global FZE</title>
+        <meta name="description" content="The leading virtual HR services company in UAE. B Square Global FZE provides expert remote talent management, payroll, and compliance solutions for modern businesses." />
+        <meta name="keywords" content="virtual HR company UAE, virtual HR services Dubai, remote HR management UAE, online payroll services UAE, HR compliance Dubai, B Square Global virtual HR" />
+        <meta property="og:title" content="Best Virtual HR Services Company in UAE | B Square Global FZE" />
+        <meta property="og:description" content="Expert virtual HR company providing talent, payroll, and compliance solutions across the UAE." />
         <meta property="og:url" content="https://bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />

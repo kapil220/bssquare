@@ -138,9 +138,9 @@ const BIMServices = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>CAD & BIM Engineering Services | B Square Global FZE</title>
-        <meta name="description" content="B Square Global FZE provides expert CAD & BIM engineering services including Architectural BIM, Structural BIM, MEP BIM, BIM coordination, as-built models, and BIM manpower outsourcing across UAE, Oman, Qatar, KSA and India." />
-        <meta name="keywords" content="CAD BIM services UAE, BIM engineering Dubai, Architectural BIM, Structural BIM, MEP BIM, BIM coordination, BIM outsourcing, Revit modeling UAE" />
+        <title>Top CAD & BIM Engineering Company in Dubai | B Square Global FZE</title>
+        <meta name="description" content="Looking for a leading CAD & BIM engineering company in Dubai? B Square Global FZE provides expert Architectural, Structural, and MEP BIM services across UAE, Oman, and India. 20+ years of excellence." />
+        <meta name="keywords" content="CAD company Dubai, CAD company UAE, BIM company Dubai, CAD BIM services UAE, BIM engineering Dubai, Architectural BIM, Structural BIM, MEP BIM, BIM coordination, Revit modeling Dubai" />
         <meta property="og:title" content="CAD & BIM Engineering Services | B Square Global FZE" />
         <meta property="og:description" content="Expert CAD & BIM engineering services — Architectural, Structural, MEP BIM, coordination, as-built models and manpower outsourcing." />
         <meta property="og:url" content="https://bsquareglobalfze.com/services/cad-bim" />

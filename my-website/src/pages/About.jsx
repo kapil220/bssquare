@@ -19,11 +19,11 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | B Square Global FZE</title>
-        <meta name="description" content="Learn about B Square Global FZE — founded by Bijal Shah with 20+ years of BIM and HR expertise. Serving clients across UAE, Oman, Qatar, KSA and India." />
-        <meta name="keywords" content="about B Square Global, BIM company UAE, HR company Dubai, Bijal Shah, BIM expertise" />
-        <meta property="og:title" content="About Us | B Square Global FZE" />
-        <meta property="og:description" content="20+ years of BIM and HR expertise serving clients across the Middle East and India." />
+        <title>About B Square Global FZE | Leading CAD, BIM & HR Company in Dubai</title>
+        <meta name="description" content="Learn about B Square Global FZE — a leading CAD, BIM engineering, and Virtual HR company in Dubai. Founded by Bijal Shah with 20+ years of expertise serving the UAE, Oman, and India." />
+        <meta name="keywords" content="B Square Global FZE, CAD company Dubai, BIM company UAE, HR consultancy Dubai, Bijal Shah BIM, engineering outsourcing UAE" />
+        <meta property="og:title" content="About B Square Global FZE | Leading CAD, BIM & HR Company in Dubai" />
+        <meta property="og:description" content="Discover B Square Global FZE's 20-year legacy in BIM engineering and HR excellence across the Middle East." />
         <meta property="og:url" content="https://bsquareglobalfze.com/about" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />

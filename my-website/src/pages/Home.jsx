@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>B Square Global FZE — CAD & BIM Engineering & Virtual HR Services</title>
-        <meta name="description" content="B Square Global FZE offers world-class CAD & BIM Engineering Services and comprehensive Virtual HR Services across UAE, Oman, Qatar, KSA and India. 20+ years of expertise." />
-        <meta name="keywords" content="CAD BIM services UAE, BIM engineering Dubai, Virtual HR services, BIM outsourcing, HR solutions UAE, B Square Global FZE" />
-        <meta property="og:title" content="B Square Global FZE — CAD & BIM Engineering & Virtual HR Services" />
+        <title>B Square Global FZE — Leading CAD, BIM & Virtual HR Company</title>
+        <meta name="description" content="B Square Global FZE is a premiere CAD & BIM engineering and Virtual HR services company. Expert solutions across UAE, Dubai, Oman, Qatar, KSA and India. 20+ years of excellence." />
+        <meta name="keywords" content="CAD company UAE, CAD company Dubai, BIM company UAE, Virtual HR services Dubai, HR outsourcing company UAE, BIM services Dubai, B Square Global FZE" />
+        <meta property="og:title" content="B Square Global FZE — Leading CAD, BIM & Virtual HR Company" />
         <meta property="og:description" content="World-class CAD & BIM Engineering and expert Virtual HR Services across the UAE and beyond." />
         <meta property="og:url" content="https://bsquareglobalfze.com/" />
         <meta property="og:type" content="website" />

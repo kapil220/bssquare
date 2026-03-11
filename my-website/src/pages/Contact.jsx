@@ -130,11 +130,11 @@ const Contact = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Contact Us | B Square Global FZE</title>
-        <meta name="description" content="Get in touch with B Square Global FZE. Reach us for CAD & BIM engineering or Virtual HR service enquiries. Offices across UAE, Oman, Qatar, KSA and India." />
-        <meta name="keywords" content="contact B Square Global, BIM services enquiry, HR services contact, Dubai BIM company contact" />
-        <meta property="og:title" content="Contact Us | B Square Global FZE" />
-        <meta property="og:description" content="Reach out to B Square Global FZE for CAD & BIM or Virtual HR services enquiries." />
+        <title>Contact B Square Global FZE | Best CAD & BIM Company in Dubai</title>
+        <meta name="description" content="Contact B Square Global FZE today for expert CAD & BIM engineering services or Virtual HR solutions in Dubai and across the UAE. Let our 20+ years of expertise drive your success." />
+        <meta name="keywords" content="contact CAD company Dubai, BIM services enquiry UAE, HR services Dubai contact, B Square Global FZE office, CAD outsourcing Dubai" />
+        <meta property="og:title" content="Contact B Square Global FZE | Best CAD & BIM Company in Dubai" />
+        <meta property="og:description" content="Get in touch with the leading CAD, BIM, and HR company in Dubai for world-class business solutions." />
         <meta property="og:url" content="https://bsquareglobalfze.com/contact" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />

@@ -94,11 +94,11 @@ const Career = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Careers | B Square Global FZE</title>
-        <meta name="description" content="Explore career opportunities at B Square Global FZE. Join our team in UAE, India and beyond in BIM engineering, HR, civil engineering, and business development roles." />
-        <meta name="keywords" content="careers B Square Global, jobs UAE, BIM engineer jobs, HR jobs Dubai, civil engineer UAE" />
-        <meta property="og:title" content="Careers | B Square Global FZE" />
-        <meta property="og:description" content="Explore exciting career opportunities at B Square Global FZE across UAE and India." />
+        <title>BIM & HR Careers in UAE | Join B Square Global FZE</title>
+        <meta name="description" content="Looking for BIM engineer jobs or HR roles in UAE? Join B Square Global FZE, a premier engineering and HR company. Explore exciting career opportunities in Dubai, India, and beyond." />
+        <meta name="keywords" content="BIM engineer jobs UAE, HR jobs Dubai, civil engineering careers UAE, BIM vacancies Dubai, work at B Square Global" />
+        <meta property="og:title" content="BIM & HR Careers in UAE | Join B Square Global FZE" />
+        <meta property="og:description" content="Build your career with a leading CAD, BIM, and HR company. Explore job openings at B Square Global FZE." />
         <meta property="og:url" content="https://bsquareglobalfze.com/career" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
