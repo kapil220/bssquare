@@ -2,6 +2,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Briefcase, MapPin, Clock, ChevronRight, Users, TrendingUp, Heart, Award, CheckCircle2, Upload } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 
 const Career = () => {
@@ -80,16 +81,11 @@ const Career = () => {
       department: 'Sales & Marketing',
       location: 'UAE Ajman',
       type: 'Commission + Base Pay (Flexible)',
-      description: 'Promote virtual Virtual HR Services, build client relationships, and achieve sales targets.'
+      description: 'Promote Virtual HR Services, build client relationships, and achieve sales targets.'
     }
   ];
 
-  const benefits = [
-    { icon: Users, title: 'Personalized Career Coaching', desc: 'One-on-one guidance from industry experts' },
-    { icon: TrendingUp, title: 'Interview Preparation', desc: 'Comprehensive training to ace your interviews' },
-    { icon: Heart, title: 'Resume Optimization', desc: 'Professional resume reviews and enhancements' },
-    { icon: Award, title: 'Exclusive Opportunities', desc: 'Access to top companies and roles' }
-  ];
+
 
   const handleJobClick = (jobId) => {
     navigate(`/career/jobs/${jobId}`);
@@ -97,6 +93,18 @@ const Career = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Careers | B Square Global FZE</title>
+        <meta name="description" content="Explore career opportunities at B Square Global FZE. Join our team in UAE, India and beyond in BIM engineering, HR, civil engineering, and business development roles." />
+        <meta name="keywords" content="careers B Square Global, jobs UAE, BIM engineer jobs, HR jobs Dubai, civil engineer UAE" />
+        <meta property="og:title" content="Careers | B Square Global FZE" />
+        <meta property="og:description" content="Explore exciting career opportunities at B Square Global FZE across UAE and India." />
+        <meta property="og:url" content="https://www.bsquareglobalfze.com/career" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.bsquareglobalfze.com/career" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-gray-100/80"></div>
@@ -141,44 +149,31 @@ const Career = () => {
         </div>
       </section>
 
-      {/* How We Help Section */}
+      {/* Join Us Section */}
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
-        
+
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-20"
+            transition={{ duration: 0.8 }}
+            className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900">
-              How We <span className="text-[#FFBD59] italic">Help Candidates</span>
+            <h2 className="text-4xl md:text-5xl font-serif mb-8 text-gray-900">
+              Join <span className="text-[#FFBD59] italic">Us</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              At B Square Global, we provide comprehensive career support to help you succeed. Our services include personalized career coaching, interview preparation, resume optimization, and access to exclusive job opportunities.
-            </p>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl text-gray-800 font-serif mb-8 leading-relaxed">
+                Are you passionate about shaping the future of Architecture, Design, Engineering & Construction Technology?
+              </p>
+              <div className="h-px w-24 bg-[#FFBD59] mx-auto mb-8"></div>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Your journey begins here! We are on the lookout for dynamic, enthusiastic, and driven professionals to join our innovative team.
+              </p>
+            </div>
           </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="inline-flex items-center justify-center w-14 h-14 bg-[#FFBD59]/10 text-[#FFBD59] rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon size={28} />
-                </div>
-                <h3 className="text-xl font-serif text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{benefit.desc}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -277,10 +272,10 @@ const Career = () => {
                       </span>
                       <span className="text-sm text-gray-500">ID: {job.id}</span>
                     </div>
-                    
+
                     <h3 className="text-2xl font-serif text-gray-900 mb-3 group-hover:text-[#FFBD59] transition-colors">{job.title}</h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">{job.description}</p>
-                    
+
                     <div className="flex flex-wrap gap-4 text-sm text-gray-500">
                       <span className="flex items-center gap-2">
                         <Briefcase size={16} className="text-[#FFBD59]" />
@@ -296,7 +291,7 @@ const Career = () => {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="lg:ml-6">
                     <motion.button
                       onClick={(e) => {

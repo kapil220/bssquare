@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { initEmailJS, sendContactEmail } from '../utils/emailService';
 
 const Contact = () => {
@@ -86,7 +87,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const isValid = validateForm();
     if (!isValid) {
       console.warn("Validation failed, form submission stopped.");
@@ -128,6 +129,18 @@ const Contact = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Contact Us | B Square Global FZE</title>
+        <meta name="description" content="Get in touch with B Square Global FZE. Reach us for CAD & BIM engineering or Virtual HR service enquiries. Offices across UAE, Oman, Qatar, KSA and India." />
+        <meta name="keywords" content="contact B Square Global, BIM services enquiry, HR services contact, Dubai BIM company contact" />
+        <meta property="og:title" content="Contact Us | B Square Global FZE" />
+        <meta property="og:description" content="Reach out to B Square Global FZE for CAD & BIM or Virtual HR services enquiries." />
+        <meta property="og:url" content="https://www.bsquareglobalfze.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.bsquareglobalfze.com/contact" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white to-gray-100/80"></div>
@@ -186,24 +199,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-0 bg-white">
-        <div className="w-full h-[500px] relative">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6833075869!2d54.89782924999999!3d25.0762345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="B Square Global Location"
-          ></iframe>
-          
-          <div className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"></div>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
       <section ref={formRef} className="py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
@@ -228,7 +223,7 @@ const Contact = () => {
                   </p>
 
                   <div className="space-y-8">
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-4"
                       initial={{ opacity: 0, x: -20 }}
                       animate={formInView ? { opacity: 1, x: 0 } : {}}
@@ -243,7 +238,7 @@ const Contact = () => {
                       </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-4"
                       initial={{ opacity: 0, x: -20 }}
                       animate={formInView ? { opacity: 1, x: 0 } : {}}
@@ -255,13 +250,13 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <div className="text-gray-300 text-sm hover:text-[#FFBD59] transition-colors cursor-pointer">
-                          Bijal.s@bsquareglobalfze.com
-Bhavin.s@bsquareglobalfze.com
+                          Bijal.s@bsquareglobalfze.com<br />
+                          Bhavin.s@bsquareglobalfze.com
                         </div>
                       </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                       className="flex items-start gap-4"
                       initial={{ opacity: 0, x: -20 }}
                       animate={formInView ? { opacity: 1, x: 0 } : {}}
@@ -448,6 +443,67 @@ Bhavin.s@bsquareglobalfze.com
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid lg:grid-cols-3 gap-12 items-center">
+            {/* Left Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-1"
+            >
+              <h2 className="text-3xl font-serif text-gray-900 mb-6">Find Us <span className="text-[#FFBD59] italic">Globally</span></h2>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Visit our regional offices or connect with us online. We operate across UAE, Oman, Qatar, KSA, and India to support your projects worldwide.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[#FFBD59]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <MapPin className="text-[#FFBD59]" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Registered Office</h4>
+                    <p className="text-gray-600 text-sm">Dubai, United Arab Emirates</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[#FFBD59]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <Clock className="text-[#FFBD59]" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Working Hours</h4>
+                    <p className="text-gray-600 text-sm">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Map */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-2 relative h-[450px] rounded-2xl overflow-hidden shadow-xl border border-gray-100"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6833075869!2d54.89782924999999!3d25.0762345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="B Square Global Location"
+              ></iframe>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Success/Error Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
@@ -460,8 +516,8 @@ Bhavin.s@bsquareglobalfze.com
                 {submitStatus === 'success' ? 'Thank You!' : 'Oops!'}
               </h3>
               <p className="mb-6 text-gray-600">
-                {submitStatus === 'success' 
-                  ? 'Your message has been sent successfully! We will get back to you within 24 hours.' 
+                {submitStatus === 'success'
+                  ? 'Your message has been sent successfully! We will get back to you within 24 hours.'
                   : 'There was an error sending your message. Please try again or contact us directly.'}
               </p>
               <button

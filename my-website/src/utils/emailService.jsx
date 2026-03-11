@@ -45,6 +45,33 @@ export const sendContactEmail = async (formData) => {
   }
 };
 
+// Send quote request email
+export const sendQuoteEmail = async (formData, selectedServices) => {
+  try {
+    const templateParams = {
+      subject: `New Quote Request - ${sanitizeText(formData.firstName)} ${sanitizeText(formData.lastName)}`,
+      to_email: 'info@globalfze.com',
+      from_name: `${sanitizeText(formData.firstName)} ${sanitizeText(formData.lastName)}`,
+      from_email: sanitizeText(formData.email),
+      phone: sanitizeText(formData.phone),
+      services: selectedServices.join(', '),
+      message: sanitizeText(formData.message),
+      date: new Date().toLocaleString()
+    };
+
+    const response = await emailjs.send(
+      EMAIL_CONFIG.SERVICE_ID,
+      EMAIL_CONFIG.TEMPLATE_ID.CONTACT, // Reusing contact template for now
+      templateParams
+    );
+
+    return { success: true, response };
+  } catch (error) {
+    console.error('Error sending quote email:', error);
+    return { success: false, error };
+  }
+};
+
 // Send job application email with file handling
 export const sendJobApplicationEmail = async (formData, jobDetails, resumeFile) => {
   try {
@@ -72,7 +99,7 @@ export const sendJobApplicationEmail = async (formData, jobDetails, resumeFile) 
     // If we have a resume file, we need to send it via a different method
     // Since EmailJS free plan doesn't support file attachments easily,
     // we'll include a note in the email about the resume
-    
+
     const response = await emailjs.send(
       EMAIL_CONFIG.SERVICE_ID,
       EMAIL_CONFIG.TEMPLATE_ID.JOB,

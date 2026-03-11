@@ -58,7 +58,7 @@ const JobDetail = () => {
       type: 'Full Time',
       experience: '1-2 years',
       salary: 'As per industry standards',
-      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual Virtual HR Services for clients in both countries.',
+      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual HR Services for clients in both countries.',
       responsibilities: [
         'Assist with recruitment, onboarding, and documentation for India and UAE-based clients.',
         'Support HR policy implementation, employee records management, and compliance tracking.',
@@ -66,7 +66,7 @@ const JobDetail = () => {
         'Coordinate payroll data and attendance with external vendors or finance teams.',
         'Resolve employee queries and provide basic grievance support.',
         'Ensure HR practices comply with both UAE and Indian labour law requirements.',
-        'Work closely with the senior HR team to deliver virtual Virtual HR Services for clients.'
+        'Work closely with the senior HR team to deliver Virtual HR Services for clients.'
       ],
       requirements: [
         'Bachelor’s degree in Human Resources, Business Administration, or related field.',
@@ -644,7 +644,7 @@ const ApplicationForm = ({ job, onClose }) => {
       // Validate file type
       const allowedTypes = ['.pdf', '.doc', '.docx'];
       const fileExtension = '.' + file.name.split('.').pop().toLowerCase();
-      
+
       if (!allowedTypes.includes(fileExtension)) {
         alert('Please upload a PDF, DOC, or DOCX file');
         e.target.value = '';

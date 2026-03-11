@@ -34,9 +34,8 @@ const IntroSection = () => {
             <motion.h2
               className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6 sm:mb-8 leading-tight text-gray-900"
             >
-              Your Growth Partner in{' '}
-              <span className="text-[#FFBD59] italic">CAD & BIM</span>{' '}
-              & Design Excellence
+              Your Trusted Partner in{' '}
+              <span className="text-[#FFBD59] italic">Business Excellence</span>
             </motion.h2>
             
             <div className="space-y-5 sm:space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
@@ -45,7 +44,7 @@ const IntroSection = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <span className="font-semibold text-gray-900">B Square Global</span> is a dynamic solutions partner specializing in cutting-edge CAD and BIM services for the construction and design industry. We deliver comprehensive design solutions, project delivery expertise, and specialized talent support to architects, engineers, and construction professionals.
+                <span className="font-semibold text-gray-900">B Square Global</span> offers two independent, world-class service lines — advanced CAD & BIM engineering solutions for the architecture and construction industry, and comprehensive Virtual HR services for businesses of all sizes seeking expert people management.
               </motion.p>
               
               <motion.div

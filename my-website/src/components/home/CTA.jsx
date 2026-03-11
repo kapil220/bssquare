@@ -37,8 +37,8 @@ const CTA = () => {
           <motion.h2 
             className="text-4xl md:text-6xl font-serif text-white mb-6 leading-tight"
           >
-            Ready to Elevate Your{' '}
-            <span className="text-[#FFBD59] italic">CAD & BIM Projects?</span>
+            Ready to Transform Your{' '}
+            <span className="text-[#FFBD59] italic">Business?</span>
           </motion.h2>
           
           <motion.p 
@@ -47,7 +47,7 @@ const CTA = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Join leading design and construction firms who trust our BIM expertise, CAD solutions, and professional coordination services for project success.
+            Partner with B Square Global for world-class CAD & BIM engineering solutions or expert Virtual HR services — two independent services built to drive your success.
           </motion.p>
 
           <motion.div
@@ -55,7 +55,7 @@ const CTA = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <button className="group relative inline-flex items-center px-10 py-5 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden transition-all duration-300 hover:bg-white">
+            <button className="group relative inline-flex items-center px-10 py-5 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden transition-all duration-300 hover:bg-white" onClick={() => window.location.href = '/contact'}>
               <span className="flex items-center tracking-wide">
                 Get a Free Consultation
                 <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />

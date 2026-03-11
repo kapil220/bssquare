@@ -6,7 +6,7 @@ const ParallaxSection = () => {
   const ref = useRef(null);
 
   return (
-    <section 
+    <section
       ref={ref}
       className="relative overflow-hidden flex items-center justify-center py-32"
     >
@@ -26,7 +26,7 @@ const ParallaxSection = () => {
       <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* Content */}
-      <motion.div 
+      <motion.div
         className="relative z-20 text-center max-w-3xl mx-auto px-6"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -36,9 +36,9 @@ const ParallaxSection = () => {
         <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
           Transforming <span className="text-[#FFBD59] italic">Visions</span> into Reality
         </h2>
-        <p className="text-lg text-gray-100">
+        {/* <p className="text-lg text-gray-100">
           Experience the power of precision engineering and innovative design solutions
-        </p>
+        </p> */}
       </motion.div>
     </section>
   );

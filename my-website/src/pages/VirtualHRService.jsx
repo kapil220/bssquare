@@ -1,16 +1,17 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import { 
-  ArrowLeft, 
-  Users, 
-  UserPlus, 
-  FileText, 
-  FileCheck, 
-  Clock, 
-  DollarSign, 
-  Scale, 
-  Handshake, 
-  TrendingUp, 
+import { Helmet } from 'react-helmet-async';
+import {
+  ArrowLeft,
+  Users,
+  UserPlus,
+  FileText,
+  FileCheck,
+  Clock,
+  DollarSign,
+  Scale,
+  Handshake,
+  TrendingUp,
   LogOut,
   Phone,
   CheckCircle,
@@ -23,12 +24,14 @@ import {
   Zap
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import QuoteModal from '../components/common/QuoteModal';
 
 const VirtualHRService = () => {
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
   const [visibleSteps, setVisibleSteps] = useState([0]); // Start with only first step visible
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const steps = [
     {
@@ -168,6 +171,18 @@ const VirtualHRService = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Virtual HR Services | B Square Global FZE</title>
+        <meta name="description" content="B Square Global FZE's complete Virtual HR Services — talent management, performance management, payroll, compliance, and HR consulting tailored for businesses across UAE and beyond." />
+        <meta name="keywords" content="virtual HR services UAE, HR outsourcing Dubai, payroll services UAE, HR compliance, talent management UAE, B Square Global HR" />
+        <meta property="og:title" content="Virtual HR Services | B Square Global FZE" />
+        <meta property="og:description" content="Complete virtual HR solutions — talent, performance, payroll and compliance — for businesses in UAE and beyond." />
+        <meta property="og:url" content="https://www.bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.bsquareglobalfze.com/services/hr-services/virtual-hr-services" />
+      </Helmet>
       {/* Header */}
       <header className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
         {/* Background Pattern */}
@@ -201,20 +216,21 @@ const VirtualHRService = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#FFBD59]/20 text-[#FFBD59] font-semibold rounded-full mb-6">
                 <Users size={20} />
-                Virtual Virtual HR Services
+                Virtual HR Services
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans mb-6 text-white leading-[0.95] tracking-[-0.02em]">
                 <span className="block font-semibold text-white/95 mb-3">One Partner</span>
                 <span className="block text-[#FFBD59] font-black">Every HR Solution</span>
               </h1>
-              
+
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Why take just one service when you can have the complete HR department?
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.button
+                  onClick={() => setIsQuoteModalOpen(true)}
                   className="group inline-flex items-center gap-3 px-8 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md hover:bg-white transition-colors duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -222,7 +238,7 @@ const VirtualHRService = () => {
                   <Phone size={20} />
                   Talk To Our HR Experts
                 </motion.button>
-                
+
                 <motion.button
                   onClick={() => setShowVideo(true)}
                   className="group inline-flex items-center gap-3 px-8 py-4 bg-white/10 text-white text-base font-semibold rounded-md hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm"
@@ -242,12 +258,12 @@ const VirtualHRService = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative flex justify-center"
             >
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
-                alt="Virtual Virtual HR Services"
+                alt="Virtual HR Services"
                 className="w-[60%] rounded-lg shadow-2xl"
               />
-              
+
               {/* Floating Stats */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -313,9 +329,9 @@ const VirtualHRService = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gray-100"
               >
-                <div className={`inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br ${feature.color} rounded-lg mb-4 text-white mx-auto`}>
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-gray-900 group-hover:bg-[#FFBD59] rounded-lg mb-4 text-white transition-colors duration-300 mx-auto">
                   <feature.icon size={28} />
                 </div>
                 <h3 className="text-lg font-serif text-gray-900 mb-2">{feature.title}</h3>
@@ -350,13 +366,12 @@ const VirtualHRService = () => {
                 <motion.button
                   key={index}
                   onClick={() => handleStepClick(index)}
-                  className={`flex items-center gap-3 px-6 py-4 rounded-lg whitespace-nowrap transition-all duration-300 ${
-                    currentStep === index
-                      ? 'bg-[#FFBD59] text-gray-900 shadow-lg'
-                      : visibleSteps.includes(index)
+                  className={`flex items-center gap-3 px-6 py-4 rounded-lg whitespace-nowrap transition-all duration-300 ${currentStep === index
+                    ? 'bg-[#FFBD59] text-gray-900 shadow-lg'
+                    : visibleSteps.includes(index)
                       ? 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       : 'bg-gray-50 text-gray-400 cursor-not-allowed'
-                  }`}
+                    }`}
                   whileHover={{ scale: visibleSteps.includes(index) ? 1.02 : 1 }}
                   whileTap={{ scale: visibleSteps.includes(index) ? 0.98 : 1 }}
                   disabled={!visibleSteps.includes(index)}
@@ -371,7 +386,7 @@ const VirtualHRService = () => {
           {/* Step Content - Only show visible steps */}
           <div className="space-y-16">
             <AnimatePresence>
-              {steps.map((step, index) => 
+              {steps.map((step, index) =>
                 visibleSteps.includes(index) && (
                   <motion.div
                     key={index}
@@ -389,15 +404,15 @@ const VirtualHRService = () => {
                         </div>
                         Step {index + 1}
                       </div>
-                      
+
                       <h3 className="text-3xl md:text-4xl font-serif mb-4 text-gray-900">
                         {step.title}
                       </h3>
-                      
+
                       <h4 className="text-xl text-[#FFBD59] font-semibold mb-6">
                         {step.subtitle}
                       </h4>
-                      
+
                       <p className="text-lg text-gray-600 leading-relaxed mb-8">
                         {step.description}
                       </p>
@@ -408,24 +423,22 @@ const VirtualHRService = () => {
                           <motion.button
                             onClick={handlePrevious}
                             disabled={currentStep === 0}
-                            className={`flex items-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${
-                              currentStep === 0
-                                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                            }`}
+                            className={`flex items-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${currentStep === 0
+                              ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                              }`}
                             whileHover={{ scale: currentStep === 0 ? 1 : 1.05 }}
                           >
                             Previous
                           </motion.button>
-                          
+
                           <motion.button
                             onClick={handleNext}
                             disabled={currentStep === steps.length - 1}
-                            className={`flex items-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${
-                              currentStep === steps.length - 1
-                                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                                : 'bg-[#FFBD59] text-gray-900 hover:bg-orange-400'
-                            }`}
+                            className={`flex items-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${currentStep === steps.length - 1
+                              ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                              : 'bg-[#FFBD59] text-gray-900 hover:bg-orange-400'
+                              }`}
                             whileHover={{ scale: currentStep === steps.length - 1 ? 1 : 1.05 }}
                           >
                             Next
@@ -437,7 +450,7 @@ const VirtualHRService = () => {
 
                     {/* Image - Alternates sides */}
                     <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                      <img 
+                      <img
                         src={step.image}
                         alt={step.title}
                         className="w-full rounded-lg shadow-2xl"
@@ -498,7 +511,7 @@ const VirtualHRService = () => {
             <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
               One Solution for <span className="text-[#FFBD59] italic">Every HR Need</span>
             </h2>
-            
+
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               Instead of juggling multiple vendors or in-house overload, let Bsquare Global
               be your one-stop HR consulting partner — from recruitment to retirement.
@@ -536,8 +549,9 @@ const VirtualHRService = () => {
               <p className="text-lg text-gray-300 mb-8">
                 Join hundreds of satisfied clients who have streamlined their operations with our professional services.
               </p>
-              
+
               <motion.button
+                onClick={() => window.location.href = '/contact'}
                 className="group inline-flex items-center gap-3 px-10 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md hover:bg-white transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -573,13 +587,20 @@ const VirtualHRService = () => {
             <div className="w-full h-full flex items-center justify-center text-white">
               <div className="text-center">
                 <Play size={64} className="mx-auto mb-4 opacity-50" />
-                <p className="text-gray-400">Virtual Virtual HR Services Overview Video</p>
+                <p className="text-gray-400">Virtual HR Services Overview Video</p>
                 <p className="text-sm text-gray-500 mt-2">Add your video URL here</p>
               </div>
             </div>
           </motion.div>
         </motion.div>
       )}
+
+      {/* Quote Request Modal */}
+      <QuoteModal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
+        selectedServices={['Virtual HR Services']}
+      />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Target, Eye, Heart, CheckCircle2, TrendingUp, Users, Award, Building2, CheckCircle } from 'lucide-react';
 
 const About = () => {
@@ -8,7 +9,7 @@ const About = () => {
   const directorRef = useRef(null);
   const industriesRef = useRef(null);
   const aboutRef = useRef(null);
-  
+
   const storyInView = useInView(storyRef, { once: true, margin: "-100px" });
   const missionInView = useInView(missionRef, { once: true, margin: "-100px" });
   const directorInView = useInView(directorRef, { once: true, margin: "-100px" });
@@ -16,7 +17,20 @@ const About = () => {
   const aboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
 
   return (
-    <div className="bg-white">
+    <>
+      <Helmet>
+        <title>About Us | B Square Global FZE</title>
+        <meta name="description" content="Learn about B Square Global FZE — founded by Bijal Shah with 20+ years of BIM and HR expertise. Serving clients across UAE, Oman, Qatar, KSA and India." />
+        <meta name="keywords" content="about B Square Global, BIM company UAE, HR company Dubai, Bijal Shah, BIM expertise" />
+        <meta property="og:title" content="About Us | B Square Global FZE" />
+        <meta property="og:description" content="20+ years of BIM and HR expertise serving clients across the Middle East and India." />
+        <meta property="og:url" content="https://www.bsquareglobalfze.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.bsquareglobalfze.com/about" />
+      </Helmet>
+      <div className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         {/* Subtle background pattern */}
@@ -54,17 +68,17 @@ const About = () => {
               <span className="block font-semibold mb-3">About</span>
               <span className="text-[#FFBD59] font-black">B Square Global</span>
             </h1>
-            <div className="flex items-center justify-center gap-4 mt-8">
+            {/* <div className="flex items-center justify-center gap-4 mt-8">
               <div className="h-px w-16 bg-[#FFBD59]"></div>
               <p className="text-lg text-gray-600 font-light">Empowering Business from Day One</p>
               <div className="h-px w-16 bg-[#FFBD59]"></div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>
 
       {/* About Us Section */}
-      <section ref={aboutRef} className="py-32 bg-white relative overflow-hidden">
+      {/* <section ref={aboutRef} className="py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -126,15 +140,15 @@ const About = () => {
             </motion.div>
           </div>
 
-          {/* Founder Section */}
-        
+
+
         </div>
-      </section>
+      </section> */}
 
       {/* Story Section */}
       <section ref={storyRef} className="py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
-        
+
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             {/* Left Content */}
@@ -147,12 +161,12 @@ const About = () => {
                 Transforming Design & Construction with{' '}
                 <span className="text-[#FFBD59] italic">CAD & BIM</span>
               </h2>
-              
+
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
                   <span className="font-semibold text-gray-900">B Square Global</span> specializes in cutting-edge CAD and BIM services for the architecture, engineering, and construction industries. We empower design professionals and construction teams with advanced modeling, coordination, and digital solutions that accelerate project delivery and enhance precision.
                 </p>
-                
+
                 <p>
                   Our approach combines technical excellence, industry expertise, and innovative methodologies. Whether you need architectural BIM modeling, structural coordination, MEP integration, or construction management support, B Square Global delivers integrated solutions that help organizations optimize workflows, reduce costs, and deliver projects on time.
                 </p>
@@ -181,9 +195,9 @@ const About = () => {
             >
               <div className="relative rounded-lg overflow-hidden shadow-xl border border-gray-100">
                 <div className="aspect-[4/3]">
-                  <img 
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" 
-                    alt="Business collaboration" 
+                  <img
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+                    alt="Business collaboration"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -216,9 +230,9 @@ const About = () => {
             >
               <div className="relative rounded-lg overflow-hidden shadow-xl border border-gray-100">
                 <div className="aspect-[4/3]">
-                  <img 
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
-                    alt="Our approach" 
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                    alt="Our approach"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -241,7 +255,7 @@ const About = () => {
               <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight text-gray-900">
                 Driven by <span className="text-[#FFBD59] italic">Digital Innovation</span> & Technical Expertise
               </h2>
-              
+
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 At B Square Global, we believe that advanced technology and skilled expertise are the cornerstones of successful design and construction projects. Our BIM and CAD solutions leverage the latest tools and methodologies to streamline workflows and enhance collaboration across all project phases.
               </p>
@@ -327,10 +341,13 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-serif mb-4 text-gray-900">
-              Meet Our <span className="text-[#FFBD59] italic">Director</span>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900">
+              Meet Our <span className="text-[#FFBD59] italic">Team</span>
             </h2>
-            <div className="flex items-center justify-center gap-4 mt-6">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+              B Square Global comprises a diverse and multidisciplinary team of Architects, Interior Designers, Civil & Structural Engineers, Mechanical & Electrical Engineers. Our team brings extensive experience across all types of construction projects and has successfully contributed to developments around the world.
+            </p>
+            <div className="flex items-center justify-center gap-4">
               <div className="h-px w-16 bg-[#FFBD59]"></div>
             </div>
           </motion.div>
@@ -351,19 +368,7 @@ const About = () => {
 
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Bhavin Shah is a strategic business development leader with over 20 years of experience in scaling startups, launching new ventures, and driving revenue growth across international markets.
-                  </p>
-                  
-                  <p>
-                    As Director – Business Development at BSquare Global, he leads the company's expansion strategy, focusing on key partnerships, market entry in the UAE and India, and innovative go-to-market initiatives.
-                  </p>
-                  
-                  <p>
-                    Bhavin has successfully co-founded and scaled multiple ventures, including startups acquired by leading global firms. His deep expertise in building tech-driven businesses and navigating startup-to-scale-up transitions makes him a valuable driver of BSquare's long-term growth.
-                  </p>
-
-                  <p className="font-medium text-gray-900 pt-4">
-                    Known for his entrepreneurial mindset, Bhavin blends innovation, operational efficiency, and customer-centric strategy to position BSquare Global as a trusted partner in engineering and digital services.
+                    Bhavin Shah is a strategic business development leader with over 20 years of experience in scaling startups and driving revenue growth. As Director of Business Development at B Square Global, he leads the company's expansion strategy and market entry across international markets.
                   </p>
                 </div>
               </div>
@@ -380,24 +385,11 @@ const About = () => {
 
                 <div className="space-y-4 text-gray-600 leading-relaxed mb-6">
                   <p>
-                    Empowering AEC firms with 20 years of BIM expertise in the UAE. Bijal Shah is the founder and technical director of B Square Global, bringing over two decades of specialized expertise in BIM technology and construction management.
+                    Bijal Shah is the founder and technical director of B Square Global, bringing over two decades of specialized expertise in BIM technology and construction management in the UAE.
                   </p>
                 </div>
 
-                {/* Contact Information */}
-                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                  <div className="space-y-3 text-gray-700">
-                    <p>
-                      <a href="tel:+971563045152" className="text-[#FFBD59] font-semibold hover:underline">+971 563045152</a>
-                    </p>
-                    <p>
-                      <a href="mailto:Bijal.s@bsquareglobalfze.com" className="text-[#FFBD59] font-semibold hover:underline">Bijal.s@bsquareglobalfze.com</a>
-                    </p>
-                    <p>
-                      <a href="http://www.bsquareglobalfze.com" target="_blank" rel="noopener noreferrer" className="text-[#FFBD59] font-semibold hover:underline">www.bsquareglobalfze.com</a>
-                    </p>
-                  </div>
-                </div>
+
               </div>
             </div>
           </motion.div>
@@ -454,7 +446,7 @@ const About = () => {
                 className="group relative overflow-hidden rounded-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
               >
                 <div className="aspect-[16/10] overflow-hidden">
-                  <img 
+                  <img
                     src={industry.image}
                     alt={industry.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -498,7 +490,7 @@ const About = () => {
             <p className="text-lg text-gray-600 mb-12">
               Join hundreds of satisfied clients who have streamlined their operations with our professional services.
             </p>
-            
+
             <motion.a
               href="/contact"
               className="group relative inline-flex items-center px-10 py-4 bg-gray-900 text-white text-base font-semibold rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
@@ -519,6 +511,7 @@ const About = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

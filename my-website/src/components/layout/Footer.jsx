@@ -1,6 +1,56 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Facebook, Linkedin, Mail, Phone, MapPin, MessageCircle, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const ServicesDropdownItem = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <li
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200">
+        Services
+        <ChevronRight
+          size={14}
+          className={`transition-transform duration-300 ${open ? 'rotate-90' : ''}`}
+        />
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.ul
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.2 }}
+            className="absolute left-0 top-full mt-2 w-56 bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden z-50"
+          >
+            <li>
+              <Link
+                to="/services/cad-bim"
+                className="flex items-center gap-2 px-4 py-3 text-sm text-gray-300 hover:text-[#FFBD59] hover:bg-gray-700 transition-all duration-200"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#FFBD59] flex-shrink-0" />
+                CAD & BIM Engineering Services
+              </Link>
+            </li>
+            <li className="border-t border-gray-700">
+              <Link
+                to="/services/hr-services"
+                className="flex items-center gap-2 px-4 py-3 text-sm text-gray-300 hover:text-[#FFBD59] hover:bg-gray-700 transition-all duration-200"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#FFBD59] flex-shrink-0" />
+                Virtual HR Services
+              </Link>
+            </li>
+          </motion.ul>
+        )}
+      </AnimatePresence>
+    </li>
+  );
+};
 
 const Footer = () => {
   return (
@@ -118,7 +168,7 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Your trusted partner for comprehensive HR, accounting, and training services. Empowering businesses to thrive with excellence.
+              Your trusted partner for precision CAD & BIM engineering and comprehensive Virtual HR services. Delivering excellence across every project and people challenge.
             </motion.p>
             <motion.div
               className="flex space-x-4"
@@ -127,7 +177,9 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/company/b-square-global/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFBD59] transition-all duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -153,12 +205,18 @@ const Footer = () => {
                 let path = '';
                 switch(link) {
                   case 'Home': path = '/'; break;
-                  case 'Services': path = '/services/cad-bim'; break;
                   case 'Career': path = '/career'; break;
                   case 'About Us': path = '/about'; break;
                   case 'Contact Us': path = '/contact'; break;
                   default: path = '/';
                 }
+
+                if (link === 'Services') {
+                  return (
+                    <ServicesDropdownItem key={link} />
+                  );
+                }
+
                 return (
                   <motion.li key={link}
                     whileHover={{ x: 5 }}

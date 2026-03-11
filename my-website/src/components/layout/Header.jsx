@@ -18,37 +18,35 @@ const Header = () => {
   const navigation = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { 
-      name: 'Services', 
+    {
+      name: 'Services',
       path: '#',
       hasDropdown: true,
       submenu: [
         { name: 'CAD & BIM Engineering Services', path: '/services/cad-bim' },
-        { name: 'Virtual Virtual HR Services', path: '/services/hr-services' },
+        { name: 'Virtual HR Services', path: '/services/hr-services' },
       ]
     },
     { name: 'Career', path: '/career' },
-    
+
     // { name: 'Contact Us', path: '/contact' },
   ];
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${
-      scrolled 
-        ? 'bg-white/95 backdrop-blur-xl shadow-2xl shadow-black/5 py-3 border-b border-gray-100' 
-        : 'bg-white/95 backdrop-blur-xl py-4'
-    }`}>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled
+      ? 'bg-white/95 backdrop-blur-xl shadow-2xl shadow-black/5 py-3 border-b border-gray-100'
+      : 'bg-white/95 backdrop-blur-xl py-4'
+      }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo - Image Only */}
           <Link to="/" className="flex items-center group relative">
             <div className="relative">
               {/* Logo Image Container */}
-              <div className={`transform transition-all duration-500  ${
-                scrolled ? 'w-28 h-12' : 'w-28 h-14'
-              }`}>
-                <img 
-                  src="/logo.jpeg" // Replace with your actual logo path
+              <div className={`transform transition-all duration-500  ${scrolled ? 'w-28 h-12' : 'w-28 h-14'
+                }`}>
+                <img
+                  src="/logobg.png" // Replace with your actual logo path
                   alt="B Square Global"
                   className="w-full h-full object-contain"
                 />
@@ -64,7 +62,7 @@ const Header = () => {
               <div key={item.name} className="relative group">
                 {item.hasDropdown ? (
                   <>
-                    <button 
+                    <button
                       className="flex items-center px-6 py-3 font-semibold text-gray-700 hover:text-[#FFBD59] transition-all duration-300 group relative"
                       onMouseEnter={() => setServicesOpen(true)}
                       onMouseLeave={() => setServicesOpen(false)}
@@ -73,10 +71,9 @@ const Header = () => {
                       <ChevronDown size={16} className="ml-2 group-hover:rotate-180 transition-transform duration-300" />
                       <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFBD59] group-hover:w-full transition-all duration-500"></div>
                     </button>
-                    <div 
-                      className={`absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 transform origin-top ${
-                        servicesOpen ? 'scale-100 translate-y-0' : 'scale-95 -translate-y-2'
-                      }`}
+                    <div
+                      className={`absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 transform origin-top ${servicesOpen ? 'scale-100 translate-y-0' : 'scale-95 -translate-y-2'
+                        }`}
                       onMouseEnter={() => setServicesOpen(true)}
                       onMouseLeave={() => setServicesOpen(false)}
                     >
@@ -132,9 +129,8 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`lg:hidden absolute top-0 left-0 w-full h-screen bg-white transform transition-all duration-700 ease-in-out ${
-          isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
-        }`}>
+        <div className={`lg:hidden absolute top-0 left-0 w-full h-screen bg-white transform transition-all duration-700 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+          }`}>
           <div className="flex flex-col items-center justify-center h-full space-y-8 px-8">
             {/* Mobile Logo */}
             <div className="mb-8">

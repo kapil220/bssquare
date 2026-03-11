@@ -16,8 +16,8 @@ const ServicesSection = () => {
     },
     {
       icon: <Users size={40} />,
-      title: 'HR Support Services',
-      description: 'HR solutions and talent support to complement your CAD & BIM team with recruitment, compliance, and HR management.',
+      title: 'Virtual HR Services',
+      description: 'End-to-end HR management including recruitment, onboarding, payroll, compliance, performance management, and employee relations — all delivered virtually.',
       link: '/services/hr-services'
     }
   ];
@@ -49,7 +49,7 @@ const ServicesSection = () => {
           </h2>
           <div className="w-16 h-px bg-[#FFBD59] mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover how our CAD and BIM expertise can transform your design and construction projects, combined with dedicated HR support.
+            Two distinct, world-class service offerings — precision CAD & BIM engineering solutions and comprehensive Virtual HR management, each designed to excel on their own.
           </p>
         </motion.div>
 

@@ -1,7 +1,9 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Users, TrendingUp, Shield, Clock, CheckCircle, ArrowRight, FileText, UserPlus, FileCheck, Handshake, Target, Scale, MapPin, DollarSign, Layers, Zap, ChevronRight, Play } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import QuoteModal from '../components/common/QuoteModal';
 
 
 const HRServices = () => {
@@ -9,14 +11,15 @@ const HRServices = () => {
   const servicesRef = useRef(null);
   const virtualHRRef = useRef(null);
   const benefitsRef = useRef(null);
-    const navigate = useNavigate();
-  
+  const navigate = useNavigate();
+
   const servicesInView = useInView(servicesRef, { once: true, margin: "-100px" });
   const virtualHRInView = useInView(virtualHRRef, { once: true, margin: "-100px" });
   const benefitsInView = useInView(benefitsRef, { once: true, margin: "-100px" });
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [showVideo, setShowVideo] = useState(false);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const hrServices = [
     {
@@ -24,7 +27,7 @@ const HRServices = () => {
       title: 'HR Documentation',
       description: 'Organized, accurate records to support smooth HR operations.',
       details: 'Comprehensive documentation systems including employee files, contracts, policy manuals, and compliance records.',
-      image: 'https://images.unsplash.com/photo-1554224311-beee460c201f?w=600&q=80'
+      image: 'https://images.unsplash.com/photo-1568234928966-359c35dd8327?w=600&q=80'
     },
     {
       icon: UserPlus,
@@ -98,8 +101,8 @@ const HRServices = () => {
   ];
 
   const toggleService = (serviceTitle) => {
-    setSelectedServices(prev => 
-      prev.includes(serviceTitle) 
+    setSelectedServices(prev =>
+      prev.includes(serviceTitle)
         ? prev.filter(s => s !== serviceTitle)
         : [...prev, serviceTitle]
     );
@@ -107,12 +110,24 @@ const HRServices = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>HR Services | B Square Global FZE</title>
+        <meta name="description" content="B Square Global FZE offers comprehensive HR services including HR documentation, employee onboarding, policy drafting, employee relations, recruitment, and compliance management across UAE and India." />
+        <meta name="keywords" content="HR services UAE, HR documentation Dubai, employee onboarding UAE, HR compliance, recruitment UAE, HR outsourcing" />
+        <meta property="og:title" content="HR Services | B Square Global FZE" />
+        <meta property="og:description" content="Comprehensive HR services — documentation, onboarding, recruitment, compliance and more for businesses across UAE and India." />
+        <meta property="og:url" content="https://www.bsquareglobalfze.com/services/hr-services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.bsquareglobalfze.com/services/hr-services" />
+      </Helmet>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Video Placeholder */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-gray-800/95 to-[#FFBD59]/20 z-10"></div>
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80"
             alt="Virtual HR Services"
             className="w-full h-full object-cover"
@@ -240,7 +255,7 @@ const HRServices = () => {
               >
                 {/* Service Image */}
                 <div className="relative h-56 overflow-hidden">
-                  <img 
+                  <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -267,11 +282,10 @@ const HRServices = () => {
 
                   <motion.button
                     onClick={() => toggleService(service.title)}
-                    className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${
-                      selectedServices.includes(service.title)
-                        ? 'bg-[#FFBD59] text-gray-900'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
+                    className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${selectedServices.includes(service.title)
+                      ? 'bg-[#FFBD59] text-gray-900'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -309,6 +323,7 @@ const HRServices = () => {
                   </p>
                 </div>
                 <motion.button
+                  onClick={() => setIsQuoteModalOpen(true)}
                   className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-md hover:bg-[#FFBD59] hover:text-gray-900 transition-colors duration-300 whitespace-nowrap"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -321,7 +336,7 @@ const HRServices = () => {
         </div>
       </section>
 
-      {/* Virtual Virtual HR Services Section */}
+      {/* Virtual HR Services Section */}
       <section ref={virtualHRRef} className="py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.02]">
           <div style={{
@@ -343,11 +358,11 @@ const HRServices = () => {
               <div className="inline-block px-4 py-2 bg-[#FFBD59]/10 text-[#FFBD59] font-semibold rounded-full mb-6">
                 Looking for a complete, professional HR solution?
               </div>
-              
+
               <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900">
-                Introducing <span className="text-[#FFBD59] italic">Virtual Virtual HR Services</span>
+                Introducing <span className="text-[#FFBD59] italic">Virtual HR Services</span>
               </h2>
-              
+
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Everything You Need, Without the Overhead
               </p>
@@ -374,15 +389,15 @@ const HRServices = () => {
                 ))}
               </div>
 
-             <motion.button
-    onClick={() => navigate('/services/hr-services/virtual-hr-services')}
-    className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white font-semibold rounded-md hover:bg-[#FFBD59] hover:text-gray-900 transition-colors duration-300"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    Explore Services
-    <ArrowRight size={20} />
-  </motion.button>
+              <motion.button
+                onClick={() => navigate('/services/hr-services/virtual-hr-services')}
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white font-semibold rounded-md hover:bg-[#FFBD59] hover:text-gray-900 transition-colors duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Explore Services
+                <ArrowRight size={20} />
+              </motion.button>
             </motion.div>
 
             {/* Image with Video Placeholder */}
@@ -393,9 +408,9 @@ const HRServices = () => {
               className="relative"
             >
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
-                  alt="Virtual Virtual HR Services"
+                  alt="Virtual HR Services"
                   className="w-full h-full object-cover aspect-[4/3]"
                 />
                 <motion.button
@@ -419,9 +434,9 @@ const HRServices = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={virtualHRInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <div className={`inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br ${feature.color} rounded-lg mb-4 text-white`}>
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-gray-900 group-hover:bg-[#FFBD59] rounded-lg mb-4 text-white transition-colors duration-300">
                   <feature.icon size={28} />
                 </div>
                 <h3 className="text-lg font-serif text-gray-900 mb-2">{feature.title}</h3>
@@ -516,8 +531,9 @@ const HRServices = () => {
             <p className="text-xl text-gray-300 mb-12 leading-relaxed">
               Join hundreds of satisfied clients who have streamlined their operations with our professional services.
             </p>
-            
+
             <motion.button
+              onClick={() => window.location.href = '/contact'}
               className="group relative inline-flex items-center gap-3 px-10 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -566,6 +582,13 @@ const HRServices = () => {
           </motion.div>
         </motion.div>
       )}
+
+      {/* Quote Request Modal */}
+      <QuoteModal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
+        selectedServices={selectedServices}
+      />
     </div>
   );
 };

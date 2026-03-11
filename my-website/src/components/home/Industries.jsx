@@ -1,32 +1,42 @@
 // Industries.jsx
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Laptop, Building2, Wrench, Zap } from 'lucide-react';
+import { Laptop, Building2, Wrench, Zap, Globe } from 'lucide-react';
 
 const Industries = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const industries = [
-    { 
-      icon: <Building2 size={40} />, 
-      name: 'Real Estate & Construction',
-      description: 'BIM modeling, architectural design, structural coordination, and complete project delivery solutions for construction and development projects.'
+    {
+      icon: <Laptop size={40} />,
+      name: 'Design Consultants',
+      description: 'We work with Architects, Structural Consultants, and MEP Consultants, providing them with our specialized BIM services.'
     },
-    { 
-      icon: <Laptop size={40} />, 
-      name: 'Design & Architecture',
-      description: 'CAD services, BIM coordination, 3D modeling, visualization, and digital design solutions for architects and design firms.'
+    {
+      icon: <Building2 size={40} />,
+      name: 'General Contractors',
+      description: 'B Square Global has a strong track record of collaborating with global general contractors on diverse projects across the industry. Read more about it.'
     },
-    { 
-      icon: <Wrench size={40} />, 
-      name: 'Engineering Services',
-      description: 'Structural BIM, MEP coordination, civil engineering design, and technical documentation for complex projects.'
+    {
+      icon: <Wrench size={40} />,
+      name: 'Trade Contractors',
+      description: 'We help Trade Contractors execute their work with reduced time, optimized cost, and enhanced safety.'
     },
-    { 
-      icon: <Building2 size={40} />, 
-      name: 'Infrastructure Development',
-      description: 'Large-scale project planning, BIM coordination, clash detection, and construction management support.'
+    {
+      icon: <Globe size={40} />,
+      name: 'Government',
+      description: 'We have partnered with multiple Government organizations worldwide to support various infrastructure development projects.'
+    },
+    {
+      icon: <Building2 size={40} />,
+      name: 'Facility Management Teams',
+      description: 'We work closely with Facility Management clients to help them efficiently manage their facilities and assets.'
+    },
+    {
+      icon: <Building2 size={40} />,
+      name: 'Owners / Developers',
+      description: 'We offer comprehensive solutions that empower project owners and developers to manage multiple projects on a centralized platform.'
     }
   ];
 
@@ -56,7 +66,7 @@ const Industries = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {industries.map((industry, index) => (
             <motion.div
               key={index}
@@ -70,11 +80,11 @@ const Industries = () => {
                 <div className="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6 text-white group-hover:bg-[#FFBD59] transition-colors duration-300">
                   {industry.icon}
                 </div>
-                
+
                 <h3 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wide">
                   {industry.name}
                 </h3>
-                
+
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {industry.description}
                 </p>

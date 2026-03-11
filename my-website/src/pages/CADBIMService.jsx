@@ -1,6 +1,8 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Layers, Box, Eye, GitMerge, Database, Users, CheckCircle, ArrowRight, Play, ChevronRight, Building2, Ruler, Zap, Shield, Clock, TrendingUp, Sofa, FileText, Wrench, Briefcase } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+import QuoteModal from '../components/common/QuoteModal';
 
 const BIMServices = () => {
   const heroRef = useRef(null);
@@ -14,6 +16,7 @@ const BIMServices = () => {
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [showVideo, setShowVideo] = useState(false);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const bimServices = [
     {
@@ -21,70 +24,70 @@ const BIMServices = () => {
       title: 'Architectural BIM Services',
       description: 'Transform your designs with precision, efficiency, and collaboration.',
       details: 'From concept to construction, we deliver intelligent 3D models, smart documentation, accurate quantity take-offs, stunning visualizations, and seamless coordination, empowering architects to design faster, smarter, and better.',
-      image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.41.jpeg'
     },
     {
       icon: Sofa,
       title: 'Interior Design BIM Services',
       description: 'Transform interiors with precision, creativity, and collaboration.',
       details: '3D Interior Modeling, Material Libraries & Family Creation, Smart Documentation, Accurate Quantity Take-Offs, Lighting & Daylight Simulation, Clash Detection & Coordination, High-Quality Visualizations & Walkthroughs, Facility & Asset Data Integration.',
-      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.42.jpeg'
     },
     {
       icon: Box,
       title: 'Structural BIM',
       description: 'Accurate 3D modeling, detailing, and documentation of structural elements.',
       details: 'Complete structural solutions including precast, rebar, and concrete modeling. We deliver bar bending schedules, quantity take-offs, and coordination to enhance structural integrity, efficiency, and collaboration.',
-      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.42 (1).jpeg'
     },
     {
       icon: Zap,
       title: 'MEP BIM Services',
       description: 'Digital models integrating mechanical, electrical, and plumbing systems.',
       details: 'MEP BIM involves creating digital models to design, plan, and manage building systems efficiently. Services include modeling & design development, family/library creation, schedules & quantity take-off, visualization, and coordination.',
-      image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.43.jpeg'
     },
     {
       icon: GitMerge,
       title: 'BIM Coordination',
       description: 'Seamless integration of architectural, structural, and MEP systems.',
       details: 'BIM Coordination ensures seamless integration preventing conflicts and enhancing collaboration. Key Services: Identify design issues, clash detection, clash reports, coordination meetings, visualization, clash-free documentation.',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.44.jpeg'
     },
     {
       icon: Database,
       title: 'BIM Object Library',
       description: 'Standardized, data-rich digital components for design integration.',
       details: 'A repository of standardized digital components—architectural, structural, and MEP—that streamline accurate design. Services: Architectural elements, structural families, mechanical fittings/equipment/fixtures, product library, parametric families.',
-      image: 'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.45.jpeg'
     },
     {
       icon: FileText,
       title: 'As-Built BIM',
       description: 'Digital representation of building\'s actual state after construction.',
       details: 'As-Built BIM captures accurate data for maintenance, facility management, and operational use. Services: Construction model, as-built documentation, FM data integration, asset management/COBie integration, point cloud modeling.',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.46.jpeg'
     },
     {
       icon: Wrench,
       title: 'Asset Data Management',
       description: 'Organized collection and maintenance of building component data.',
       details: 'Asset data management in BIM involves organized collection, storage, and maintenance of digital information for ongoing operations. Services: Architectural data, mechanical data, asset tagging, incorporate FM, asset data sheeting.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.48.jpeg'
     },
     {
       icon: Users,
       title: 'BIM Team Establishment',
       description: 'Forming dedicated BIM professionals for project excellence.',
       details: 'BIM Team Establishment involves forming a dedicated group to implement and manage BIM processes, standards, and projects. Services: BIM/software training, BIM implementation/planning, documentation and standards setup, on-site BIM support, customized Revit templates, virtual BIM support.',
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.48 (1).jpeg'
     },
     {
       icon: Briefcase,
       title: 'BIM Manpower Outsource',
       description: 'Skilled BIM professionals tailored to your project needs.',
       details: 'We provide skilled BIM professionals managed by an in-house BIM Manager to ensure coordination and quality. What We Provide: Architectural Modelers, MEP Modelers, Structural Modelers, BIM Coordinators, In-House BIM Manager.',
-      image: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80'
+      image: '/WhatsApp Image 2026-03-07 at 15.16.49.jpeg'
     }
   ];
 
@@ -132,6 +135,18 @@ const BIMServices = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>CAD & BIM Engineering Services | B Square Global FZE</title>
+        <meta name="description" content="B Square Global FZE provides expert CAD & BIM engineering services including Architectural BIM, Structural BIM, MEP BIM, BIM coordination, as-built models, and BIM manpower outsourcing across UAE, Oman, Qatar, KSA and India." />
+        <meta name="keywords" content="CAD BIM services UAE, BIM engineering Dubai, Architectural BIM, Structural BIM, MEP BIM, BIM coordination, BIM outsourcing, Revit modeling UAE" />
+        <meta property="og:title" content="CAD & BIM Engineering Services | B Square Global FZE" />
+        <meta property="og:description" content="Expert CAD & BIM engineering services — Architectural, Structural, MEP BIM, coordination, as-built models and manpower outsourcing." />
+        <meta property="og:url" content="https://www.bsquareglobalfze.com/services/cad-bim" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.bsquareglobalfze.com/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://www.bsquareglobalfze.com/services/cad-bim" />
+      </Helmet>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -300,8 +315,8 @@ const BIMServices = () => {
                   <motion.button
                     onClick={() => toggleService(service.title)}
                     className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-md font-semibold transition-colors duration-300 ${selectedServices.includes(service.title)
-                        ? 'bg-[#FFBD59] text-gray-900'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      ? 'bg-[#FFBD59] text-gray-900'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -339,6 +354,7 @@ const BIMServices = () => {
                   </p>
                 </div>
                 <motion.button
+                  onClick={() => setIsQuoteModalOpen(true)}
                   className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-md hover:bg-[#FFBD59] hover:text-gray-900 transition-colors duration-300 whitespace-nowrap"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -377,9 +393,9 @@ const BIMServices = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={coreServicesInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <div className={`inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br ${service.color} rounded-lg mb-4 text-white`}>
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-gray-900 group-hover:bg-[#FFBD59] rounded-lg mb-4 text-white transition-colors duration-300">
                   <service.icon size={28} />
                 </div>
                 <h3 className="text-lg font-serif text-gray-900 mb-2">{service.title}</h3>
@@ -476,6 +492,7 @@ const BIMServices = () => {
             </p>
 
             <motion.button
+              onClick={() => window.location.href = '/contact'}
               className="group relative inline-flex items-center gap-3 px-10 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -524,6 +541,13 @@ const BIMServices = () => {
           </motion.div>
         </motion.div>
       )}
+
+      {/* Quote Request Modal */}
+      <QuoteModal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
+        selectedServices={selectedServices}
+      />
     </div>
   );
 };
