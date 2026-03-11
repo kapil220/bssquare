@@ -2,11 +2,13 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import ParallaxBackground from '../ParallaxBackground';
 
 const CTA = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
 
   return (
     <ParallaxBackground
@@ -55,7 +57,7 @@ const CTA = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <button className="group relative inline-flex items-center px-10 py-5 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden transition-all duration-300 hover:bg-white" onClick={() => window.location.href = '/contact'}>
+            <button className="group relative inline-flex items-center px-10 py-5 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden transition-all duration-300 hover:bg-white" onClick={() => navigate('/contact')}>
               <span className="flex items-center tracking-wide">
                 Get a Free Consultation
                 <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />

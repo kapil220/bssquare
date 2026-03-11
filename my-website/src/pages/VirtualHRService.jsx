@@ -551,7 +551,7 @@ const VirtualHRService = () => {
               </p>
 
               <motion.button
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => navigate('/contact')}
                 className="group inline-flex items-center gap-3 px-10 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md hover:bg-white transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

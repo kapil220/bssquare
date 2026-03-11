@@ -1,11 +1,13 @@
 // ServicesSection.jsx
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BookOpen, Users, ArrowRight } from 'lucide-react';
 
 const ServicesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -24,7 +26,7 @@ const ServicesSection = () => {
 
   const handleServiceClick = (serviceLink) => {
     // Navigate to the service page
-    window.location.href = serviceLink;
+    navigate(serviceLink);
   };
 
   return (

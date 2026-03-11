@@ -533,7 +533,7 @@ const HRServices = () => {
             </p>
 
             <motion.button
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => navigate('/contact')}
               className="group relative inline-flex items-center gap-3 px-10 py-4 bg-[#FFBD59] text-gray-900 text-base font-semibold rounded-md overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
