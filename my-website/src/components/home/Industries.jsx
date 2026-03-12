@@ -15,8 +15,8 @@ const Industries = () => {
     },
     {
       icon: <Building2 size={40} />,
-      name: 'General Contractors',
-      description: 'B Square Global has a strong track record of collaborating with global general contractors on diverse projects across the industry. Read more about it.'
+      name: 'Contractors and Sub-Contractors',
+      description: 'B Square Global has a strong track record of collaborating with global Contractors and Sub-Contractors on diverse projects across the industry. Read more about it.'
     },
     {
       icon: <Wrench size={40} />,

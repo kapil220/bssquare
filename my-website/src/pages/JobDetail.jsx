@@ -625,7 +625,7 @@ const ApplicationForm = ({ job, onClose }) => {
       }
     } catch (error) {
       console.error("Error submitting application:", error);
-      alert('There was an error submitting your application. Please try again or email us directly at careers@bsquareglobal.com');
+      alert('There was an error submitting your application. Please try again or email us directly at careers@bsquareglobalfze.com');
     } finally {
       setIsLoading(false);
     }

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Clock } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-import { initEmailJS, sendContactEmail } from '../utils/emailService';
+import { sendContactEmail } from '../utils/emailService';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -21,10 +21,6 @@ const Contact = () => {
   const [showModal, setShowModal] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  // Initialize EmailJS
-  useEffect(() => {
-    initEmailJS();
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -272,7 +268,7 @@ const Contact = () => {
                             +971 56 226 0803
                           </div>
                           <div className="text-gray-300 text-sm hover:text-[#FFBD59] transition-colors cursor-pointer">
-                            +971 56 747 9769
+                            +971 56 304 5152
                           </div>
                         </div>
                       </div>

@@ -1,8 +1,7 @@
 import emailjs from 'emailjs-com';
 
-export const initEmailJS = () => {
-  emailjs.init("uwGFaOMSj0-7gR9wj");
-};
+// Initialize EmailJS globally
+emailjs.init("uwGFaOMSj0-7gR9wj");
 
 // Separate templates for contact and job
 export const EMAIL_CONFIG = {
@@ -24,7 +23,7 @@ export const sendContactEmail = async (formData) => {
   try {
     const templateParams = {
       subject: `New Contact Form - ${sanitizeText(formData.firstName)} ${sanitizeText(formData.lastName)}`,
-      to_email: 'info@globalfze.com',
+      to_email: 'info@bsquareglobalfze.com',
       from_name: `${sanitizeText(formData.firstName)} ${sanitizeText(formData.lastName)}`,
       from_email: sanitizeText(formData.email),
       phone: sanitizeText(formData.phone),
@@ -50,7 +49,7 @@ export const sendQuoteEmail = async (formData, selectedServices) => {
   try {
     const templateParams = {
       subject: `New Quote Request - ${sanitizeText(formData.firstName)} ${sanitizeText(formData.lastName)}`,
-      to_email: 'info@globalfze.com',
+      to_email: 'info@bsquareglobalfze.com',
       from_name: `${sanitizeText(formData.firstName)} ${sanitizeText(formData.lastName)}`,
       from_email: sanitizeText(formData.email),
       phone: sanitizeText(formData.phone),
@@ -77,7 +76,7 @@ export const sendJobApplicationEmail = async (formData, jobDetails, resumeFile) 
   try {
     const templateParams = {
       subject: `Job Application - ${sanitizeText(formData.fullName)} for ${sanitizeText(jobDetails?.title)}`,
-      to_email: 'careers@bsquareglobal.com',
+      to_email: 'careers@bsquareglobalfze.com',
       from_name: sanitizeText(formData.fullName),
       from_email: sanitizeText(formData.email),
       phone: sanitizeText(formData.phone),

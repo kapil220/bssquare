@@ -11,7 +11,7 @@ const ServicesDropdownItem = () => {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200">
+      <button className="flex items-center gap-1 text-sm text-gray-500 hover:text-[#FFBD59] transition-colors duration-200">
         Services
         <ChevronRight
           size={14}
@@ -25,21 +25,21 @@ const ServicesDropdownItem = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-0 top-full mt-2 w-56 bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden z-50"
+            className="absolute left-0 top-full mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-xl overflow-hidden z-50"
           >
             <li>
               <Link
                 to="/services/cad-bim"
-                className="flex items-center gap-2 px-4 py-3 text-sm text-gray-300 hover:text-[#FFBD59] hover:bg-gray-700 transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-3 text-sm text-gray-600 hover:text-[#FFBD59] hover:bg-gray-50 transition-all duration-200"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FFBD59] flex-shrink-0" />
                 CAD & BIM Engineering Services
               </Link>
             </li>
-            <li className="border-t border-gray-700">
+            <li className="border-t border-gray-200">
               <Link
                 to="/services/hr-services"
-                className="flex items-center gap-2 px-4 py-3 text-sm text-gray-300 hover:text-[#FFBD59] hover:bg-gray-700 transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-3 text-sm text-gray-600 hover:text-[#FFBD59] hover:bg-gray-50 transition-all duration-200"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FFBD59] flex-shrink-0" />
                 Virtual HR Services
@@ -54,13 +54,13 @@ const ServicesDropdownItem = () => {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-600 overflow-hidden">
       {/* Background elements matching HeroSection */}
       <div className="absolute inset-0 opacity-10">
         <motion.div
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px)`,
             backgroundSize: '50px 50px'
           }}
           animate={{
@@ -157,7 +157,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/logo8.png"
+                src="/logo.jpeg"
                 alt="B Square Global"
                 className="h-15 object-contain"
               />
@@ -180,13 +180,13 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/b-square-global/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFBD59] transition-all duration-300"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-[#FFBD59] transition-all duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Linkedin size={20} className="text-gray-300 hover:text-gray-900" />
+                <Linkedin size={20} className="text-gray-600 hover:text-gray-900" />
               </motion.a>
-             
+
             </motion.div>
           </div>
 
@@ -196,14 +196,14 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="text-white font-bold text-lg mb-6 relative inline-block">
+            <h4 className="text-gray-900 font-bold text-lg mb-6 relative inline-block">
               Quick Links
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
             <ul className="space-y-3">
               {['Home', 'Services', 'Career', 'About Us', 'Contact Us'].map((link) => {
                 let path = '';
-                switch(link) {
+                switch (link) {
                   case 'Home': path = '/'; break;
                   case 'Career': path = '/career'; break;
                   case 'About Us': path = '/about'; break;
@@ -224,7 +224,7 @@ const Footer = () => {
                   >
                     <Link
                       to={path}
-                      className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
+                      className="text-sm text-gray-500 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
                     >
                       {link}
                     </Link>
@@ -240,7 +240,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h4 className="text-white font-bold text-lg mb-6 relative inline-block">
+            <h4 className="text-gray-900 font-bold text-lg mb-6 relative inline-block">
               Our Services
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
@@ -248,7 +248,7 @@ const Footer = () => {
               {[
                 { name: 'CAD & BIM Engineering Service', path: '/services/cad-bim' },
                 { name: 'Virtual HR Services', path: '/services/hr-services' },
-               
+
               ].map((service) => (
                 <motion.li key={service.name}
                   whileHover={{ x: 5 }}
@@ -256,7 +256,7 @@ const Footer = () => {
                 >
                   <Link
                     to={service.path}
-                    className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
+                    className="text-sm text-gray-500 hover:text-[#FFBD59] transition-colors duration-200 inline-block"
                   >
                     {service.name}
                   </Link>
@@ -271,7 +271,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <h4 className="text-white font-bold text-lg mb-6 relative inline-block">
+            <h4 className="text-gray-900 font-bold text-lg mb-6 relative inline-block">
               Contact Us
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#FFBD59]"></span>
             </h4>
@@ -282,7 +282,7 @@ const Footer = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <MapPin size={20} className="mr-3 mt-0.5 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
-                <span className="text-sm leading-relaxed text-gray-400">UAE | INDIA</span>
+                <span className="text-sm leading-relaxed text-gray-500">UAE | INDIA</span>
               </motion.li>
               <motion.li
                 className="flex items-center group"
@@ -290,7 +290,7 @@ const Footer = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Mail size={20} className="mr-3 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
-                <a href="mailto:info@bsquareglobalfze.com" className="text-sm text-gray-400 hover:text-[#FFBD59] transition-colors">
+                <a href="mailto:info@bsquareglobalfze.com" className="text-sm text-gray-500 hover:text-[#FFBD59] transition-colors">
                   info@bsquareglobalfze.com
                 </a>
               </motion.li>
@@ -300,9 +300,9 @@ const Footer = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Phone size={20} className="mr-3 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
-                <div className="text-sm text-gray-400">
-                  <div>+971 56 293 6953</div>
-                  <div className="mt-1">+971 56 747 9953</div>
+                <div className="text-sm text-gray-500">
+                  <div>+971 56 226 0803</div>
+                  <div className="mt-1">+971 56 304 5152</div>
                 </div>
               </motion.li>
             </ul>
@@ -311,18 +311,18 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <motion.div
-          className="border-t border-gray-700 mt-12 pt-8"
+          className="border-t border-gray-200 mt-12 pt-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
             <p>&copy; 2025 B Square Global. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy-policy" className="text-gray-400 hover:text-[#FFBD59] transition-colors">
+              <Link to="/privacy-policy" className="text-gray-500 hover:text-[#FFBD59] transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms-of-service" className="text-gray-400 hover:text-[#FFBD59] transition-colors">
+              <Link to="/terms-of-service" className="text-gray-500 hover:text-[#FFBD59] transition-colors">
                 Terms of Service
               </Link>
             </div>

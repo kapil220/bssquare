@@ -378,7 +378,7 @@ const Career = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <motion.a
-                  href="mailto:careers@bsquareglobal.com?subject=Job Application"
+                  href="mailto:careers@bsquareglobalfze.com?subject=Job Application"
                   className="flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 text-white text-base font-semibold rounded-md hover:bg-[#FFBD59] transition-colors duration-300"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
