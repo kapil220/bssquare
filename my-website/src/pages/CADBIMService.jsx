@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Layers, Box, Eye, GitMerge, Database, Users, CheckCircle, ArrowRight, Play, ChevronRight, Building2, Ruler, Zap, Shield, Clock, TrendingUp, Sofa, FileText, Wrench, Briefcase } from 'lucide-react';
+import { Layers, Box, Eye, GitMerge, Database, Users, CheckCircle, ArrowRight, Play, ChevronRight, Building2, Ruler, Zap, Shield, Clock, TrendingUp, Sofa, FileText, Wrench, Briefcase, Calculator, Plug, Cloud, Globe, Award, Cpu, Server, Activity } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import QuoteModal from '../components/common/QuoteModal';
@@ -10,10 +10,12 @@ const BIMServices = () => {
   const heroRef = useRef(null);
   const servicesRef = useRef(null);
   const coreServicesRef = useRef(null);
+  const cubeRef = useRef(null);
   const benefitsRef = useRef(null);
 
   const servicesInView = useInView(servicesRef, { once: true, margin: "-100px" });
   const coreServicesInView = useInView(coreServicesRef, { once: true, margin: "-100px" });
+  const cubeInView = useInView(cubeRef, { once: true, margin: "-100px" });
   const benefitsInView = useInView(benefitsRef, { once: true, margin: "-100px" });
 
   const [selectedServices, setSelectedServices] = useState([]);
@@ -127,6 +129,44 @@ const BIMServices = () => {
     { icon: Zap, title: 'AI & ML Integration', desc: 'Smart BIM workflow training with cutting-edge AI & ML technologies for future-ready solutions.' }
   ];
 
+  const cubeModules = [
+    { icon: Eye, title: 'CAD & BIM Viewers', desc: 'View 2D CAD and 3D BIM models directly from the browser — no authoring software, no expensive hardware. Supports IFC, RVT, NWD, DWG, SKP, OBJ, FBX and more.' },
+    { icon: FileText, title: 'Document Management', desc: 'A built-in Common Data Environment with versioning, transmittals, approval workflows, search, and granular access control across folders, files and sub-folders.' },
+    { icon: GitMerge, title: 'Design Coordination', desc: 'Create issues, markups and viewpoints on 2D drawings and federated 3D models. Cloud-based automated clash detection with transmittals across teams.' },
+    { icon: Calculator, title: 'Estimations & Costs', desc: 'Automated quantity take-offs linked to cost databases like DSR and PAR to produce code-compliant 2D, 3D and BIM-driven estimates, BOQs and BOMs.' },
+    { icon: Clock, title: 'Project Tracking', desc: 'Cloud schedules with Primavera P6 and MS Project integration, 4D/5D simulations, S-curves, and BIM-enabled BI dashboards for real-time project visibility.' },
+    { icon: Users, title: 'Site Correspondence', desc: 'Digital forms for site inspections, Daily Progress Reports and Health & Safety workflows — customizable templates and routing for every project.' },
+    { icon: Plug, title: 'Integrations with ERP', desc: 'Bi-directional connectors to ERP, BMS, CAFM and CMMS systems so your platform data stays in sync with the rest of the enterprise stack.' },
+    { icon: Box, title: 'Asset & Digital Twins', desc: '24/7 live asset tracking through BIM models linked to IoT sensors, with as-built data, work orders and preventive-maintenance alerts on a single cloud.' },
+  ];
+
+  const cubeDimensions = [
+    { label: '2D', title: 'Drawings', desc: 'Cloud 2D documentation workflows with measurements, snapping and paper/model space.' },
+    { label: '3D', title: 'Models', desc: 'View, review and federate BIM models from architecture, structure and MEP on the cloud.' },
+    { label: '4D', title: 'Planning', desc: 'Link 3D models with WBS activities to create visual schedule simulations.' },
+    { label: '5D', title: 'Quantities & Budgets', desc: 'Integrate 4D models with quantity and cost information for live budget tracking.' },
+    { label: '6D', title: 'O & M', desc: 'Connect BIM models with facility and asset operation & maintenance data.' },
+    { label: 'BI', title: 'Dashboards', desc: 'Automated BIM-enabled BI reports with scheduled data extraction.' },
+  ];
+
+  const cubeStrengths = [
+    { icon: Server, title: 'Private Cloud / On-Premise', desc: 'Deploy on private cloud or fully on-premise to meet data-sovereignty requirements.' },
+    { icon: Globe, title: 'GCC-Specific Workflows', desc: 'Templates and workflows tailored to construction practices across the Gulf.' },
+    { icon: Wrench, title: 'Customizable & Flexible', desc: 'Adapts to your workflows instead of forcing pre-defined templates.' },
+    { icon: Layers, title: 'OpenBIM Compliant', desc: 'Open standards like IFC alongside leading vendor-specific formats.' },
+    { icon: Cloud, title: 'High Performance Anywhere', desc: 'Runs smoothly on moderate internet — ideal for remote construction sites.' },
+    { icon: Cpu, title: 'Unmatched Interoperability', desc: 'RVT, NWD, IFC, DWG, SKP, OBJ, FBX and all major OEM formats out of the box.' },
+    { icon: Building2, title: 'All-In-One Platform', desc: 'Single platform spanning every stage of the construction lifecycle.' },
+    { icon: Plug, title: 'ERP / CAFM Integrations', desc: 'Highly customizable with deep integrations into enterprise systems.' },
+    { icon: Award, title: 'ISO-19650 Compliant', desc: 'BSI BIM Kitemark certified — globally recognised compliance.' },
+  ];
+
+  const cubeStats = [
+    { value: '2,000+', label: 'Projects Delivered' },
+    { value: '$10B+', label: 'Value of Projects' },
+    { value: '100,000+', label: 'Active Users' },
+  ];
+
   const toggleService = (serviceTitle) => {
     setSelectedServices(prev =>
       prev.includes(serviceTitle)
@@ -138,11 +178,11 @@ const BIMServices = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Top CAD & BIM Engineering Company in Dubai | B Square Global FZE</title>
-        <meta name="description" content="Looking for a leading CAD & BIM engineering company in Dubai? B Square Global FZE provides expert Architectural, Structural, and MEP BIM services across UAE, Oman, and India. 20+ years of excellence." />
-        <meta name="keywords" content="CAD company Dubai, CAD company UAE, BIM company Dubai, CAD BIM services UAE, BIM engineering Dubai, Architectural BIM, Structural BIM, MEP BIM, BIM coordination, Revit modeling Dubai" />
-        <meta property="og:title" content="CAD & BIM Engineering Services | B Square Global FZE" />
-        <meta property="og:description" content="Expert CAD & BIM engineering services — Architectural, Structural, MEP BIM, coordination, as-built models and manpower outsourcing." />
+        <title>CAD & BIM Services + CUBE Digital Construction Platform | B Square Global FZE</title>
+        <meta name="description" content="CAD & BIM engineering services and the CUBE Digital Construction Platform (Connected Unified Built Environment) from B Square Global — a leading CUBE channel partner across UAE, India, Qatar, Oman, KSA and the wider GCC." />
+        <meta name="keywords" content="CAD company Dubai, CAD company UAE, BIM company Dubai, CAD BIM services UAE, BIM engineering Dubai, Architectural BIM, Structural BIM, MEP BIM, BIM coordination, Revit modeling Dubai, CUBE platform, CUBE digital construction platform, Connected Unified Built Environment, Common Data Environment, CDE, ISO-19650, OpenBIM, CUBE channel partner GCC, CUBE UAE, CUBE Qatar, CUBE Oman, CUBE Saudi Arabia, CUBE India" />
+        <meta property="og:title" content="CAD & BIM Services + CUBE Digital Construction Platform | B Square Global FZE" />
+        <meta property="og:description" content="Expert CAD & BIM engineering services — Architectural, Structural, MEP BIM, coordination, as-built models and manpower outsourcing. Official CUBE channel partner across the GCC." />
         <meta property="og:url" content="https://bsquareglobalfze.com/services/cad-bim" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://bsquareglobalfze.com/logo.jpeg" />
@@ -405,6 +445,198 @@ const BIMServices = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CUBE Digital Construction Platform */}
+      <section ref={cubeRef} className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
+          <div style={{
+            backgroundImage: `linear-gradient(rgba(255,189,89,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,189,89,0.6) 1px, transparent 1px)`,
+            backgroundSize: '60px 60px',
+            width: '100%',
+            height: '100%'
+          }}></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <p className="text-sm md:text-base text-[#FFBD59] font-semibold tracking-[0.2em] uppercase mb-4">
+              Connected Unified Built Environment
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900">
+              CUBE <span className="text-[#FFBD59] italic">Digital Construction Platform</span>
+            </h2>
+            <div className="flex items-center justify-center gap-3 mb-6 text-gray-700">
+              <span className="px-3 py-1 text-sm font-semibold bg-[#FFBD59]/15 border border-[#FFBD59]/40 rounded-full">Secured</span>
+              <span className="text-gray-400">·</span>
+              <span className="px-3 py-1 text-sm font-semibold bg-[#FFBD59]/15 border border-[#FFBD59]/40 rounded-full">Scalable</span>
+              <span className="text-gray-400">·</span>
+              <span className="px-3 py-1 text-sm font-semibold bg-[#FFBD59]/15 border border-[#FFBD59]/40 rounded-full">Tailored</span>
+            </div>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              An end-to-end digitization platform for the built environment. CUBE replaces disconnected tools with a single connected data environment — managing every stage and every type of construction data, from concept design to operations & maintenance.
+            </p>
+          </motion.div>
+
+          {/* Modules grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mb-20"
+          >
+            <h3 className="text-2xl md:text-3xl font-serif text-gray-900 text-center mb-10">
+              Integrated Modules
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {cubeModules.map((m, i) => (
+                <motion.div
+                  key={m.title}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.15 + i * 0.05 }}
+                  className="group bg-white p-6 rounded-lg border border-gray-200 hover:border-[#FFBD59] hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gray-900 group-hover:bg-[#FFBD59] text-white group-hover:text-gray-900 rounded-lg mb-4 transition-colors duration-300">
+                    <m.icon size={24} />
+                  </div>
+                  <h4 className="text-lg font-serif text-gray-900 mb-2">{m.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">{m.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* 2D - 6D dimensions strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-20"
+          >
+            <h3 className="text-2xl md:text-3xl font-serif text-gray-900 text-center mb-3">
+              Integrated Construction Technology
+            </h3>
+            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+              One tool to manage every dimension of construction data — from drawings to digital twins.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {cubeDimensions.map((d, i) => (
+                <motion.div
+                  key={d.label}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={cubeInView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.4, delay: 0.25 + i * 0.05 }}
+                  className="bg-white p-5 rounded-lg border border-gray-200 hover:border-[#FFBD59] transition-colors duration-300 text-center"
+                >
+                  <div className="text-3xl font-bold text-[#FFBD59] mb-1">{d.label}</div>
+                  <div className="text-sm font-semibold text-gray-900 mb-2">{d.title}</div>
+                  <p className="text-xs text-gray-600 leading-relaxed">{d.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Strengths */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mb-20"
+          >
+            <h3 className="text-2xl md:text-3xl font-serif text-gray-900 text-center mb-3">
+              Why CUBE Stands Apart
+            </h3>
+            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto italic">
+              "Unlike other platforms, CUBE's philosophy is to adapt to the customer's workflows rather than forcing them to implement pre-defined templates."
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cubeStrengths.map((s, i) => (
+                <motion.div
+                  key={s.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.35 + i * 0.05 }}
+                  className="flex gap-4 bg-white p-5 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="flex-shrink-0 inline-flex items-center justify-center w-11 h-11 bg-[#FFBD59]/15 text-[#FFBD59] rounded-lg">
+                    <s.icon size={22} />
+                  </div>
+                  <div>
+                    <h4 className="text-base font-semibold text-gray-900 mb-1">{s.title}</h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">{s.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Channel partner band */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="relative overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-[#FFBD59]/30 p-10 md:p-14 mb-16"
+          >
+            <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
+              <div style={{
+                backgroundImage: `linear-gradient(rgba(255,189,89,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,189,89,0.5) 1px, transparent 1px)`,
+                backgroundSize: '40px 40px',
+                width: '100%',
+                height: '100%'
+              }}></div>
+            </div>
+            <div className="relative z-10 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#FFBD59]/15 border border-[#FFBD59]/40 rounded-full mb-6">
+                <Globe size={16} className="text-[#FFBD59]" />
+                <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#FFBD59]">Leading CUBE Channel Partner</span>
+              </div>
+              <h3 className="text-2xl md:text-4xl font-serif text-white leading-tight mb-5">
+                B Square Global brings CUBE to the <span className="text-[#FFBD59] italic">GCC and beyond</span>
+              </h3>
+              <p className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                As a leading channel partner for the CUBE Digital Construction Platform, B Square Global supports AEC firms, government bodies and asset owners across the <span className="text-white font-semibold">UAE, India, Qatar, Oman, the Kingdom of Saudi Arabia</span> and other GCC regions — with on-the-ground implementation, training and workflow customization.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3">
+                {['UAE', 'India', 'Qatar', 'Oman', 'Saudi Arabia', 'Other GCC'].map((region) => (
+                  <span
+                    key={region}
+                    className="px-4 py-1.5 text-sm font-medium text-white bg-white/5 border border-white/15 rounded-full"
+                  >
+                    {region}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Stats row */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={cubeInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            {cubeStats.map((s, i) => (
+              <motion.div
+                key={s.label}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={cubeInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: 0.55 + i * 0.08 }}
+                className="bg-gradient-to-br from-[#FFBD59]/10 to-orange-50 p-8 rounded-lg border border-[#FFBD59]/20 text-center"
+              >
+                <div className="text-4xl md:text-5xl font-bold text-[#FFBD59] mb-2">{s.value}</div>
+                <div className="text-base font-serif text-gray-900">{s.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
