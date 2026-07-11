@@ -19,11 +19,11 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     {
-      name: 'Services',
+      name: 'Solution & Services',
       path: '#',
       hasDropdown: true,
       submenu: [
-        { name: 'CAD & BIM Engineering Services', path: '/services/cad-bim' },
+        { name: 'CAD & BIM Engineering', path: '/services/cad-bim' },
         { name: 'Virtual HR Services', path: '/services/hr-services' },
       ]
     },

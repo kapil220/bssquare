@@ -605,7 +605,7 @@ const BIMServices = () => {
                 As a leading channel partner for the CUBE Digital Construction Platform, B Square Global supports AEC firms, government bodies and asset owners across the <span className="text-white font-semibold">UAE, India, Qatar, Oman, the Kingdom of Saudi Arabia</span> and other GCC regions — with on-the-ground implementation, training and workflow customization.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3">
-                {['UAE', 'India', 'Qatar', 'Oman', 'Saudi Arabia', 'Other GCC'].map((region) => (
+                {['UAE', 'Qatar', 'Oman', 'Saudi Arabia', 'Other GCC Countries', 'India'].map((region) => (
                   <span
                     key={region}
                     className="px-4 py-1.5 text-sm font-medium text-white bg-white/5 border border-white/15 rounded-full"

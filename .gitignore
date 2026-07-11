@@ -1,0 +1,6 @@
+# macOS junk (created automatically on exFAT/non-HFS volumes like external SSDs)
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd

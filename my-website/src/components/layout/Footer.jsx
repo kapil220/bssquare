@@ -282,7 +282,7 @@ const Footer = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <MapPin size={20} className="mr-3 mt-0.5 flex-shrink-0 text-[#FFBD59] group-hover:scale-110 transition-transform" />
-                <span className="text-sm leading-relaxed text-gray-500">UAE | INDIA</span>
+                <span className="text-sm leading-relaxed text-gray-500">UAE | Qatar | Oman | Saudi Arabia | Other GCC Countries | India</span>
               </motion.li>
               <motion.li
                 className="flex items-center group"

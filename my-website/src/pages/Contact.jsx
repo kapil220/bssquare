@@ -230,7 +230,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Location</h3>
-                        <p className="text-gray-300 text-sm">UAE | OMAN |QATAR | KSA | INDIA</p>
+                        <p className="text-gray-300 text-sm">UAE | Qatar | Oman | Saudi Arabia | Other GCC Countries | India</p>
                       </div>
                     </motion.div>
 
