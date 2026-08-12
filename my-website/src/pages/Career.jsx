@@ -12,76 +12,31 @@ const Career = () => {
 
   const jobs = [
     {
-      id: '4727',
-      title: 'Public Relations Officer (PRO)',
-      category: 'Construction Services',
-      department: 'Construction Services',
-      location: 'Dubai, UAE',
+      id: '5101',
+      title: 'Sales Executive – HR & Manpower Services',
+      category: 'HR & Manpower Services',
+      department: 'Sales & Business Development',
+      location: 'UAE',
       type: 'Full Time',
-      description: 'Handle government relations, visa processing, and PRO services for our UAE operations.'
+      description: 'Drive business growth in HR, Recruitment, Manpower Supply & Resource Deployment Services across the UAE market.'
     },
     {
-      id: '4505',
-      title: 'HR Generalist',
-      category: 'Virtual HR Services',
-      department: 'Human Resources',
-      location: 'India',
-      type: 'Full Time',
-      description: 'Manage end-to-end HR operations including recruitment, employee relations, and compliance.'
-    },
-    {
-      id: '4504',
-      title: 'HR Manager',
-      category: 'Virtual HR Services',
-      department: 'Human Resources',
-      location: 'India',
-      type: 'Full Time',
-      description: 'Lead HR strategy, team management, and organizational development initiatives.'
-    },
-    {
-      id: '4503',
-      title: 'Business Development Executive',
-      category: 'Virtual HR Services',
-      department: 'Sales & Marketing',
-      location: 'Sharjah, UAE',
-      type: 'Full Time',
-      description: 'Drive business growth through client acquisition and relationship management in Sharjah.'
-    },
-    {
-      id: '4502',
-      title: 'Project Engineer (Civil)',
-      category: 'Construction Services',
-      department: 'Engineering',
-      location: 'Sharjah, UAE',
-      type: 'Full Time',
-      description: 'Oversee civil construction projects, ensure quality standards and timely delivery.'
-    },
-    {
-      id: '4501',
+      id: '5102',
       title: 'Civil Engineer',
       category: 'Construction Services',
       department: 'Engineering',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      description: 'Design, plan and supervise construction projects with focus on structural integrity.'
+      description: 'Hamriyah Fabricators (HF) is hiring an experienced Civil Engineer with strong UAE construction project experience and hands-on Primavera P6 knowledge.'
     },
     {
-      id: '4493',
-      title: 'Purchase Assistant (Civil Construction)',
-      category: 'Construction Services',
-      department: 'Procurement',
+      id: '5103',
+      title: 'Landscape Draftsman & Civil 3D Draftsman',
+      category: 'CAD & BIM Services',
+      department: 'Design & Drafting',
       location: 'Sharjah, UAE',
-      type: 'Full Time',
-      description: 'Manage procurement of construction materials, vendor coordination, and inventory.'
-    },
-    {
-      id: '4374',
-      title: 'Business Development Executive – Virtual HR',
-      category: 'Virtual HR Services',
-      department: 'Sales & Marketing',
-      location: 'UAE Ajman',
-      type: 'Commission + Base Pay (Flexible)',
-      description: 'Promote Virtual HR Services, build client relationships, and achieve sales targets.'
+      type: 'Full-Time | 3 Months (Extendable)',
+      description: 'Immediate requirement for Landscape Draftsman (6+ years) and Civil 3D Draftsman (2+ years) for landscape and infrastructure projects in Sharjah.'
     }
   ];
 

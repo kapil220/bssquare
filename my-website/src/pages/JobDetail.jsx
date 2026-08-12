@@ -12,312 +12,97 @@ const JobDetail = () => {
 
   const jobs = [
     {
-      id: '4727',
-      title: 'Public Relations Officer (PRO)',
-      category: 'Construction Services',
-      department: 'Construction Services',
-      location: 'Dubai, UAE',
+      id: '5101',
+      title: 'Sales Executive – HR & Manpower Services',
+      category: 'HR & Manpower Services',
+      department: 'Sales & Business Development',
+      location: 'UAE',
       type: 'Full Time',
-      experience: '8 years',
-      salary: 'Competitive',
-      description: 'We are looking for an experienced and well-connected Public Relations Officer (PRO) to handle all government-related tasks, visa processes, legal documentation, and license renewals.',
+      experience: 'Sales / BD / HR / Manpower experience preferred',
+      salary: 'Competitive + Incentives',
+      applyEmail: 'bijal.s@bsquareglobalfze.com',
+      description: 'We are looking for a Sales Executive to join our team and drive business growth in HR, Recruitment, Manpower Supply & Resource Deployment Services. Education: Bachelor’s Degree or relevant qualification. Excellent English communication skills required. Target-driven work environment.',
       responsibilities: [
-        'Manage visa processing, Emirates ID, labor contracts, and medical tests.',
-        'Coordinate with Dubai government departments – GDRFA, MOHRE, DED, DHA, etc.',
-        'Handle trade license renewals, tenancy contracts, and company documentation.',
-        'Ensure compliance with UAE labor and immigration laws.',
-        'Maintain strong relationships with typing centers and government offices.'
+        'Generate new business opportunities and develop client relationships.',
+        'Identify and approach potential corporate clients.',
+        'Promote HR, recruitment, manpower supply and resource deployment services.',
+        'Understand client manpower requirements and coordinate with the relevant teams.',
+        'Conduct client meetings, presentations and negotiations.',
+        'Prepare quotations and commercial proposals.',
+        'Maintain strong relationships with existing and new clients.',
+        'Achieve assigned monthly and annual sales targets.'
       ],
       requirements: [
-        'Minimum 8 years of PRO experience in the UAE (Dubai-specific experience preferred).',
-        'Strong knowledge of UAE labor and immigration laws.',
-        'Familiarity with government portals (MOHRE, GDRFA, ICP, Tasheel).',
-        'Good communication in English (Arabic is a plus).',
-        'UAE driving license (preferred).'
-      ],
-      // qualifications: [
-      //   'High school diploma or equivalent',
-      //   'PRO certification from relevant authorities',
-      //   'Proven track record in PRO services',
-      //   'Knowledge of typing in both English and Arabic'
-      // ],
-      // benefits: [
-      //   'Health insurance',
-      //   'Annual flight ticket',
-      //   '30 days annual leave',
-      //   'Performance bonus',
-      //   'Career growth opportunities'
-      // ]
-    },
-    {
-      id: '4505',
-      title: 'HR Generalist',
-      category: 'Virtual HR Services',
-      department: 'Human Resources',
-      location: 'India',
-      type: 'Full Time',
-      experience: '1-2 years',
-      salary: 'As per industry standards',
-      description: 'We are looking for a proactive and detail-oriented HR Generalist to support day-to-day HR operations and client servicing. The ideal candidate should be familiar with both Indian and UAE labour laws, and ready to contribute to Virtual HR Services for clients in both countries.',
-      responsibilities: [
-        'Assist with recruitment, onboarding, and documentation for India and UAE-based clients.',
-        'Support HR policy implementation, employee records management, and compliance tracking.',
-        'Help prepare offer letters, contracts, and HR reports.',
-        'Coordinate payroll data and attendance with external vendors or finance teams.',
-        'Resolve employee queries and provide basic grievance support.',
-        'Ensure HR practices comply with both UAE and Indian labour law requirements.',
-        'Work closely with the senior HR team to deliver Virtual HR Services for clients.'
-      ],
-      requirements: [
-        'Bachelor’s degree in Human Resources, Business Administration, or related field.',
-        '1–2 years of experience in HR operations or generalist roles (internship experience also considered).',
-        'Basic knowledge of Indian and UAE labour laws is mandatory.',
-        'Good written and verbal communication skills in English.',
-        'Familiarity with MS Excel, Google Workspace, and HR software is a plus.',
-        'Ability to work remotely, manage tasks independently, and adapt to cross-border work environments.'
-      ],
-      // qualifications: [
-      //   'MBA in HR or relevant degree',
-      //   'HR certification preferred',
-      //   'Strong knowledge of HR best practices',
-      //   'Proficiency in MS Office and HRIS'
-      // ],
-      benefits: [
-        'Exposure to multi-country HR practices (India + UAE).',
-        'Flexible remote/hybrid work environment.',
-        'Opportunity to grow into a specialized HR role.',
-        'Mentorship from experienced HR leaders in the Virtual HR industry.',
-        'Work with growing startups and mid-scale businesses.'
+        'Good knowledge of HR & Recruitment Services.',
+        'Strong communication and interpersonal skills.',
+        'Confident in client handling and negotiations.',
+        'Self-motivated, proactive and result-oriented.',
+        'Willing to work under sales targets and performance-based objectives.',
+        'UAE market knowledge and existing corporate connections will be an advantage.',
+        'Candidates with experience in manpower supply / recruitment agencies / HR outsourcing / workforce solutions are highly preferred.',
+        'Bachelor’s Degree or relevant qualification.',
+        'Excellent English communication skills.'
       ]
     },
     {
-      id: '4504',
-      title: 'HR Manager',
-      category: 'Virtual HR Services',
-      department: 'Human Resources',
-      location: 'India',
-      type: 'Full Time',
-      experience: '5+ years',
-      salary: 'Best in industry',
-      description: 'We are looking for an experienced HR Manager to lead and manage our HR operations and also support our clients through our Virtual HR Service model. You will be responsible for designing HR processes, guiding junior HR consultants, and ensuring client satisfaction across the HR lifecycle.',
-      responsibilities: [
-        'Lead internal HR strategy, recruitment, onboarding, and employee engagement.',
-        'Oversee Virtual HR service delivery for client companies, ensuring quality and compliance.',
-        'Act as the primary HR contact for clients—handle grievances, policy creation, performance reviews, and exit processes.',
-        'Implement and monitor HRMS tools for workflow automation.Prepare and present HR reports, dashboards, and compliance documentation.',
-        'Guide a small team of HR executives and freelance consultants.Ensure labor law compliance across client operations (UAE labor law expertise preferred).',
-        'Collaborate with the Training team for employee development programs.'
-      ],
-      requirements: [
-        'Bachelor’s degree in HR or related field (MBA in HR preferred).',
-        '5+ years of HR experience, including at least 2 years in a leadership role.',
-        'Hands-on experience in recruitment, policy drafting, payroll coordination, and employee engagement.',
-        'Experience in working with or managing remote/virtual teams is a strong plus.',
-        'Strong knowledge of UAE labor law and HR compliance.',
-        'Excellent communication and client-handling skills.',
-        'Tech-savvy, with familiarity in tools like Zoho People, BambooHR, or similar HRMS.'
-      ],
-      // qualifications: [
-      //   'MBA in HR or related field',
-      //   'Relevant HR certification required',
-      //   'Strong business acumen',
-      //   'Excellent communication and presentation skills'
-      // ],
-      benefits: [
-        'Work with a visionary startup shaping the future of HR in the UAE.',
-        'Lead innovation in Virtual HR delivery for SMEs and startups.',
-        'Flexible, remote-first work environment.',
-        'Opportunity to grow into a leadership role within a fast-scaling company.'
-      ]
-    },
-    {
-      id: '4503',
-      title: 'Business Development Executive',
-      category: 'Virtual HR Services',
-      department: 'Marketing',
-      location: 'Sharjah, UAE',
-      type: 'Full Time',
-      experience: '2-4 years',
-      salary: 'Base + Commission',
-      description: 'We are looking for a Business Development Executive who is driven, self-motivated, and confident in building strong B2B relationships. This role is ideal for someone who can communicate value to mid-sized businesses and startups, and convert leads into long-term clients for our services.',
-      responsibilities: [
-        'Identify and pursue new B2B leads for Virtual HR, Consultancy, Training, and Manpower services.',
-        'Conduct client meetings (virtual/in-person), presentations, and service demonstrations.',
-        'Understand client needs and propose tailored service packages from B Square Global.',
-        'Maintain CRM records, follow up on prospects, and achieve monthly sales targets.',
-        'Collaborate with operations and delivery teams to ensure smooth onboarding of new clients.',
-        'Represent the company in networking events, webinars, and industry forums.',
-        'Create proposals, quotations, and coordinate agreement sign-offs.'
-      ],
-      requirements: [
-        'Bachelor’s degree in Business, Marketing, or related field.',
-        '2–4 years of B2B sales experience (preferably in HR, consultancy, or service sectors).',
-        'Excellent communication, negotiation, and presentation skills.',
-        'Proficiency in using CRM tools and MS Office Suite.',
-        'Strong understanding of UAE market and business culture.',
-        'Ability to work independently and manage time effectively.',
-        'UAE driving license is a plus.'
-      ],
-      // qualifications: [
-      //   'Bachelor\'s degree in Business or Marketing',
-      //   'Proven sales track record',
-      //   'Strong network in UAE business community'
-      // ],
-      benefits: [
-        'Flexible working model (Remote/Hybrid).',
-        'Base salary + performance-based incentives.',
-        'Opportunity to grow with a visionary startup.',
-        'Work directly with the leadership team and build meaningful B2B connections.',
-        'Exposure to multi-sector clients and cross-functional services.'
-      ]
-    },
-    {
-      id: '4502',
-      title: 'Project Engineer (Civil)',
-      category: 'Construction Services',
-      department: 'Engineering',
-      location: 'Sharjah, UAE',
-      type: 'Full Time',
-      experience: '5 years',
-      salary: 'AED 8,000 - 12,000',
-      description: 'We are looking for a dynamic and experienced Project Engineer to join our growing team in the UAE. The ideal candidate should have hands-on experience in civil and infrastructure construction projects with a strong understanding of local regulations, construction standards, and project execution.',
-      responsibilities: [
-        'Oversee and manage day-to-day site activities and construction work.',
-        'Coordinate with consultants, subcontractors, and suppliers.',
-        'Ensure timely project delivery within budget and quality standards.',
-        'Monitor progress and prepare regular reports.',
-        'Ensure compliance with HSE regulations and quality standards.'
-      ],
-      requirements: [
-        'Bachelor’s degree in Civil Engineering (B.E / B.Tech).',
-        'Minimum 5 years of UAE experience in civil and infrastructure projects.',
-        'Strong knowledge of site execution, project planning, and technical specifications.',
-        'Excellent leadership, communication, and problem-solving skills.',
-        'UAE driving license is an advantage.'
-      ],
-      // qualifications: [
-      //   'Bachelor\'s degree in Civil Engineering',
-      //   'UAE driving license',
-      //   'Project management certification preferred'
-      // ],
-      // benefits: [
-      //   'Accommodation allowance',
-      //   'Transportation allowance',
-      //   'Medical insurance',
-      //   'Annual bonus',
-      //   'Professional certification support'
-      // ]
-    },
-    {
-      id: '4501',
+      id: '5102',
       title: 'Civil Engineer',
       category: 'Construction Services',
       department: 'Engineering',
       location: 'Sharjah, UAE',
       type: 'Full Time',
-      experience: '2-5 years',
-      salary: 'AED 6,000 - 9,000',
-      description: 'We are seeking a highly motivated and detail-oriented Construction Site Supervisor to oversee and direct construction projects from conception to completion. You will be the on-site leader responsible for ensuring projects are delivered on time, within budget, and to the highest quality and safety standards.',
+      experience: 'Minimum 5 years (UAE)',
+      salary: 'Competitive',
+      applyEmail: 'hr@aftechfze.com',
+      description: 'Hamriyah Fabricators (HF) is looking for an experienced Civil Engineer to join our growing team. The ideal candidate will have strong experience in UAE construction projects, excellent planning and coordination skills, and hands-on knowledge of Primavera. Immediate joiners will be given preference.',
       responsibilities: [
-        'Supervise and monitor site construction activities to ensure alignment with project specifications, safety regulations, and timelines.',
-        'Review drawings, plans, and quantities for accuracy.',
-        'Coordinate with architects, consultants, contractors, and local authorities.',
-        'Prepare daily, weekly, and monthly progress reports.',
-        'Ensure materials used and work performed are in accordance with the project specifications.',
-        'Manage site logistics and resolve any technical or engineering issues that arise.',
-        'Conduct quality control and safety inspections.',
-        'Assist in budgeting, cost estimation, and project documentation.'
+        'Plan, execute, and supervise construction activities in accordance with project schedules and quality standards.',
+        'Prepare, monitor, and update project plans and schedules using Primavera.',
+        'Coordinate with consultants, subcontractors, suppliers, and internal departments to ensure timely project execution.',
+        'Monitor project progress and prepare daily, weekly, and monthly progress reports.',
+        'Ensure compliance with project specifications, safety regulations, and quality requirements.',
+        'Review drawings, resolve technical issues, and support site execution.',
+        'Track project resources, materials, and manpower to achieve project milestones.',
+        'Assist in project planning, risk assessment, and cost control.',
+        'Attend project meetings and provide progress updates to management.'
       ],
       requirements: [
-        'Bachelor’s degree in Civil Engineering (mandatory).',
-        '2–5 years of UAE experience in construction or infrastructure projects.',
-        'Strong knowledge of AutoCAD, MS Office, and project management tools.',
-        'Familiarity with Sharjah Municipality regulations and permitting processes is a plus.',
-        'Good command of English (Arabic is a plus).',
-        'UAE driving license preferred.'
-      ],
-      // qualifications: [
-      //   'Bachelor\'s degree in Civil Engineering',
-      //   'UAE driving license',
-      //   'Engineer membership preferred'
-      // ],
-      benefits: [
-        'Competitive salary based on experience.',
-        'Annual leave and health insurance.',
-        'Professional development opportunities.',
-        'Collaborative and supportive work environment.'
+        'Bachelor’s Degree in Civil Engineering.',
+        'Minimum 5 years of UAE experience in Civil Building construction projects.',
+        'Proven experience in project planning and scheduling.',
+        'Good skill and knowledge of Primavera P6 mandatory.',
+        'Strong understanding of construction methodologies, project execution, and site coordination.',
+        'Excellent communication, problem-solving, and organizational skills.',
+        'Valid UAE Driving License is an added advantage.',
+        'Immediate joiners will be given preference.'
       ]
     },
     {
-      id: '4493',
-      title: 'Purchase Assistant (Civil Construction)',
-      category: 'Construction Services',
-      department: 'Procurement',
+      id: '5103',
+      title: 'Landscape Draftsman & Civil 3D Draftsman',
+      category: 'CAD & BIM Services',
+      department: 'Design & Drafting',
       location: 'Sharjah, UAE',
-      type: 'Full Time',
-      experience: '4 years',
-      salary: 'AED 4,000 - 6,000',
-      description: 'We are seeking an experienced Procurement Specialist (Civil Construction) to handle procurement, supplier negotiations, and material sourcing for construction projects.',
+      type: 'Full-Time | 3 Months (Extendable)',
+      experience: 'Landscape Draftsman 6+ years | Civil 3D Draftsman 2+ years',
+      salary: 'Competitive',
+      applyEmail: 'Bijal.s@bsquareglobalfze.com',
+      description: 'Immediate requirement for two drafting professionals in Sharjah, UAE. Joining: Immediate. UAE-based candidates and immediate joiners preferred.',
       responsibilities: [
-        'Source and procure construction materials cost-effectively.',
-        'Negotiate with suppliers and maintain vendor relationships.',
-        'Ensure timely deliveries and manage inventory.',
-        'Maintain purchase records and compliance.'
+        'Landscape Draftsman: 6+ years of experience.',
+        'Landscape Draftsman: Proficient in AutoCAD (Mandatory).',
+        'Landscape Draftsman: Experience in landscape, infrastructure, parks, residential & commercial projects.',
+        'Landscape Draftsman: Civil 3D knowledge is an added advantage.',
+        'Civil 3D Draftsman: 2+ years of experience.',
+        'Civil 3D Draftsman: Strong proficiency in Autodesk Civil 3D & AutoCAD.',
+        'Civil 3D Draftsman: Experience in roads, utilities, grading & infrastructure projects.'
       ],
       requirements: [
-        'Bachelor’s degree in Business, Supply Chain, or related field.',
-        '4 years of construction procurement experience.',
-        'Strong negotiation & vendor management skills.',
-        'Proficiency in MS Office & ERP software.'
-      ],
-      // qualifications: [
-      //   'Diploma or degree in Supply Chain Management',
-      //   'Proficiency in MS Office and inventory software',
-      //   'Valid UAE driving license'
-      // ],
-      benefits: [
-        'Competitive salary, Visa',
-        'accommodation',
-        'transport',
-        'health insurance.'
-      ]
-    },
-    {
-      id: '4374',
-      title: 'Business Development Executive – Virtual HR',
-      category: 'Virtual HR Services',
-      department: 'Sales & Marketing',
-      location: 'UAE Ajman',
-      type: 'Commission + Base Pay (Flexible)',
-      experience: '2 years',
-      salary: 'Base + High Commission',
-      description: 'We are seeking a motivated and result-oriented Business Development Executive to promote and sell our Virtual HR service packages across the UAE market. The ideal candidate will identify target clients, generate leads, conduct sales meetings, and close deals with SMEs, startups, and mid-sized firms.',
-      responsibilities: [
-        'Promote and sell Virtual HR solutions to target clients in the UAE.',
-        'Identify new business opportunities through cold calling, networking, and field visits.',
-        'Schedule meetings with potential clients and present service offerings.',
-        'Customize service packages based on client needs and budgets.',
-        'Meet or exceed monthly and quarterly sales targets.',
-        'Maintain client records and report regularly to management.',
-        'Attend business events and HR networking sessions when needed.'
-      ],
-      requirements: [
-        'Minimum 2 years of experience in B2B sales, preferably in Virtual HR Services, consulting, SaaS, or staffing.',
-        'Strong understanding of the UAE business market and client behavior.',
-        'Excellent communication and presentation skills in English, Hindi (Arabic is a plus).',
-        'Self-motivated, target-driven, and able to work independently.',
-        'UAE driving license is an advantage but not mandatory.'
-      ],
-      // qualifications: [
-      //   'Bachelor\'s degree in any field',
-      //   'Sales certification preferred',
-      //   'Experience in service industry sales'
-      // ],
-      benefits: [
-        'Competitive base salary + performance-based commission.',
-        'Flexible work structure (field visits + remote work).',
-        'Opportunity to grow with a startup focused on innovation and virtual solutions.',
-        'Training on Virtual HR Services and virtual solutions provided.'
+        'Proficiency in AutoCAD is mandatory for both roles.',
+        'Autodesk Civil 3D proficiency required for the Civil 3D Draftsman role.',
+        'Relevant project experience in landscape or infrastructure works.',
+        'UAE-based candidates preferred.',
+        'Immediate availability to join.'
       ]
     }
   ];
@@ -516,6 +301,17 @@ const JobDetail = () => {
                   <Upload size={20} />
                   Apply Now
                 </motion.button>
+                {job.applyEmail && (
+                  <p className="text-sm text-gray-600 mt-4 text-center">
+                    Or send your CV to{' '}
+                    <a
+                      href={`mailto:${job.applyEmail}?subject=Application – ${job.title}`}
+                      className="font-semibold text-gray-900 hover:text-[#FFBD59] transition-colors break-all"
+                    >
+                      {job.applyEmail}
+                    </a>
+                  </p>
+                )}
               </div>
 
               {/* Share Job */}
